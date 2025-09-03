@@ -41,3 +41,4 @@ htmlcov/
 Thumbs.db
 
 # Project Files to remain Private
+Documentation/

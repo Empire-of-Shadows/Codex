@@ -22,8 +22,11 @@ class HelpListener(commands.Cog):
 		logger.info(f"Mentions: {[user.id for user in message.mentions]}")
 		logger.info(f"Bot user ID: {self.bot.user.id if self.bot.user else 'None'}")
 
-		if message.author.bot:
-			logger.info("Message is from a bot, ignoring")
+		# Allow messages from selected bots by ID only
+		allowed_bot_ids = [1324702268666417192, 1324623083646095453]
+
+		if message.author.bot and message.author.id not in allowed_bot_ids:
+			logger.info("Message is from a non-allowed bot, ignoring")
 			return
 
 		if self.bot.user not in message.mentions:
@@ -74,6 +77,5 @@ class HelpListener(commands.Cog):
 
 
 async def setup(bot):
-	# Initialize the guide manager database when the cog is loaded
 	await guide_manager.initialize_database()
 	await bot.add_cog(HelpListener(bot))
