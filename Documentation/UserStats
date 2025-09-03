@@ -1,0 +1,162 @@
+# 📊 User Stats Feature - Server Documentation
+
+## What is User Stats?
+
+User Stats is your personal activity dashboard on our Discord server! It tracks and displays your engagement across different areas of the server, showing you detailed information about your participation in messages, voice channels, emoji usage, and more.
+
+## 🎯 How to Access Your Stats
+
+### Quick Access
+- Use the slash command: `/member stats`
+- View your own stats: `/member stats` (no options needed)
+- View someone else's stats: `/member stats member:@username`
+- Make it public: `/member stats public:True` (shows to everyone in the channel)
+
+### What You'll See
+When you use the stats command, you get an **interactive dashboard** with different sections you can explore!
+
+## 📱 Interactive Dashboard Sections
+
+### 🏠 **Overview** (Default View)
+Your complete activity summary at a glance:
+- **Level & XP**: Your current level and total experience points
+- **Embers**: Your server currency/points
+- **Message Activity**: Total messages sent, longest message, daily streak
+- **Voice Participation**: Time spent in voice channels, activity percentages
+- **Top Emojis**: Your 5 most-used emojis with usage counts
+
+### 💬 **Messages** (Detailed View)
+Deep dive into your messaging activity:
+- **Messages Sent**: Total count of all your messages
+- **Longest Message**: Your record for character count in a single message
+- **Daily Streak**: How many consecutive days you've been active
+- **Reacted Messages**: Messages where you added reactions
+- **Reactions Received**: How many reactions others gave your messages
+
+### 🔊 **Voice** (Detailed View)
+Complete voice channel participation breakdown:
+- **Total Voice Time**: All time spent in voice channels
+- **Active Time**: Time when you were actively participating (not muted/deafened)
+- **Muted/Deafened Time**: Time spent with audio disabled
+- **Self-Muted/Self-Deafened**: Time you chose to mute/deafen yourself
+- **Voice Sessions**: Number of separate voice channel visits
+- **Activity Percentages**: How active you are when in voice channels
+
+### ⭐ **Emojis** (Detailed View)
+Your emoji usage patterns:
+- **Top 10 Emojis**: Your most frequently used emojis with exact counts
+- Shows both custom server emojis and standard emojis
+- Helps you see your emoji personality and favorites!
+
+## 🛠️ Interactive Features
+
+### 🔄 **Refresh Button**
+- Click to get the most up-to-date stats
+- Useful if you've been active recently and want current numbers
+- Updates all sections with fresh data
+
+### 📋 **Section Selector**
+- Drop-down menu to switch between Overview, Messages, Voice, and Emojis
+- Each section shows different levels of detail
+- Navigate easily without losing your place
+
+### 🎭 **View All Emojis** (When Available)
+- If you have lots of emoji usage, you'll see this special button
+- Shows your complete emoji history in multiple pages
+- Perfect for seeing your full emoji journey!
+
+## 💡 Understanding Your Stats
+
+### **Level & XP System**
+- You gain XP from various server activities (messaging, voice participation, etc.)
+- Higher levels show more engagement with the community
+- XP accumulates over time - it never decreases!
+
+### **Daily Streak**
+- Counts consecutive days you've sent at least one message
+- Resets if you miss a day
+- Great way to track your consistency in the community
+
+### **Voice Activity Percentages**
+- **Active %**: How often you're participating when in voice (not muted)
+- **Unmuted %**: How often you have your microphone available
+- Higher percentages show more interactive voice participation
+
+### **Emoji Statistics**
+- Tracks every emoji reaction and emoji in messages
+- Shows your communication style and favorite expressions
+- Custom server emojis and standard Discord emojis both count
+
+## 🎨 Related Features
+
+### Profile Cards
+Your stats also power your **profile card** system:
+- Use `/member card` to see a visual summary
+- Customize how your stats are displayed
+- Share your achievements with the community
+
+### Settings & Preferences
+- Use `/member settings` to customize your profile display
+- Control what information shows on your profile card
+- Your stats remain the same, but you control the presentation
+
+## ⏰ Data Updates
+
+- **Real-time tracking**: Your activities are tracked as they happen
+- **Smart caching**: Stats load quickly using our caching system
+- **Refresh option**: Use the refresh button for the most current data
+- **Historical data**: Your stats build up over time - nothing gets lost!
+
+## 🔒 Privacy & Access
+
+### Who Can See What
+- **Your own stats**: Always visible to you
+- **Public display**: Only when you choose `public:True` in the command
+- **Other users' stats**: You can view them, but they control public visibility
+- **Profile cards**: Controlled by individual user preferences
+
+### Data Security
+- All stats are tied to your Discord account
+- Data is stored securely in our server database
+- Your stats are preserved even if you temporarily leave and return
+
+## 🚀 Tips for Power Users
+
+### **Maximizing Your Stats**
+1. **Stay Active**: Regular participation builds impressive stats over time
+2. **Voice Engagement**: Join voice channels and stay unmuted for higher activity percentages
+3. **Emoji Expression**: Use a variety of emojis to build interesting usage patterns
+4. **Daily Consistency**: Maintain your daily streak by staying engaged
+
+### **Sharing Your Progress**
+- Use `public:True` when you want to show off achievements
+- Profile cards are great for displaying your community standing
+- Compare friendly stats with other community members
+
+### **Tracking Growth**
+- Check your stats regularly to see improvement
+- Use the refresh button after active sessions
+- Watch your daily streak and try to maintain it
+
+## ❓ Troubleshooting
+
+### Stats Not Loading?
+- Try the refresh button first
+- Make sure you've been active on the server (new users may have minimal stats)
+- If issues persist, the system may be updating - try again in a few minutes
+
+### Missing Recent Activity?
+- Use the refresh button to get the latest data
+- Some activities may take a moment to process into your stats
+- Very recent activity (last few minutes) might need a refresh to appear
+
+### Emoji Section Empty?
+- You need to use emojis in messages or as reactions for them to appear
+- Both custom server emojis and standard Discord emojis count
+- Start using emojis and check back later!
+
+---
+
+**Remember**: Your stats are a reflection of your unique participation in our community. Whether you're a chatty member, a voice channel regular, or an emoji enthusiast, your stats tell the story of your server journey!
+
+Use `/member stats` anytime to see how you're doing and celebrate your community engagement! 🎉

@@ -1,0 +1,72 @@
+Here’s a concise overview of how the DropsStatsCog works and how it calculates monthly averages.
+
+What it listens to
+- Listens to Discord messages via the on_message event.
+- Ignores:
+  - DMs
+  - Messages from bots
+- Only processes messages posted in three specific channels, mapped to logical categories:
+  - 1314381131768008757 → "Updates"
+  - 1317187274496016494 → "Free"
+  - 1316889374318923856 → "Prime"
+
+What it stores (MongoDB)
+- Database: Updates-Drops
+- Collections:
+  - stats_monthly: One doc per (collection, year, month) with a message count
+    - _id: { coll: "<Updates|Free|Prime>", year: <int>, month: <int> }
+    - count: <int>
+    - first_event_at: <datetime UTC, set on first message for that month>
+    - updated_at: <datetime UTC>
+  - stats_totals: One doc per collection with cumulative totals and average
+    - _id: "<Updates|Free|Prime>"
+    - total_count: <int>  // total messages observed for this collection
+    - months_with_data: <int>  // number of months that have at least one message
+    - average_per_month: <float>  // computed field
+    - updated_at: <datetime UTC>
+
+Processing flow per message
+1) Identify which channel the message is in and map it to the logical collection name ("Updates" | "Free" | "Prime").
+2) Determine the event timestamp (prefer message.created_at; fallback to now in UTC).
+3) Update stats_monthly with an upsert:
+   - Keyed by {coll, year, month}
+   - $inc count by 1
+   - On insert, set first_event_at
+   - Always set updated_at
+   - If the result includes upserted_id, this is the first message of that month for that collection.
+4) Update stats_totals:
+   - $inc total_count by 1
+   - If first message for that month (new doc in step 3), also $inc months_with_data by 1
+   - Always set updated_at
+5) Recalculate average_per_month:
+   - Read total_count and months_with_data from stats_totals
+   - average_per_month = round(total_count / months_with_data, 2) if months_with_data > 0 else 0.0
+   - Store the new average_per_month (and updated_at)
+
+How the monthly average is calculated
+- For each logical collection (Updates, Free, Prime):
+  - total_count = total number of messages observed in that collection across all time
+  - months_with_data = count of distinct months in which at least one message was observed
+  - average_per_month = total_count / months_with_data (rounded to 2 decimals)
+- Example:
+  - If “Free” has 54 total messages across 6 months that had at least one message:
+    - average_per_month = 54 / 6 = 9.0
+
+Concurrency and performance
+- Uses an asyncio.Lock to serialize updates and avoid interleaved writes when multiple messages arrive quickly.
+- Performs MongoDB updates in a background thread via asyncio.to_thread to avoid blocking the event loop.
+- Uses minimal round trips for each message: one upsert to stats_monthly, one update to stats_totals, one read of totals, one write for average.
+
+Time and timezone
+- Uses UTC for stored timestamps and for determining year/month.
+- If you need a different timezone for month boundaries, convert the timestamp before extracting year and month.
+
+Resilience and correctness details
+- stats_totals $inc and $set are used without conflicting $setOnInsert on the same fields to avoid MongoDB path update conflicts.
+- No custom indexes are created on _id, since MongoDB automatically maintains a unique index on _id.
+
+Typical queries you might run
+- Current month count for “Prime”:
+  - Find in stats_monthly with _id.coll="Prime" and the current year/month.
+- All-time totals and average for “Free”:
+  - Find in stats_totals with _id="Free".

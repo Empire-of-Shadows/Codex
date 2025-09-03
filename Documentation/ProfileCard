@@ -1,0 +1,97 @@
+Based on your profile card system and the examples you've provided, here's a non-technical explanation you can share with your Discord server members:
+
+---
+
+## 🎨 Profile Card System - Your Digital Identity Card
+
+### What is it?
+Think of it as your personalized trading card or ID badge for our server! It shows off your stats, achievements, and personality in a beautiful visual format.
+
+### ✨ What's on Your Profile Card?
+
+**📊 Your Server Stats:**
+- Your current level and experience points progress
+- How many messages you've sent
+- Your daily chatting streak
+- Time spent in voice channels
+- Number of voice chat sessions
+- Your ember balance (our server currency)
+
+**👤 Personal Info:**
+- Your server nickname and avatar
+- When you joined our community
+- Your favorite emoji (the one you use most!)
+- How many items you have in your inventory
+
+**🏆 Achievements & Badges:**
+- Special badges you've earned
+- Recognition for your contributions
+
+### 🎨 Customization Options
+
+**Themes:** Choose from different color schemes:
+- **Dark** - Classic dark theme with purple accents
+- **Neon** - Bright green cyberpunk vibes
+- **Gold** - Elegant golden luxury look
+- **Minimal** - Clean, simple white design
+- **Custom Themes** - Create your own color combinations!
+
+**Layouts:**
+- **Detailed** - Shows everything in a larger card
+- **Compact** - Smaller, streamlined version
+
+**Display Options:**
+- Toggle your inventory display on/off
+- Show or hide your achievement badges
+- Save your favorite settings for next time
+
+### 🎮 How to Use It
+
+1. **Type `/member card`** - Shows your profile card privately
+2. **Use the buttons** to customize:
+   - ◀ ▶ **Theme buttons** - Cycle through different color themes
+   - **Layout button** - Switch between detailed and compact views
+   - **Toggle buttons** - Show/hide inventory and badges
+   - **Share Publicly** - Let everyone see your awesome card!
+   - **💾 Save Settings** - Remember your preferences for next time
+
+### 🌈 Creating Custom Themes
+
+Want your own unique colors? Use `/theme create` with:
+- A name for your theme (like "sunset" or "ocean")
+- Background color (in hex format like #2C1810)
+- Accent color (for highlights and progress bars)
+- Text color
+
+**Example:** `/theme create name:sunset background:#2C1810 accent:#FF6B35 text:#FFFFFF`
+
+You can only have one custom theme at a time, but you can delete it and make a new one anytime!
+
+### 💡 Tips & Tricks
+
+- **Your card updates automatically** - As you chat and participate, your stats grow!
+- **Experiment with themes** - Use the arrow buttons to try different looks
+- **Save your favorites** - Hit the save button when you find a style you love
+- **Share your achievements** - Use "Share Publicly" to show off your progress
+- **Check available themes** - Use `/theme list` to see all options
+
+### 🎯 Why Use Profile Cards?
+
+- **Show your progress** - See how active you've been in the community
+- **Express yourself** - Pick colors and styles that match your personality
+- **Share achievements** - Let others see your server milestones
+- **Stay motivated** - Watch your stats grow as you participate more
+- **Stand out** - Create a unique look that represents you
+
+### 🔧 Quick Commands Reference
+
+- `/member card` - View your profile card
+- `/theme create` - Make a custom color theme
+- `/theme list` - See all available themes
+- `/theme delete` - Remove your custom theme
+
+---
+
+**Ready to create your digital identity? Type `/member card` and start customizing!** 🚀
+
+*Your profile card is a reflection of your journey in our community - make it uniquely yours!*

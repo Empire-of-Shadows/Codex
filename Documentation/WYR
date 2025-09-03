@@ -1,0 +1,177 @@
+# Would You Rather (WYR) Discord Bot Commands Documentation
+
+This documentation covers all available commands for the **Would You Rather** Discord bot feature.
+
+## Command Overview
+
+The WYR bot provides interactive "Would You Rather" questions with voting capabilities, statistics tracking, and automated daily posting.
+
+---
+
+## Available Commands
+
+### `/wyr post`
+**Description:** Manually post a WYR question (Admin only)
+
+**Permissions Required:** `manage_messages`
+
+**Parameters:**
+- `category` (optional): Category of question - `sfw`, `nsfw`, or `mixed` (default: `sfw`)
+- `random_pick` (optional): Pick a random question instead of least used (default: `false`)
+
+**Usage:**
+```
+/wyr post
+/wyr post category:nsfw
+/wyr post category:sfw random_pick:true
+```
+
+
+**Features:**
+- Creates an interactive embed with voting buttons
+- Automatically creates a discussion thread
+- Tracks question usage to ensure variety
+
+---
+
+### `/wyr stats`
+**Description:** Check WYR voting statistics for yourself or another user
+
+**Parameters:**
+- `user` (optional): User to check stats for (defaults to yourself)
+
+**Usage:**
+```
+/wyr stats
+/wyr stats user:@username
+```
+
+
+**Information Displayed:**
+- 1️⃣ Option 1 votes count
+- 2️⃣ Option 2 votes count
+- 🗳️ Total votes
+- 📈 Voting preference percentages
+- 🕐 First and last vote timestamps
+
+---
+
+### `/wyr results`
+**Description:** Show results for a specific WYR question
+
+**Parameters:**
+- `message_id` (required): Message ID of the WYR question to check results for
+
+**Usage:**
+```
+/wyr results message_id:1234567890123456789
+```
+
+
+**Note:** This feature is currently in development and requires message ID tracking implementation.
+
+---
+
+### `/wyr leaderboard`
+**Description:** Show the WYR voting leaderboard
+
+**Parameters:**
+- `limit` (optional): Number of users to show in leaderboard (default: 10, max: varies)
+
+**Usage:**
+```
+/wyr leaderboard
+/wyr leaderboard limit:20
+```
+
+
+**Features:**
+- 🥇🥈🥉 Medal emojis for top 3 users
+- Shows total vote counts for each user
+- Handles unknown/deleted users gracefully
+
+---
+
+### `/wyr reset_stats`
+**Description:** Reset a user's WYR statistics (Admin only)
+
+**Permissions Required:** `administrator`
+
+**Parameters:**
+- `user` (required): User to reset stats for
+
+**Usage:**
+```
+/wyr reset_stats user:@username
+```
+
+
+**Warning:** This action permanently deletes all voting statistics for the specified user.
+
+---
+
+## Interactive Features
+
+### Voting Buttons
+Each WYR question includes three interactive buttons:
+
+1. **1️⃣ Option 1** - Vote for the first option
+2. **2️⃣ Option 2** - Vote for the second option
+3. **📊 Show Results** - View current voting results with progress bars
+
+### Voting Features:
+- ✅ Vote confirmation messages
+- 🔄 Ability to change votes anytime
+- 📊 Real-time results with visual progress bars
+- 💬 Automatic discussion thread creation
+
+---
+
+## Automated Features
+
+### Daily Question Posting
+- **Frequency:** Every 24 hours
+- **Channel:** Configured channel (ID: `1322177352758984764`)
+- **Logic:** Posts least-used SFW questions to ensure variety
+- **Thread Creation:** Automatically creates discussion threads
+
+### Statistics Tracking
+- **User Stats:** Individual voting patterns and preferences
+- **Question Usage:** Tracks how often each question has been used
+- **Leaderboard:** Real-time ranking of most active voters
+
+---
+
+## Database Collections
+
+The bot uses two MongoDB collections:
+
+1. **WYR Collection:** Stores questions and vote data
+2. **WYR_Leaderboard Collection:** Stores user voting statistics
+
+---
+
+## Error Handling
+
+The bot includes comprehensive error handling for:
+- Database connection issues
+- Invalid message IDs
+- Missing permissions
+- Network timeouts
+- Unknown users
+
+---
+
+## Tips for Users
+
+1. **Voting:** Click the numbered buttons to vote on questions
+2. **Results:** Use the "Show Results" button to see current vote percentages
+3. **Stats:** Check `/wyr stats` to see your voting history
+4. **Discussion:** Join the auto-created threads to discuss your choices
+
+## Tips for Administrators
+
+1. **Manual Posting:** Use `/wyr post` to post questions outside the daily schedule
+2. **Category Control:** Specify `nsfw` or `mixed` categories when appropriate
+3. **Random Questions:** Use `random_pick:true` for variety in manual posts
+4. **User Management:** Use `/wyr reset_stats` to clear user data if needed
