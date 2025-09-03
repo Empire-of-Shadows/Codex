@@ -12,13 +12,14 @@ RUN apt-get update && \
 
 WORKDIR /app
 
-# Copy requirements first for better caching
-COPY requirements.txt .
+# Clone your GitHub repo directly
+RUN git clone https://github.com/Empire-of-Shadows/Codex.git .
+COPY healthcheck.py /app/healthcheck.py
+RUN chmod +x /app/healthcheck.py
+
+# Install Python dependencies
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
-
-# Copy application code
-COPY . .
 
 # Create logs directory
 RUN mkdir -p logs
