@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Discord Bot Deployment Script
@@ -8,9 +7,36 @@ set -e  # Exit on any error
 CONTAINER_NAME="codex"
 IMAGE_NAME="codex"
 BACKUP_TAG="codex:backup"
+HEALTH_CHECK_TIMEOUT=120  # seconds to wait for health check
 
 echo "==== Starting Discord Bot Deployment ===="
 echo "Timestamp: $(date)"
+
+# Function to check container health
+check_container_health() {
+    echo "🏥 Checking container health..."
+
+    local timeout=$HEALTH_CHECK_TIMEOUT
+    local elapsed=0
+    local interval=5
+
+    while [ $elapsed -lt $timeout ]; do
+        if docker inspect "$CONTAINER_NAME" --format='{{.State.Health.Status}}' 2>/dev/null | grep -q "healthy"; then
+            echo "✅ Container is healthy!"
+            return 0
+        elif docker inspect "$CONTAINER_NAME" --format='{{.State.Health.Status}}' 2>/dev/null | grep -q "unhealthy"; then
+            echo "❌ Container is unhealthy!"
+            return 1
+        else
+            echo "⏳ Waiting for health check... (${elapsed}s/${timeout}s)"
+            sleep $interval
+            elapsed=$((elapsed + interval))
+        fi
+    done
+
+    echo "⏰ Health check timeout reached"
+    return 1
+}
 
 # Function to rollback to previous version
 rollback() {
@@ -26,7 +52,14 @@ rollback() {
     if docker images "$BACKUP_TAG" --format "{{.Repository}}:{{.Tag}}" | grep -q "$BACKUP_TAG"; then
         docker tag "$BACKUP_TAG" "$IMAGE_NAME"
         docker compose up -d
-        echo "✅ Rollback completed"
+
+        # Wait for rollback to be healthy
+        if check_container_health; then
+            echo "✅ Rollback completed successfully"
+        else
+            echo "❌ Rollback failed - container is unhealthy"
+            exit 1
+        fi
     else
         echo "❌ No backup image found for rollback"
         exit 1
@@ -81,19 +114,28 @@ docker rmi -f "$IMAGE_NAME" 2>/dev/null || echo "ℹ️  No old image to remove"
 # Step 3: Build and start
 echo "🏗️  Building new image and starting container..."
 if docker compose up --build -d; then
-    echo "✅ Container started successfully"
+    echo "🚀 Container started, waiting for health check..."
 
-    # Clean up backup image after successful deployment
-    docker rmi -f "$BACKUP_TAG" 2>/dev/null || true
+    # Wait for container to be healthy
+    if check_container_health; then
+        echo "✅ Deployment successful - container is healthy"
 
-    echo "==== Discord Bot Deployed Successfully! ===="
-    echo "Timestamp: $(date)"
-    echo ""
-    echo "📋 Following logs (Press Ctrl+C to exit log view):"
-    echo "================================================"
+        # Clean up backup image after successful deployment
+        docker rmi -f "$BACKUP_TAG" 2>/dev/null || true
 
-    # Follow logs
-    docker logs -f "$CONTAINER_NAME"
+        echo "==== Discord Bot Deployed Successfully! ===="
+        echo "Timestamp: $(date)"
+        echo ""
+        echo "📋 Following logs (Press Ctrl+C to exit log view):"
+        echo "================================================"
+
+        # Follow logs
+        docker logs -f "$CONTAINER_NAME"
+    else
+        echo "❌ Health check failed, initiating rollback..."
+        rollback
+        exit 1
+    fi
 else
     echo "❌ Failed to build/start container, initiating rollback..."
     rollback

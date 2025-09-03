@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   app:
     build:
@@ -7,9 +9,14 @@ services:
       - .env
     container_name: codex
     image: codex
+    healthcheck:
+      test: [ "CMD", "python", "/app/healthcheck.py" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
     volumes:
-      - .:/app
-      - /home/eosofficial/discord-bots/bot_logs/codex:/app/logs  # Persistent logs
+      - /home/eosofficial/discord-bots/bot_logs/codex:/app/logs
     restart: unless-stopped
     logging:
       driver: "json-file"
