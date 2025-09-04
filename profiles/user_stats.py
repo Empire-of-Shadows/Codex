@@ -751,12 +751,10 @@ class MemberCommands(commands.Cog):
 			# Use DatabaseManager to fetch user stats
 			user_stats_collection = db_manager.get_raw_collection_from_connection('Ecom-Server', 'Users', 'secondary')
 			# Debug the query to see the sent and received result
-			logger.debug(f"{LOG_PREFIX} Fetching stats - req_id={req_id}, query: {user_stats_collection.find_one({"user_id": user_id})}')")
+			query = {"guild_id": guild_id, "user_id": user_id}
+			logger.debug(f"{LOG_PREFIX} Fetching stats - req_id={req_id}, query: {query}")
 			stats = await asyncio.wait_for(
-				user_stats_collection.find_one({
-					"guild_id": guild_id,
-					"user_id": user_id
-				}),
+				user_stats_collection.find_one(query),
 				timeout=6.0
 			)
 
