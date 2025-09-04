@@ -15,3 +15,4 @@ discord.py~=2.6.3
 pillow~=11.3.0
 requests~=2.32.5
 backoff~=2.2.1
+psutil>=5.9.0
