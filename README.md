@@ -1,5 +1,5 @@
 ### What it does
-Our bot helps you explore the server, track your activity, create beautiful announcement cards, share suggestions, and play community mini‑games — all with easy buttons and friendly menus.
+Our bot helps you explore the server, track your activity, create beautiful announcement cards, share suggestions — all with easy buttons and friendly menus.
 
 ---
 
@@ -36,10 +36,6 @@ Our bot helps you explore the server, track your activity, create beautiful anno
   - Batch clone multiple messages at once.
   - Configure limits, cooldowns, roles allowed, and logging.
   - Edit any bot message embed when needed.
-
-- 🔢 Mini‑Game: Counting
-  - A server counting channel with occasional power‑ups to spice things up.
-  - Simple, social, and fun for everyone.
 
 ---
 
