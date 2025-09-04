@@ -31,6 +31,18 @@ class HealthChecker:
 	def __init__(self):
 		self.max_check_time = 8.0
 
+	# Log environment info for debugging
+	logger.info(f"Health check starting in PID {os.getpid()}")
+	logger.info(f"Current working directory: {os.getcwd()}")
+	logger.info(f"Python executable: {sys.executable}")
+	logger.info(f"PATH: {os.environ.get('PATH', 'N/A')}")
+
+	# Check if we're running in Docker
+	if os.path.exists('/.dockerenv'):
+		logger.info("Running inside Docker container")
+	else:
+		logger.warning("Not running inside Docker container")
+
 	def check_main_process(self):
 		"""Check if the main bot process is running."""
 		try:
