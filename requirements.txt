@@ -11,5 +11,5 @@ starlette~=0.40.0
 pendulum~=2.1.0
 aiohttp~=3.11.18
 fuzzywuzzy~=0.18.0
-discord.py~=2.5.2
+discord.py~=2.6.3
 pillow~=11.3.0
