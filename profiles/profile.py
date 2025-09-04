@@ -1,9 +1,7 @@
 import os
 from io import BytesIO
-import logging
-from datetime import timedelta
 import asyncio
-from typing import Dict, Optional, List, Tuple, Any
+from typing import Dict, Optional, Tuple
 import time
 
 import aiohttp
@@ -13,8 +11,9 @@ from discord.ext import commands
 from PIL import Image, ImageDraw, ImageFont
 import pendulum
 from dotenv import load_dotenv
+from pymongo import IndexModel
 
-from profiles.Database.DatabaseManager import db_manager
+from Database.DatabaseManager import db_manager
 from utils.logger import get_logger, PerformanceLogger
 
 # Load environment variables
@@ -166,22 +165,51 @@ def _load_emoji_font_cached(size: int = 22) -> ImageFont.FreeTypeFont:
 
 
 class ProfilePreferences:
-	def __init__(self, db_client):
-		self.preferences = db_client["Ecom-Server"]["ProfilePreferences"]
-		self.custom_themes = db_client["Ecom-Server"]["CustomThemes"]
-		logger.info("ProfilePreferences initialized")
-		# Create indexes for better performance
-		asyncio.create_task(self._ensure_indexes())
+	def __init__(self):
+		"""Initialize ProfilePreferences with DatabaseManager integration."""
+		logger.info("ProfilePreferences initialized with DatabaseManager")
+		# Register collection configurations if not already present
+		self._ensure_collection_configs()
 
-	async def _ensure_indexes(self):
-		"""Create database indexes for better performance."""
-		with PerformanceLogger(logger, "database index creation"):
-			try:
-				await self.preferences.create_index([("user_id", 1), ("guild_id", 1)], background=True)
-				await self.custom_themes.create_index([("user_id", 1), ("guild_id", 1)], background=True)
-				logger.info("Database indexes created successfully")
-			except Exception as e:
-				logger.error(f"Index creation failed: {e}")
+	def _ensure_collection_configs(self):
+		"""Ensure ProfileCard collections are configured in DatabaseManager."""
+		# Add ProfileCard collections configuration
+		if 'profilecard_preferences' not in db_manager._collection_configs:
+			from Database.DatabaseManager import CollectionConfig
+
+			db_manager._collection_configs['profilecard_preferences'] = CollectionConfig(
+				name='ProfilePreferences',
+				database='ProfileCard',
+				connection='primary',
+				indexes=[
+					IndexModel([('user_id', 1), ('guild_id', 1)], unique=True, background=True),
+					IndexModel([('updated_at', -1)], background=True)
+				]
+			)
+
+		if 'profilecard_themes' not in db_manager._collection_configs:
+			from Database.DatabaseManager import CollectionConfig
+
+			db_manager._collection_configs['profilecard_themes'] = CollectionConfig(
+				name='CustomThemes',
+				database='ProfileCard',
+				connection='primary',
+				indexes=[
+					IndexModel([('user_id', 1), ('guild_id', 1)], background=True),
+					IndexModel([('user_id', 1), ('guild_id', 1), ('theme_name', 1)], unique=True, background=True),
+					IndexModel([('created_at', -1)], background=True)
+				]
+			)
+
+	@property
+	def preferences(self):
+		"""Get ProfilePreferences collection manager."""
+		return db_manager.get_collection_manager('profilecard_preferences')
+
+	@property
+	def custom_themes(self):
+		"""Get CustomThemes collection manager."""
+		return db_manager.get_collection_manager('profilecard_themes')
 
 	async def get_user_preferences_and_theme(self, user_id: str, guild_id: str, theme_name: str) -> tuple[dict, dict]:
 		"""Combined query to get both preferences and theme palette in one operation."""
@@ -220,7 +248,7 @@ class ProfilePreferences:
 			]
 
 			try:
-				result = await self.preferences.aggregate(pipeline).to_list(1)
+				result = await self.preferences.aggregate(pipeline)
 				if result:
 					data = result[0]
 					logger.debug(
@@ -363,10 +391,11 @@ class ProfilePreferences:
 			logger.debug(f"Starting with default themes: {themes}")
 
 			try:
-				custom_theme_docs = await self.custom_themes.find(
+				custom_theme_docs = await self.custom_themes.find_many(
 					{"user_id": user_id, "guild_id": guild_id},
-					{"theme_name": 1, "_id": 0}
-				).to_list(length=20)
+					{"theme_name": 1, "_id": 0},
+					limit=20
+				)
 
 				custom_themes = [doc["theme_name"] for doc in custom_theme_docs]
 				themes.extend(custom_themes)
@@ -413,13 +442,12 @@ class ProfilePreferences:
 			logger.info(f"Deleting custom theme '{theme_name}' for user {user_id}")
 
 			try:
-				result = await self.custom_themes.delete_one({
+				deleted = await self.custom_themes.delete_one({
 					"user_id": user_id,
 					"guild_id": guild_id,
 					"theme_name": theme_name
 				})
 
-				deleted = result.deleted_count > 0
 				if deleted:
 					logger.info(f"Successfully deleted custom theme '{theme_name}' for user {user_id}")
 				else:
@@ -646,7 +674,7 @@ class Profile(commands.Cog):
 		logger.info("Loading Profile cog...")
 		with PerformanceLogger(logger, "Profile cog loading"):
 			await db_manager.initialize()
-			self.preferences = ProfilePreferences(db_manager.db_client)
+			self.preferences = ProfilePreferences()
 			logger.info("Profile cog loaded successfully")
 
 	async def cog_unload(self):
@@ -666,29 +694,43 @@ class Profile(commands.Cog):
 
 			logger.debug(f"Fetching user data for {user.id} in guild {guild.id}")
 
-			# Parallel database queries
-			member_task = db_manager.users.find_one(
-				{"guild_id": guild.id, "id": user.id},
-				{"display_name": 1, "joined_at": 1, "avatar_url": 1, "_id": 0}
-			)
-			stats_task = db_manager.user_stats.find_one(
-				{"guild_id": guild_id_str, "user_id": user_id_str},
-				{
-					"level": 1, "xp": 1, "embers": 1,
-					"message_stats.messages": 1, "message_stats.daily_streak": 1,
-					"voice_stats.voice_seconds": 1, "voice_stats.voice_sessions": 1,
-					"favorites": 1, "_id": 0
-				}
-			)
-			inventory_task = db_manager.inventory.count_documents({"user_id": user_id_str})
+			# Use DatabaseManager for data fetching
+			try:
+				# Get ServerData collections through DatabaseManager
+				users_manager = db_manager.get_collection_manager('serverdata_users')
 
-			# Await all tasks concurrently
-			start_time = time.time()
-			member_data, stats_doc, inv_count = await asyncio.gather(
-				member_task, stats_task, inventory_task, return_exceptions=True
-			)
-			fetch_time = time.time() - start_time
-			logger.debug(f"Database queries completed in {fetch_time:.3f}s")
+				# For other collections not yet configured in DatabaseManager, use raw collection access
+				user_stats_collection = db_manager.get_raw_collection('ServerData', 'UserStats')
+				inventory_collection = db_manager.get_raw_collection('Inventory', 'Items')
+
+				# Parallel database queries
+				member_task = users_manager.find_one(
+					{"guild_id": guild.id, "id": user.id},
+					{"display_name": 1, "joined_at": 1, "avatar_url": 1, "_id": 0}
+				)
+				stats_task = user_stats_collection.find_one(
+					{"guild_id": guild_id_str, "user_id": user_id_str},
+					{
+						"level": 1, "xp": 1, "embers": 1,
+						"message_stats.messages": 1, "message_stats.daily_streak": 1,
+						"voice_stats.voice_seconds": 1, "voice_stats.voice_sessions": 1,
+						"favorites": 1, "_id": 0
+					}
+				)
+				inventory_task = inventory_collection.count_documents({"user_id": user_id_str})
+
+				# Await all tasks concurrently
+				start_time = time.time()
+				member_data, stats_doc, inv_count = await asyncio.gather(
+					member_task, stats_task, inventory_task, return_exceptions=True
+				)
+				fetch_time = time.time() - start_time
+				logger.debug(f"Database queries completed in {fetch_time:.3f}s")
+
+			except Exception as e:
+				logger.error(f"Failed to fetch user data from DatabaseManager: {e}")
+				# Fallback to direct database access if needed
+				member_data, stats_doc, inv_count = None, None, 0
 
 			# Process member data
 			if isinstance(member_data, Exception) or not member_data:

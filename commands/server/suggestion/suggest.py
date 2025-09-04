@@ -1,7 +1,6 @@
 import discord
 from discord import app_commands
 from discord.ext import commands, tasks
-from pymongo import MongoClient
 from datetime import datetime
 from typing import Optional, List, Dict, Any, cast
 import uuid
@@ -11,10 +10,12 @@ import csv
 import os
 from dotenv import load_dotenv
 from utils.logger import get_logger, log_context, PerformanceLogger
+from Database.DatabaseManager import db_manager
 
 logger = get_logger("Suggestion")
 
 load_dotenv()
+
 
 class SuggestionView(discord.ui.View):
 	def __init__(self, suggestion_id: str, db_manager):
@@ -41,7 +42,6 @@ class SuggestionView(discord.ui.View):
 	async def thinking(self, interaction: discord.Interaction, button: discord.ui.Button):
 		logger.debug(f"Thinking button clicked by user {interaction.user.id} for suggestion {self.suggestion_id}")
 		await self._handle_vote(interaction, "thinking")
-
 
 	async def _handle_vote(self, interaction: discord.Interaction, vote_type: str):
 		with PerformanceLogger(logger, f"handle_vote_{vote_type}"):
@@ -165,49 +165,30 @@ class SuggestionModal(discord.ui.Modal):
 
 
 class SuggestionDatabaseManager:
-	def __init__(self, mongo_uri: str):
-		logger.info("Initializing SuggestionDatabaseManager")
-		self.client = MongoClient(mongo_uri)
-		self.db = self.client["Suggestions"]
+	"""
+	Database manager adapter that uses the new DatabaseManager for suggestions.
+	This maintains backward compatibility while using the new database architecture.
+	"""
 
-		# Collections
-		self.suggestions = self.db["Suggestions"]
-		self.votes = self.db["Votes"]
-		self.user_stats = self.db["UserStats"]
-		self.suggestion_templates = self.db["Templates"]
-		self.notification_queue = self.db["NotificationQueue"]
+	def __init__(self, mongo_uri: str = None):
+		logger.info("Initializing SuggestionDatabaseManager with new DatabaseManager")
+		# We don't need the mongo_uri parameter anymore since we use the global db_manager
+		self.db_manager = db_manager
+		self._initialized = False
 
-		# Create indexes for better performance
-		self._create_indexes()
-
-	def _create_indexes(self):
-		"""Create database indexes for optimal performance"""
-		with log_context(logger, "database_index_creation"):
-			try:
-				# Suggestions indexes
-				self.suggestions.create_index("suggestion_id", unique=True)
-				self.suggestions.create_index("user_id")
-				self.suggestions.create_index("status")
-				self.suggestions.create_index("category")
-				self.suggestions.create_index("created_at")
-				self.suggestions.create_index([("text", "text")])  # Text search index
-
-				# Votes indexes
-				self.votes.create_index([("suggestion_id", 1), ("user_id", 1)], unique=True)
-				self.votes.create_index("suggestion_id")
-
-				# User stats indexes
-				self.user_stats.create_index("user_id", unique=True)
-
-				logger.info("Database indexes created successfully")
-			except Exception as e:
-				logger.error(f"Error creating database indexes: {e}", exc_info=True)
-				raise
+	async def _ensure_initialized(self):
+		"""Ensure the database manager is initialized"""
+		if not self._initialized:
+			if not self.db_manager._initialized:
+				await self.db_manager.initialize()
+			self._initialized = True
 
 	async def create_suggestion(self, user_id: int, text: str, anonymous: bool = False,
 								category: str = "Other", message_id: int = None,
 								thread_id: int = None) -> str:
 		"""Create a new suggestion in the database"""
+		await self._ensure_initialized()
+
 		with PerformanceLogger(logger, "create_suggestion"):
 			suggestion_id = str(uuid.uuid4())
 
@@ -224,15 +205,13 @@ class SuggestionDatabaseManager:
 				"priority": "Medium",
 				"message_id": message_id,
 				"thread_id": thread_id,
-				"created_at": datetime.utcnow(),
-				"updated_at": datetime.utcnow(),
 				"admin_notes": "",
 				"implementation_date": None,
 				"tags": []
 			}
 
 			try:
-				self.suggestions.insert_one(suggestion_doc)
+				await self.db_manager.suggestions_suggestions.create_one(suggestion_doc)
 
 				# Update user statistics
 				if not anonymous:
@@ -248,30 +227,30 @@ class SuggestionDatabaseManager:
 	async def update_suggestion_status(self, suggestion_id: str, status: str,
 									   admin_id: int, reason: str = None) -> bool:
 		"""Update suggestion status"""
+		await self._ensure_initialized()
+
 		with PerformanceLogger(logger, "update_suggestion_status"):
 			logger.info(f"Admin {admin_id} updating suggestion {suggestion_id} status to {status}")
 
 			try:
 				update_doc = {
-					"$set": {
-						"status": status,
-						"updated_at": datetime.utcnow(),
-						"last_updated_by": admin_id
-					}
+					"status": status,
+					"last_updated_by": admin_id
 				}
 
 				if reason:
-					update_doc["$set"]["status_reason"] = reason
+					update_doc["status_reason"] = reason
 					logger.debug(f"Status update reason: {reason}")
 
-				result = self.suggestions.update_one(
+				result = await self.db_manager.suggestions_suggestions.update_one(
 					{"suggestion_id": suggestion_id},
-					update_doc
+					{"$set": update_doc}
 				)
 
-				if result.modified_count > 0:
+				if result:
 					# Add to notification queue
-					suggestion = self.suggestions.find_one({"suggestion_id": suggestion_id})
+					suggestion = await self.db_manager.suggestions_suggestions.find_one(
+						{"suggestion_id": suggestion_id})
 					if suggestion and not suggestion.get("anonymous") and suggestion.get("user_id"):
 						await self._queue_notification(suggestion["user_id"], suggestion_id, status, reason)
 
@@ -287,12 +266,14 @@ class SuggestionDatabaseManager:
 
 	async def add_vote(self, suggestion_id: str, user_id: int, vote_type: str) -> Dict[str, Any]:
 		"""Add or update a vote for a suggestion"""
+		await self._ensure_initialized()
+
 		with PerformanceLogger(logger, "add_vote"):
 			logger.debug(f"Processing {vote_type} vote from user {user_id} for suggestion {suggestion_id}")
 
 			try:
 				# Check if user already voted
-				existing_vote = self.votes.find_one({
+				existing_vote = await self.db_manager.suggestions_votes.find_one({
 					"suggestion_id": suggestion_id,
 					"user_id": user_id
 				})
@@ -300,14 +281,13 @@ class SuggestionDatabaseManager:
 				vote_doc = {
 					"suggestion_id": suggestion_id,
 					"user_id": user_id,
-					"vote_type": vote_type,
-					"created_at": datetime.utcnow()
+					"vote_type": vote_type
 				}
 
 				if existing_vote:
 					if existing_vote["vote_type"] == vote_type:
 						# Remove vote if same type
-						self.votes.delete_one({
+						await self.db_manager.suggestions_votes.delete_one({
 							"suggestion_id": suggestion_id,
 							"user_id": user_id
 						})
@@ -315,16 +295,16 @@ class SuggestionDatabaseManager:
 						return {"success": True, "message": f"Removed your {vote_type} vote"}
 					else:
 						# Update vote type
-						self.votes.update_one(
+						await self.db_manager.suggestions_votes.update_one(
 							{"suggestion_id": suggestion_id, "user_id": user_id},
-							{"$set": {"vote_type": vote_type, "created_at": datetime.utcnow()}}
+							{"$set": {"vote_type": vote_type}}
 						)
 						logger.info(
 							f"Changed vote from {existing_vote['vote_type']} to {vote_type} for user {user_id} on suggestion {suggestion_id}")
 						return {"success": True, "message": f"Changed vote to {vote_type}"}
 				else:
 					# Add new vote
-					self.votes.insert_one(vote_doc)
+					await self.db_manager.suggestions_votes.create_one(vote_doc)
 					await self._update_user_stats(user_id, "votes_cast")
 					logger.info(f"Added new {vote_type} vote from user {user_id} for suggestion {suggestion_id}")
 					return {"success": True, "message": f"Added {vote_type} vote"}
@@ -335,6 +315,8 @@ class SuggestionDatabaseManager:
 
 	async def get_vote_counts(self, suggestion_id: str) -> Dict[str, int]:
 		"""Get vote counts for a suggestion"""
+		await self._ensure_initialized()
+
 		with PerformanceLogger(logger, "get_vote_counts"):
 			try:
 				pipeline = [
@@ -342,7 +324,7 @@ class SuggestionDatabaseManager:
 					{"$group": {"_id": "$vote_type", "count": {"$sum": 1}}}
 				]
 
-				results = list(self.votes.aggregate(pipeline))
+				results = await self.db_manager.suggestions_votes.aggregate(pipeline)
 				vote_counts = {result["_id"]: result["count"] for result in results}
 
 				logger.debug(f"Retrieved vote counts for suggestion {suggestion_id}: {vote_counts}")
@@ -356,6 +338,8 @@ class SuggestionDatabaseManager:
 								 status: str = None, author_id: int = None,
 								 limit: int = 10) -> List[Dict]:
 		"""Search suggestions with filters"""
+		await self._ensure_initialized()
+
 		with PerformanceLogger(logger, "search_suggestions"):
 			search_params = {
 				"query": query,
@@ -378,7 +362,11 @@ class SuggestionDatabaseManager:
 				if author_id:
 					filter_doc["user_id"] = author_id
 
-				results = list(self.suggestions.find(filter_doc).limit(limit).sort("created_at", -1))
+				results = await self.db_manager.suggestions_suggestions.find_many(
+					filter_dict=filter_doc,
+					limit=limit,
+					sort=[("created_at", -1)]
+				)
 
 				logger.info(f"Search returned {len(results)} suggestions")
 				return results
@@ -389,14 +377,16 @@ class SuggestionDatabaseManager:
 
 	async def get_user_suggestions(self, user_id: int, limit: int = 10) -> List[Dict]:
 		"""Get suggestions by a specific user"""
+		await self._ensure_initialized()
+
 		with PerformanceLogger(logger, "get_user_suggestions"):
 			logger.info(f"Retrieving suggestions for user {user_id} (limit: {limit})")
 
 			try:
-				results = list(
-					self.suggestions.find({"user_id": user_id})
-					.limit(limit)
-					.sort("created_at", -1)
+				results = await self.db_manager.suggestions_suggestions.find_many(
+					filter_dict={"user_id": user_id},
+					limit=limit,
+					sort=[("created_at", -1)]
 				)
 				logger.info(f"Found {len(results)} suggestions for user {user_id}")
 				return results
@@ -406,24 +396,26 @@ class SuggestionDatabaseManager:
 
 	async def get_suggestion_stats(self) -> Dict[str, Any]:
 		"""Get overall suggestion statistics"""
+		await self._ensure_initialized()
+
 		with PerformanceLogger(logger, "get_suggestion_stats"):
 			logger.info("Generating suggestion statistics")
 
 			try:
-				total_suggestions = self.suggestions.count_documents({})
+				total_suggestions = await self.db_manager.suggestions_suggestions.count_documents({})
 
 				# Status distribution
 				status_pipeline = [
 					{"$group": {"_id": "$status", "count": {"$sum": 1}}}
 				]
-				status_results = list(self.suggestions.aggregate(status_pipeline))
+				status_results = await self.db_manager.suggestions_suggestions.aggregate(status_pipeline)
 				status_dist = {result["_id"]: result["count"] for result in status_results}
 
 				# Category distribution
 				category_pipeline = [
 					{"$group": {"_id": "$category", "count": {"$sum": 1}}}
 				]
-				category_results = list(self.suggestions.aggregate(category_pipeline))
+				category_results = await self.db_manager.suggestions_suggestions.aggregate(category_pipeline)
 				category_dist = {result["_id"]: result["count"] for result in category_results}
 
 				# Top contributors
@@ -433,7 +425,7 @@ class SuggestionDatabaseManager:
 					{"$sort": {"count": -1}},
 					{"$limit": 5}
 				]
-				contributor_results = list(self.suggestions.aggregate(contributor_pipeline))
+				contributor_results = await self.db_manager.suggestions_suggestions.aggregate(contributor_pipeline)
 
 				stats = {
 					"total_suggestions": total_suggestions,
@@ -453,7 +445,7 @@ class SuggestionDatabaseManager:
 	async def _update_user_stats(self, user_id: int, stat_type: str):
 		"""Update user statistics"""
 		try:
-			self.user_stats.update_one(
+			await self.db_manager.get_collection_manager('suggestions_userstats').update_one(
 				{"user_id": user_id},
 				{
 					"$inc": {stat_type: 1},
@@ -475,11 +467,10 @@ class SuggestionDatabaseManager:
 				"type": "status_update",
 				"status": status,
 				"reason": reason,
-				"created_at": datetime.utcnow(),
 				"sent": False
 			}
 
-			self.notification_queue.insert_one(notification_doc)
+			await self.db_manager.get_collection_manager('suggestions_notification_queue').create_one(notification_doc)
 			logger.info(
 				f"Queued notification for user {user_id} - suggestion {suggestion_id} status changed to {status}")
 
@@ -488,8 +479,11 @@ class SuggestionDatabaseManager:
 
 	async def get_pending_notifications(self) -> List[Dict]:
 		"""Get pending notifications"""
+		await self._ensure_initialized()
+
 		try:
-			notifications = list(self.notification_queue.find({"sent": False}))
+			notifications = await self.db_manager.get_collection_manager('suggestions_notification_queue').find_many(
+				{"sent": False})
 			logger.debug(f"Retrieved {len(notifications)} pending notifications")
 			return notifications
 		except Exception as e:
@@ -499,13 +493,19 @@ class SuggestionDatabaseManager:
 	async def mark_notification_sent(self, notification_id):
 		"""Mark notification as sent"""
 		try:
-			self.notification_queue.update_one(
+			await self.db_manager.get_collection_manager('suggestions_notification_queue').update_one(
 				{"_id": notification_id},
 				{"$set": {"sent": True, "sent_at": datetime.utcnow()}}
 			)
 			logger.debug(f"Marked notification {notification_id} as sent")
 		except Exception as e:
 			logger.error(f"Error marking notification as sent: {e}", exc_info=True)
+
+	# Legacy compatibility methods for direct collection access
+	@property
+	def suggestions(self):
+		"""Legacy access to suggestions collection"""
+		return self.db_manager.get_raw_collection('Suggestions', 'Suggestions')
 
 
 class SuggestionCommandGroup(app_commands.Group):
@@ -713,7 +713,7 @@ class SuggestionAdminGroup(app_commands.Group):
 			# Try to update the original suggestion embed in the suggestions channel
 			try:
 				# Retrieve the full suggestion document to get message/thread IDs
-				doc = self.cog.db_manager.suggestions.find_one({"suggestion_id": full_id})
+				doc = await db_manager.suggestions_suggestions.find_one({"suggestion_id": full_id})
 				if doc and doc.get("message_id"):
 					channel = self.cog.bot.get_channel(self.cog.suggestions_channel_id)
 					if channel:
@@ -890,22 +890,17 @@ class SuggestionAdminGroup(app_commands.Group):
 
 class SuggestionCog(commands.Cog):
 	def __init__(self, bot):
-		logger.info("Initializing SuggestionCog")
+		logger.info("Initializing SuggestionCog with new DatabaseManager")
 		self.bot = bot
 		self.suggestions_channel_id = 1371239792888516719
 		self.admin_channel_id = 1265125349772230787
 
-		# Initialize database connection
-		mongo_uri = os.getenv("MONGO_URI3")
-		if not mongo_uri:
-			logger.error("MONGO_URI not found in environment variables")
-			raise ValueError("MONGO_URI is required")
-
+		# Initialize database connection using the new DatabaseManager
 		try:
-			self.db_manager = SuggestionDatabaseManager(mongo_uri)
-			logger.info("Successfully initialized database manager")
+			self.db_manager = SuggestionDatabaseManager()
+			logger.info("Successfully initialized suggestion database manager")
 		except Exception as e:
-			logger.error(f"Failed to initialize database manager: {e}", exc_info=True)
+			logger.error(f"Failed to initialize suggestion database manager: {e}", exc_info=True)
 			raise
 
 		# Add command groups
@@ -924,6 +919,8 @@ class SuggestionCog(commands.Cog):
 	async def on_ready(self):
 		"""Add persistent views when bot starts"""
 		logger.info("Adding persistent views for suggestion system")
+		# Initialize database manager on bot ready
+		await self.db_manager._ensure_initialized()
 		self.bot.add_view(SuggestionView("", self.db_manager))
 
 	async def _process_suggestion(self, interaction: discord.Interaction,
@@ -965,8 +962,10 @@ class SuggestionCog(commands.Cog):
 					logger.info(f"User {user.id} cancelled submission after seeing similar suggestions")
 					await interaction_inner.response.send_message("✅ Suggestion cancelled.", ephemeral=True)
 
-				continue_btn = discord.ui.Button(label="Submit Anyway", style=cast(discord.ButtonStyle, discord.ButtonStyle.success))
-				cancel_btn = discord.ui.Button(label="Cancel", style=cast(discord.ButtonStyle, discord.ButtonStyle.danger))
+				continue_btn = discord.ui.Button(label="Submit Anyway",
+												 style=cast(discord.ButtonStyle, discord.ButtonStyle.success))
+				cancel_btn = discord.ui.Button(label="Cancel",
+											   style=cast(discord.ButtonStyle, discord.ButtonStyle.danger))
 				continue_btn.callback = continue_anyway
 				cancel_btn.callback = cancel_suggestion
 
@@ -1077,7 +1076,7 @@ class SuggestionCog(commands.Cog):
 				logger.info(f"Created discussion thread {thread.id} for suggestion {suggestion_id}")
 
 				# Update database with message and thread IDs
-				self.db_manager.suggestions.update_one(
+				await db_manager.suggestions_suggestions.update_one(
 					{"suggestion_id": suggestion_id},
 					{
 						"$set": {

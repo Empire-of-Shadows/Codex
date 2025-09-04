@@ -4,9 +4,7 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 from datetime import timedelta
-from typing import Optional
-from profiles.Database.DatabaseManager import db_manager
-from profiles.Database.mongo_track import track_manager
+from Database.DatabaseManager import db_manager
 from profiles.profile import ProfilePreferences, create_profile_card, ProfileCardView
 from io import BytesIO
 import pendulum
@@ -317,7 +315,7 @@ class SectionSelect(discord.ui.Select):
 
 			if interaction.user.id not in {self.view_ref.member.id, origin_id}:
 				logger.warning(f"{LOG_PREFIX} Unauthorized section switch attempt by user={interaction.user.id}")
-				return await interaction.response.send_message("This view isn't for you.", ephemeral=True)
+				return await interaction.response.send_message("This view isn't for you.", ephemeral=True) # type: ignore
 
 			old_section = self.view_ref.current_section
 			self.view_ref.current_section = self.values[0]
@@ -329,7 +327,7 @@ class SectionSelect(discord.ui.Select):
 			embed = await self.view_ref.build_embed()
 			embed_time = _now() - t0
 
-			await interaction.response.edit_message(embed=embed, view=self.view_ref)
+			await interaction.response.edit_message(embed=embed, view=self.view_ref) # type: ignore
 
 			total_time = _now() - start_time
 			logger.info(f"{LOG_PREFIX} Section switch completed in {_fmt(total_time)} (embed: {_fmt(embed_time)})")
@@ -338,7 +336,7 @@ class SectionSelect(discord.ui.Select):
 			total_time = _now() - start_time
 			logger.error(f"{LOG_PREFIX} SectionSelect callback failed after {_fmt(total_time)}: {e}", exc_info=True)
 			try:
-				await interaction.response.send_message("An error occurred while switching sections.", ephemeral=True)
+				await interaction.response.send_message("An error occurred while switching sections.", ephemeral=True) # type: ignore
 			except Exception as resp_error:
 				logger.error(f"{LOG_PREFIX} Failed to send error response: {resp_error}")
 
@@ -346,7 +344,7 @@ class SectionSelect(discord.ui.Select):
 class RefreshButton(discord.ui.Button):
 	def __init__(self, view: UserStatsView):
 		logger.debug(f"{LOG_PREFIX} RefreshButton initializing")
-		super().__init__(label="Refresh", style=discord.ButtonStyle.secondary, emoji="🔄", row=1)
+		super().__init__(label="Refresh", style=discord.ButtonStyle.secondary, emoji="🔄", row=1) # type: ignore
 		self.view_ref = view
 		logger.debug(f"{LOG_PREFIX} RefreshButton initialized")
 
@@ -358,20 +356,24 @@ class RefreshButton(discord.ui.Button):
 		try:
 			if not interaction.guild:
 				logger.warning(f"{LOG_PREFIX} Refresh rejected - no guild context")
-				return await interaction.response.send_message("This action is only available in a server.",
+				return await interaction.response.send_message("This action is only available in a server.", # type: ignore
 															   ephemeral=True)
 
 			logger.debug(f"{LOG_PREFIX} Starting stats refresh for member={self.view_ref.member.id}")
 			t0 = _now()
+
+			# Use DatabaseManager to fetch user stats
+			user_stats_collection = db_manager.get_raw_collection_from_connection('Ecom-Server', 'Users', 'secondary')
 			refreshed = await asyncio.wait_for(
-				track_manager.get_user_stats(
-					str(interaction.guild.id),
-					str(self.view_ref.member.id),
-					flush=False,
-					include_cache=True
+				user_stats_collection.find_one(
+					{
+						"guild_id": str(interaction.guild.id),
+						"user_id": str(self.view_ref.member.id)
+					}
 				),
 				timeout=FETCH_TIMEOUT_SECONDS
 			)
+
 			fetch_time = _now() - t0
 
 			stats_size = len(str(refreshed)) if refreshed else 0
@@ -385,7 +387,7 @@ class RefreshButton(discord.ui.Button):
 			embed_time = _now() - embed_start
 
 			logger.debug(f"{LOG_PREFIX} Sending refreshed message")
-			await interaction.response.edit_message(embed=embed, view=self.view_ref)
+			await interaction.response.edit_message(embed=embed, view=self.view_ref) # type: ignore
 
 			total_time = _now() - start_time
 			logger.info(
@@ -397,11 +399,11 @@ class RefreshButton(discord.ui.Button):
 				f"{LOG_PREFIX} Refresh timeout after {_fmt(total_time)} for member={self.view_ref.member.id}")
 
 			try:
-				if interaction.response.is_done():
+				if interaction.response.is_done(): # type: ignore
 					await interaction.followup.send("Fetching stats is taking too long. Please try again shortly.",
 													ephemeral=True)
 				else:
-					await interaction.response.send_message(
+					await interaction.response.send_message( # type: ignore
 						"Fetching stats is taking too long. Please try again shortly.", ephemeral=True)
 			except Exception as resp_error:
 				logger.error(f"{LOG_PREFIX} Failed to send timeout response: {resp_error}")
@@ -413,18 +415,18 @@ class RefreshButton(discord.ui.Button):
 				exc_info=True)
 
 			try:
-				if interaction.response.is_done():
+				if interaction.response.is_done(): # type: ignore
 					await interaction.followup.send("Couldn't refresh stats right now.", ephemeral=True)
 				else:
-					await interaction.response.send_message("Couldn't refresh stats right now.", ephemeral=True)
+					await interaction.response.send_message("Couldn't refresh stats right now.", ephemeral=True) # type: ignore
 			except Exception as resp_error:
 				logger.error(f"{LOG_PREFIX} Failed to send error response: {resp_error}")
 
 
 class MemberCommands(commands.Cog):
 	"""
-    Independent cog that handles all member-related commands (card, settings, stats).
-    """
+	Independent cog that handles all member-related commands (card, settings, stats).
+	"""
 
 	def __init__(self, bot: commands.Bot):
 		self.bot = bot
@@ -436,7 +438,7 @@ class MemberCommands(commands.Cog):
 		logger.info(f"{LOG_PREFIX} Loading MemberCommands cog")
 		try:
 			await db_manager.initialize()
-			self.preferences = ProfilePreferences(db_manager.db_client)
+			self.preferences = ProfilePreferences()
 			logger.info(f"{LOG_PREFIX} MemberCommands cog loaded successfully")
 		except Exception as e:
 			logger.error(f"{LOG_PREFIX} Failed to load MemberCommands cog: {e}", exc_info=True)
@@ -450,24 +452,33 @@ class MemberCommands(commands.Cog):
 
 		logger.debug(f"{LOG_PREFIX} Fetching user data for user={user.id} in guild={guild.id}")
 
-		# Parallel database queries using db_manager
-		member_task = db_manager.users.find_one(
-			{"guild_id": guild.id, "id": user.id},
-			{"display_name": 1, "joined_at": 1, "avatar_url": 1, "_id": 0}
-		)
-		stats_task = db_manager.user_stats.find_one(
-			{"guild_id": guild_id_str, "user_id": user_id_str},
-			{
-				"level": 1, "xp": 1, "embers": 1,
-				"message_stats.messages": 1, "message_stats.daily_streak": 1,
-				"voice_stats.voice_seconds": 1, "voice_stats.voice_sessions": 1,
-				"favorites": 1, "_id": 0
-			}
-		)
-		inventory_task = db_manager.inventory.count_documents({"user_id": user_id_str})
-
-		# Await all tasks concurrently
+		# Use DatabaseManager for all data fetching
 		try:
+			# Get collection managers from the new DatabaseManager
+			users_manager = db_manager.get_collection_manager('serverdata_users')
+
+			# For collections not yet configured in DatabaseManager, use raw collection access
+			user_stats_collection = db_manager.get_raw_collection_from_connection('Ecom-Server', 'Users', 'secondary')
+			inventory_collection = db_manager.get_raw_collection_from_connection('Ecom-Server', 'Inventory',
+																				 'secondary')
+
+			# Parallel database queries
+			member_task = users_manager.find_one(
+				{"guild_id": guild.id, "id": user.id},
+				{"display_name": 1, "joined_at": 1, "avatar_url": 1}
+			)
+			stats_task = user_stats_collection.find_one(
+				{"guild_id": guild_id_str, "user_id": user_id_str},
+				{
+					"level": 1, "xp": 1, "embers": 1,
+					"message_stats.messages": 1, "message_stats.daily_streak": 1,
+					"voice_stats.voice_seconds": 1, "voice_stats.voice_sessions": 1,
+					"favorites": 1
+				}
+			)
+			inventory_task = inventory_collection.count_documents({"user_id": user_id_str})
+
+			# Await all tasks concurrently
 			member_data, stats_doc, inv_count = await asyncio.gather(
 				member_task, stats_task, inventory_task, return_exceptions=True
 			)
@@ -585,7 +596,7 @@ class MemberCommands(commands.Cog):
 		logger.info(
 			f"{LOG_PREFIX} Profile card requested for user={user.id} ({user.display_name}) by requester={interaction.user.id}, public={public}")
 
-		await interaction.response.defer(ephemeral=not public)
+		await interaction.response.defer(ephemeral=not public) # type: ignore
 
 		try:
 			user_id_str = str(user.id)
@@ -670,7 +681,7 @@ class MemberCommands(commands.Cog):
 		start_time = _now()
 		logger.info(f"{LOG_PREFIX} Settings requested by user={interaction.user.id}")
 
-		await interaction.response.defer(ephemeral=True)
+		await interaction.response.defer(ephemeral=True) # type: ignore
 
 		try:
 			prefs = await self.preferences.get_user_preferences(
@@ -723,10 +734,10 @@ class MemberCommands(commands.Cog):
 
 		if not interaction.guild:
 			logger.warning(f"{LOG_PREFIX} Stats command rejected (DM usage) - req_id={req_id}")
-			return await interaction.response.send_message("This command can only be used in a server.", ephemeral=True)
+			return await interaction.response.send_message("This command can only be used in a server.", ephemeral=True) # type: ignore
 
 		# Defer response
-		await interaction.response.defer(ephemeral=not public)
+		await interaction.response.defer(ephemeral=not public) # type: ignore
 		logger.debug(f"{LOG_PREFIX} Response deferred - req_id={req_id}")
 
 		guild_id = str(interaction.guild.id)
@@ -736,15 +747,19 @@ class MemberCommands(commands.Cog):
 		try:
 			logger.debug(f"{LOG_PREFIX} Fetching stats - req_id={req_id}")
 			fetch_start = _now()
+
+			# Use DatabaseManager to fetch user stats
+			user_stats_collection = db_manager.get_raw_collection_from_connection('Ecom-Server', 'Users', 'secondary')
+			# Debug the query to see the sent and received result
+			logger.debug(f"{LOG_PREFIX} Fetching stats - req_id={req_id}, query: {user_stats_collection.find_one({"user_id": user_id})}')")
 			stats = await asyncio.wait_for(
-				track_manager.get_user_stats(
-					guild_id,
-					user_id,
-					flush=False,
-					include_cache=True,
-				),
+				user_stats_collection.find_one({
+					"guild_id": guild_id,
+					"user_id": user_id
+				}),
 				timeout=6.0
 			)
+
 			fetch_time = _now() - fetch_start
 			stats_size = len(str(stats)) if stats else 0
 			logger.info(
@@ -836,7 +851,7 @@ class MemberCommands(commands.Cog):
 				view.add_item(
 					discord.ui.Button(
 						label="View All Emojis",
-						style=discord.ButtonStyle.primary,
+						style=discord.ButtonStyle.primary, # type: ignore
 						custom_id=f"view_all_emojis_{target_member.id}",
 						row=1
 					)
@@ -844,7 +859,7 @@ class MemberCommands(commands.Cog):
 				logger.debug(f"{LOG_PREFIX} 'View All Emojis' button added successfully - req_id={req_id}")
 			except Exception as button_error:
 				logger.warning(f"{LOG_PREFIX} Failed to add 'View All Emojis' button - req_id={req_id}: {button_error}")
-				# Continue without the button rather than failing
+		# Continue without the button rather than failing
 
 		logger.debug(f"{LOG_PREFIX} Sending final response - req_id={req_id}")
 		t_send = _now()
@@ -906,7 +921,7 @@ class UserStats(commands.Cog):
 			if not interaction.guild:
 				logger.warning(f"{LOG_PREFIX} Emoji view rejected - no guild context")
 				try:
-					await interaction.response.send_message("This action is only available in a server.",
+					await interaction.response.send_message("This action is only available in a server.", # type: ignore
 															ephemeral=True)
 				except Exception as resp_error:
 					logger.error(f"{LOG_PREFIX} Failed to send no-guild response: {resp_error}")
@@ -917,10 +932,19 @@ class UserStats(commands.Cog):
 			try:
 				logger.debug(f"{LOG_PREFIX} Fetching emoji stats for user={user_id}")
 				t0 = _now()
+
+				# Use DatabaseManager to fetch emoji stats
+				user_stats_collection = db_manager.get_raw_collection_from_connection('Ecom-Server', 'Users',
+																					  'secondary')
+				logger.debug(f"Collection fetched: {user_stats_collection} ({user_stats_collection.name})")
 				stats = await asyncio.wait_for(
-					track_manager.get_user_stats(guild_id, user_id, flush=False, include_cache=True),
+					user_stats_collection.find_one({
+						"guild_id": guild_id,
+						"user_id": user_id
+					}),
 					timeout=FETCH_TIMEOUT_SECONDS
 				)
+
 				fetch_time = _now() - t0
 				stats_size = len(str(stats)) if stats else 0
 				logger.info(
@@ -930,11 +954,11 @@ class UserStats(commands.Cog):
 				fetch_time = _now() - t0
 				logger.warning(f"{LOG_PREFIX} Emoji stats fetch timeout after {_fmt(fetch_time)} - user={user_id}")
 				try:
-					if interaction.response.is_done():
+					if interaction.response.is_done(): # type: ignore
 						await interaction.followup.send("Fetching emoji stats timed out. Please try again.",
 														ephemeral=True)
 					else:
-						await interaction.response.send_message("Fetching emoji stats timed out. Please try again.",
+						await interaction.response.send_message("Fetching emoji stats timed out. Please try again.", #type: ignore
 																ephemeral=True)
 				except Exception as resp_error:
 					logger.error(f"{LOG_PREFIX} Failed to send emoji timeout response: {resp_error}")
@@ -946,10 +970,10 @@ class UserStats(commands.Cog):
 							 exc_info=True)
 				try:
 					error_msg = "⚠️ Unable to fetch emoji stats at the moment. Please try again later."
-					if interaction.response.is_done():
+					if interaction.response.is_done(): # type: ignore
 						await interaction.followup.send(error_msg, ephemeral=True)
 					else:
-						await interaction.response.send_message(error_msg, ephemeral=True)
+						await interaction.response.send_message(error_msg, ephemeral=True) # type: ignore
 				except Exception as resp_error:
 					logger.error(f"{LOG_PREFIX} Failed to send emoji error response: {resp_error}")
 				return
@@ -958,10 +982,10 @@ class UserStats(commands.Cog):
 				logger.info(f"{LOG_PREFIX} No emoji stats found for user={user_id}")
 				try:
 					no_stats_msg = "❌ No stats found for this user."
-					if interaction.response.is_done():
+					if interaction.response.is_done(): # type: ignore
 						await interaction.followup.send(no_stats_msg, ephemeral=True)
 					else:
-						await interaction.response.send_message(no_stats_msg, ephemeral=True)
+						await interaction.response.send_message(no_stats_msg, ephemeral=True) # type: ignore
 				except Exception as resp_error:
 					logger.error(f"{LOG_PREFIX} Failed to send no emoji stats response: {resp_error}")
 				return
@@ -971,10 +995,10 @@ class UserStats(commands.Cog):
 				logger.info(f"{LOG_PREFIX} No favorite emojis for user={user_id}")
 				try:
 					no_emojis_msg = "⭐ No favorite emojis recorded for this user."
-					if interaction.response.is_done():
+					if interaction.response.is_done(): # type: ignore
 						await interaction.followup.send(no_emojis_msg, ephemeral=True)
 					else:
-						await interaction.response.send_message(no_emojis_msg, ephemeral=True)
+						await interaction.response.send_message(no_emojis_msg, ephemeral=True) # type: ignore
 				except Exception as resp_error:
 					logger.error(f"{LOG_PREFIX} Failed to send no emojis response: {resp_error}")
 				return
@@ -993,9 +1017,9 @@ class UserStats(commands.Cog):
 			# Send first page via initial response (if available), rest via followups
 			try:
 				send_start = _now()
-				if not interaction.response.is_done():
+				if not interaction.response.is_done(): # type: ignore
 					await asyncio.wait_for(
-						interaction.response.send_message(f"⭐ **Full List of Emojis:**\n{emoji_pages[0]}",
+						interaction.response.send_message(f"⭐ **Full List of Emojis:**\n{emoji_pages[0]}", # type: ignore
 														  ephemeral=True),
 						timeout=SEND_TIMEOUT_SECONDS
 					)

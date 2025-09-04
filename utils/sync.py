@@ -75,13 +75,6 @@ async def attach_databases():
 	failed_logs = []
 
 	try:
-		# MongoDB Client 1
-		mongo_client = AsyncIOMotorClient(MONGO_URI)
-
-		# Main Bot Data (ImperialCodex DB)
-		bot.db = mongo_client["ImperialCodex"]
-		result, is_success = await attach_attribute("WYR", bot.db["WYR"])
-		(success_logs if is_success else failed_logs).append(result)
 
 		# MongoDB Client 2 - E-commerce Database
 		mongo_client2 = AsyncIOMotorClient(MONGO_URI2)
@@ -99,7 +92,7 @@ async def attach_databases():
 		# Initialize Cache Manager
 		from utils.cache import create_cache_manager
 		try:
-			cache_manager = await create_cache_manager(MONGO_URI2)
+			cache_manager = await create_cache_manager(MONGO_URI)
 			result, is_success = await attach_attribute("cache_manager", cache_manager)
 			(success_logs if is_success else failed_logs).append(result)
 
