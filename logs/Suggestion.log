@@ -1,0 +1,807 @@
+2025-09-03 20:26:29,041 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-03 20:26:29,041 [INFO] Suggestion:
+                         Initializing SuggestionCog
+2025-09-03 20:26:29,041 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager
+2025-09-03 20:26:33,478 [INFO] Suggestion:
+                         Starting: database_index_creation
+2025-09-03 20:26:34,603 [INFO] Suggestion:
+                         Database indexes created successfully
+2025-09-03 20:26:34,604 [INFO] Suggestion:
+                         Completed: database_index_creation (took 1.1252s)
+2025-09-03 20:26:34,606 [INFO] Suggestion:
+                         Successfully initialized database manager
+2025-09-03 20:26:34,607 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-03 20:26:34,607 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-03 20:26:34,716 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-03 20:26:34,717 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-03 20:26:34,720 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-03 20:26:34,762 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-03 20:26:34,763 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0420s)
+2025-09-03 20:28:51,406 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-03 20:29:11,050 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-03 20:29:11,051 [INFO] Suggestion:
+                         Initializing SuggestionCog
+2025-09-03 20:29:11,051 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager
+2025-09-03 20:29:15,126 [INFO] Suggestion:
+                         Starting: database_index_creation
+2025-09-03 20:29:16,224 [INFO] Suggestion:
+                         Database indexes created successfully
+2025-09-03 20:29:16,225 [INFO] Suggestion:
+                         Completed: database_index_creation (took 1.0989s)
+2025-09-03 20:29:16,225 [INFO] Suggestion:
+                         Successfully initialized database manager
+2025-09-03 20:29:16,226 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-03 20:29:16,226 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-03 20:29:16,317 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-03 20:29:16,318 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-03 20:29:16,322 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-03 20:29:16,368 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-03 20:29:16,369 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0476s)
+2025-09-03 20:34:16,336 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-03 20:34:16,382 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-03 20:34:16,384 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0475s)
+2025-09-03 20:39:16,340 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-03 20:39:16,388 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-03 20:39:16,388 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0474s)
+2025-09-03 20:44:16,333 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-03 20:44:16,380 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-03 20:44:16,382 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0479s)
+2025-09-03 20:49:16,315 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-03 20:49:16,360 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-03 20:49:16,361 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0454s)
+2025-09-03 20:54:16,316 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-03 20:54:16,361 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-03 20:54:16,361 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0436s)
+2025-09-03 20:59:16,323 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-03 20:59:16,368 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-03 20:59:16,368 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0454s)
+2025-09-03 21:04:16,320 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-03 21:04:16,366 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-03 21:04:16,367 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0458s)
+2025-09-03 21:04:54,786 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-03 21:05:22,906 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-03 21:05:22,906 [INFO] Suggestion:
+                         Initializing SuggestionCog
+2025-09-03 21:05:22,907 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager
+2025-09-03 21:05:26,992 [INFO] Suggestion:
+                         Starting: database_index_creation
+2025-09-03 21:05:28,088 [INFO] Suggestion:
+                         Database indexes created successfully
+2025-09-03 21:05:28,089 [INFO] Suggestion:
+                         Completed: database_index_creation (took 1.0964s)
+2025-09-03 21:05:28,089 [INFO] Suggestion:
+                         Successfully initialized database manager
+2025-09-03 21:05:28,089 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-03 21:05:28,089 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-03 21:05:28,172 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-03 21:05:28,172 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-03 21:05:28,175 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-03 21:05:28,217 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-03 21:05:28,217 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0424s)
+2025-09-03 21:05:58,376 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 07:52:14,026 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 07:52:14,027 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 07:52:14,028 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 07:52:14,028 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 07:52:14,028 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 07:52:14,028 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 07:52:14,126 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 07:52:14,126 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 07:52:14,127 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 07:52:18,715 [ERROR] Suggestion:
+                         Error in notification task: 'ProfileCard'
+Traceback (most recent call last):
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\commands\server\suggestion\suggest.py", line 1121, in notification_task
+    notifications = await self.db_manager.get_pending_notifications()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\commands\server\suggestion\suggest.py", line 482, in get_pending_notifications
+    await self._ensure_initialized()
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\commands\server\suggestion\suggest.py", line 183, in _ensure_initialized
+    await self.db_manager.initialize()
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\Database\DatabaseManager.py", line 854, in initialize
+    await self._initialize_collections()
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\Database\DatabaseManager.py", line 870, in _initialize_collections
+    database = self.databases[config.database]
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'ProfileCard'
+2025-09-04 07:52:18,716 [INFO] Suggestion:
+                         Completed: notification_processing (took 4.5891s)
+2025-09-04 07:57:14,136 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 07:57:14,137 [ERROR] Suggestion:
+                         Error in notification task: 'ProfileCard'
+Traceback (most recent call last):
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\commands\server\suggestion\suggest.py", line 1121, in notification_task
+    notifications = await self.db_manager.get_pending_notifications()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\commands\server\suggestion\suggest.py", line 482, in get_pending_notifications
+    await self._ensure_initialized()
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\commands\server\suggestion\suggest.py", line 183, in _ensure_initialized
+    await self.db_manager.initialize()
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\Database\DatabaseManager.py", line 854, in initialize
+    await self._initialize_collections()
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\Database\DatabaseManager.py", line 870, in _initialize_collections
+    database = self.databases[config.database]
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'ProfileCard'
+2025-09-04 07:57:14,138 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0020s)
+2025-09-04 07:59:24,294 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 07:59:35,822 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 07:59:35,823 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 07:59:35,824 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 07:59:35,824 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 07:59:35,824 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 07:59:35,824 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 07:59:35,897 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 07:59:35,897 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 07:59:35,898 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 07:59:41,451 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 07:59:41,451 [INFO] Suggestion:
+                         Completed: notification_processing (took 5.5531s)
+2025-09-04 08:04:35,908 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 08:04:35,967 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 08:04:35,967 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0586s)
+2025-09-04 08:07:23,374 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 08:07:36,050 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 08:07:36,051 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 08:07:36,052 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 08:07:36,052 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 08:07:36,052 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 08:07:36,052 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 08:07:36,139 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 08:07:36,139 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 08:07:36,140 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 08:07:41,584 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 08:07:41,585 [INFO] Suggestion:
+                         Completed: notification_processing (took 5.4444s)
+2025-09-04 08:09:12,466 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 09:08:42,096 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 09:08:42,096 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 09:08:42,096 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 09:08:42,096 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 09:08:42,096 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 09:08:42,096 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 09:08:42,180 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 09:08:42,180 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 09:08:42,181 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:08:52,704 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:08:52,704 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.5228s)
+2025-09-04 09:13:42,180 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:13:42,227 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:13:42,228 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0473s)
+2025-09-04 09:18:42,186 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:18:42,234 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:18:42,235 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0494s)
+2025-09-04 09:18:54,825 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 09:19:07,190 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 09:19:07,190 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 09:19:07,190 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 09:19:07,190 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 09:19:07,190 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 09:19:07,190 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 09:19:07,269 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 09:19:07,269 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 09:19:07,270 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:19:17,309 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:19:17,310 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.0398s)
+2025-09-04 09:22:55,077 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 09:23:08,050 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 09:23:08,050 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 09:23:08,050 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 09:23:08,050 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 09:23:08,051 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 09:23:08,051 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 09:23:08,124 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 09:23:08,124 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 09:23:08,126 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:23:18,535 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:23:18,535 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.4090s)
+2025-09-04 09:28:08,135 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:28:08,179 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:28:08,181 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0453s)
+2025-09-04 09:29:16,627 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 09:29:29,768 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 09:29:29,768 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 09:29:29,769 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 09:29:29,769 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 09:29:29,769 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 09:29:29,769 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 09:29:29,839 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 09:29:29,840 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 09:29:29,840 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:29:40,099 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:29:40,099 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.2587s)
+2025-09-04 09:34:29,852 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:34:29,894 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:34:29,895 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0423s)
+2025-09-04 09:39:29,841 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:39:29,885 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:39:29,885 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0449s)
+2025-09-04 09:44:29,856 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:44:29,904 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:44:29,905 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0471s)
+2025-09-04 09:49:29,845 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:49:29,888 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:49:29,889 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0432s)
+2025-09-04 09:54:29,852 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:54:29,897 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:54:29,898 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0455s)
+2025-09-04 09:57:23,861 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 09:57:35,950 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 09:57:35,950 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 09:57:35,950 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 09:57:35,950 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 09:57:35,950 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 09:57:35,951 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 09:57:36,034 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 09:57:36,034 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 09:57:36,035 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 09:57:46,114 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 09:57:46,115 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.0799s)
+2025-09-04 10:02:36,052 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:02:36,099 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:02:36,100 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0483s)
+2025-09-04 10:07:36,048 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:07:36,093 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:07:36,093 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0453s)
+2025-09-04 10:12:36,044 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:12:36,092 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:12:36,094 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0494s)
+2025-09-04 10:14:45,935 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 10:15:01,229 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 10:15:01,229 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 10:15:01,229 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 10:15:01,229 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 10:15:01,230 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 10:15:01,230 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 10:15:01,315 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 10:15:01,315 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 10:15:01,317 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:15:11,464 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:15:11,464 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.1474s)
+2025-09-04 10:18:42,221 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 10:18:58,205 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 10:18:58,205 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 10:18:58,206 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 10:18:58,206 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 10:18:58,206 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 10:18:58,206 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 10:18:58,317 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 10:18:58,317 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 10:18:58,318 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:19:08,381 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:19:08,381 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.0633s)
+2025-09-04 10:23:58,325 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:23:58,371 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:23:58,372 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0458s)
+2025-09-04 10:25:09,452 [INFO] Suggestion:
+                         User 1264236749060575355 requested their suggestion history
+2025-09-04 10:25:09,736 [DEBUG] Suggestion:
+                         Starting operation: get_user_suggestions
+2025-09-04 10:25:09,737 [INFO] Suggestion:
+                         Retrieving suggestions for user 1264236749060575355 (limit: 10)
+2025-09-04 10:25:09,785 [INFO] Suggestion:
+                         Found 1 suggestions for user 1264236749060575355
+2025-09-04 10:25:09,785 [INFO] Suggestion:
+                         Operation 'get_user_suggestions' completed in 0.0485s
+2025-09-04 10:25:09,785 [DEBUG] Suggestion:
+                         Starting operation: get_vote_counts
+2025-09-04 10:25:09,833 [DEBUG] Suggestion:
+                         Retrieved vote counts for suggestion b3dd4fff-2351-4451-900b-e9170708ab1b: {'thinking': 1}
+2025-09-04 10:25:09,834 [INFO] Suggestion:
+                         Operation 'get_vote_counts' completed in 0.0494s
+2025-09-04 10:25:09,835 [INFO] Suggestion:
+                         Displayed 1 suggestions to user 1264236749060575355
+2025-09-04 10:28:58,331 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:28:58,377 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:28:58,377 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0453s)
+2025-09-04 10:33:58,327 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:33:58,373 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:33:58,373 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0454s)
+2025-09-04 10:38:58,327 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:38:58,371 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:38:58,372 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0442s)
+2025-09-04 10:43:58,335 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:43:58,383 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:43:58,383 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0474s)
+2025-09-04 10:47:41,131 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 10:52:05,379 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 10:52:05,379 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 10:52:05,379 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 10:52:05,379 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 10:52:05,379 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 10:52:05,379 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 10:52:05,456 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 10:52:05,456 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 10:52:05,457 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:52:15,470 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:52:15,470 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.0129s)
+2025-09-04 10:57:05,470 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 10:57:05,515 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 10:57:05,515 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0453s)
+2025-09-04 11:02:05,469 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 11:02:05,516 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 11:02:05,516 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0464s)
+2025-09-04 11:07:05,468 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 11:07:05,508 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 11:07:05,508 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0400s)
+2025-09-04 11:12:05,465 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 11:12:05,505 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 11:12:05,505 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0406s)
+2025-09-04 11:17:05,468 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 11:17:05,512 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 11:17:05,512 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0435s)
+2025-09-04 11:17:56,087 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 11:27:38,383 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 11:27:38,383 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 11:27:38,383 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 11:27:38,383 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 11:27:38,383 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 11:27:38,383 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 11:27:38,476 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 11:27:38,476 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 11:27:38,476 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 11:27:48,627 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 11:27:48,627 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.1507s)
+2025-09-04 11:29:21,338 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 11:37:20,179 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 11:37:20,179 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 11:37:20,179 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 11:37:20,179 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 11:37:20,179 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 11:37:20,179 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 11:37:20,317 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 11:37:20,317 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 11:37:20,317 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 11:37:30,661 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 11:37:30,661 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.3434s)
+2025-09-04 11:41:12,428 [INFO] Suggestion:
+                         User 1264236749060575355 requested their suggestion history
+2025-09-04 11:41:12,645 [DEBUG] Suggestion:
+                         Starting operation: get_user_suggestions
+2025-09-04 11:41:12,646 [INFO] Suggestion:
+                         Retrieving suggestions for user 1264236749060575355 (limit: 10)
+2025-09-04 11:41:12,690 [INFO] Suggestion:
+                         Found 1 suggestions for user 1264236749060575355
+2025-09-04 11:41:12,690 [INFO] Suggestion:
+                         Operation 'get_user_suggestions' completed in 0.0452s
+2025-09-04 11:41:12,691 [DEBUG] Suggestion:
+                         Starting operation: get_vote_counts
+2025-09-04 11:41:12,743 [DEBUG] Suggestion:
+                         Retrieved vote counts for suggestion b3dd4fff-2351-4451-900b-e9170708ab1b: {'thinking': 1}
+2025-09-04 11:41:12,743 [INFO] Suggestion:
+                         Operation 'get_vote_counts' completed in 0.0524s
+2025-09-04 11:41:12,743 [INFO] Suggestion:
+                         Displayed 1 suggestions to user 1264236749060575355
+2025-09-04 11:42:20,318 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 11:42:20,363 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 11:42:20,363 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0447s)
+2025-09-04 11:45:35,228 [INFO] Suggestion:
+                         Search command used by 1264236749060575355 - Query: 'regards', Category: None, Status: None, Author: None
+2025-09-04 11:45:35,587 [DEBUG] Suggestion:
+                         Starting operation: search_suggestions
+2025-09-04 11:45:35,587 [INFO] Suggestion:
+                         Searching suggestions with parameters: {'query': 'regards', 'category': None, 'status': None, 'author_id': None, 'limit': 10}
+2025-09-04 11:45:35,632 [INFO] Suggestion:
+                         Search returned 1 suggestions
+2025-09-04 11:45:35,632 [INFO] Suggestion:
+                         Operation 'search_suggestions' completed in 0.0454s
+2025-09-04 11:45:35,632 [INFO] Suggestion:
+                         Search results displayed to user 1264236749060575355: 1 total results
+2025-09-04 11:46:00,317 [INFO] Suggestion:
+                         Suggestion submission command used by 1264236749060575355 - Category: Other, Anonymous: False
+2025-09-04 11:46:00,317 [INFO] Suggestion:
+                         Starting: process_suggestion_Other
+2025-09-04 11:46:00,317 [INFO] Suggestion:
+                         Processing suggestion from user 1264236749060575355 - Category: Other, Anonymous: False, Length: 4 chars
+2025-09-04 11:46:00,603 [DEBUG] Suggestion:
+                         Starting operation: search_suggestions
+2025-09-04 11:46:00,603 [INFO] Suggestion:
+                         Searching suggestions with parameters: {'query': 'Test', 'category': None, 'status': None, 'author_id': None, 'limit': 3}
+2025-09-04 11:46:00,650 [INFO] Suggestion:
+                         Search returned 0 suggestions
+2025-09-04 11:46:00,651 [INFO] Suggestion:
+                         Operation 'search_suggestions' completed in 0.0479s
+2025-09-04 11:46:00,651 [INFO] Suggestion:
+                         No similar suggestions found for user 1264236749060575355's submission, proceeding directly
+2025-09-04 11:46:00,651 [DEBUG] Suggestion:
+                         Starting operation: create_suggestion_post
+2025-09-04 11:46:00,651 [INFO] Suggestion:
+                         Creating suggestion post for user 1264236749060575355 - Category: Other, Anonymous: False
+2025-09-04 11:46:00,651 [DEBUG] Suggestion:
+                         Starting operation: create_suggestion
+2025-09-04 11:46:00,651 [INFO] Suggestion:
+                         Creating suggestion for user 1264236749060575355 - Category: Other, Length: 4 chars
+2025-09-04 11:46:00,765 [DEBUG] Suggestion:
+                         Updated suggestions_submitted stat for user 1264236749060575355
+2025-09-04 11:46:00,765 [INFO] Suggestion:
+                         Successfully created suggestion 1184d8c5-bd49-43ec-bb7d-d5c971e0e4f5 for user 1264236749060575355
+2025-09-04 11:46:00,765 [INFO] Suggestion:
+                         Operation 'create_suggestion' completed in 0.1143s
+2025-09-04 11:46:01,165 [INFO] Suggestion:
+                         Posted suggestion 1184d8c5-bd49-43ec-bb7d-d5c971e0e4f5 to suggestions channel (message 1413203460601417779)
+2025-09-04 11:46:02,179 [INFO] Suggestion:
+                         Created discussion thread 1413203460601417779 for suggestion 1184d8c5-bd49-43ec-bb7d-d5c971e0e4f5
+2025-09-04 11:46:02,228 [DEBUG] Suggestion:
+                         Updated suggestion 1184d8c5-bd49-43ec-bb7d-d5c971e0e4f5 with message and thread IDs
+2025-09-04 11:46:02,395 [INFO] Suggestion:
+                         Sent admin copy of suggestion 1184d8c5-bd49-43ec-bb7d-d5c971e0e4f5 to admin channel
+2025-09-04 11:46:02,716 [INFO] Suggestion:
+                         Successfully processed suggestion 1184d8c5-bd49-43ec-bb7d-d5c971e0e4f5 for user 1264236749060575355
+2025-09-04 11:46:02,717 [INFO] Suggestion:
+                         Operation 'create_suggestion_post' completed in 2.0659s
+2025-09-04 11:46:02,717 [INFO] Suggestion:
+                         Completed: process_suggestion_Other (took 2.3993s)
+2025-09-04 11:46:45,287 [INFO] Suggestion:
+                         Admin 1264236749060575355 requested export in JSON format
+2025-09-04 11:46:45,774 [DEBUG] Suggestion:
+                         Starting operation: search_suggestions
+2025-09-04 11:46:45,774 [INFO] Suggestion:
+                         Searching suggestions with parameters: {'query': None, 'category': None, 'status': None, 'author_id': None, 'limit': 1000}
+2025-09-04 11:46:45,814 [INFO] Suggestion:
+                         Search returned 2 suggestions
+2025-09-04 11:46:45,814 [INFO] Suggestion:
+                         Operation 'search_suggestions' completed in 0.0405s
+2025-09-04 11:46:45,815 [ERROR] Suggestion:
+                         Error during export for admin 1264236749060575355: Object of type ObjectId is not JSON serializable
+Traceback (most recent call last):
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\commands\server\suggestion\suggest.py", line 875, in export_suggestions
+    json_content = json.dumps(json_data, indent=2).encode('utf-8')
+                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "C:\Python313\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python313\Lib\json\encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python313\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type ObjectId is not JSON serializable
+2025-09-04 11:47:06,161 [INFO] Suggestion:
+                         Admin 1264236749060575355 requested export in CSV format
+2025-09-04 11:47:06,447 [DEBUG] Suggestion:
+                         Starting operation: search_suggestions
+2025-09-04 11:47:06,448 [INFO] Suggestion:
+                         Searching suggestions with parameters: {'query': None, 'category': None, 'status': None, 'author_id': None, 'limit': 1000}
+2025-09-04 11:47:06,491 [INFO] Suggestion:
+                         Search returned 2 suggestions
+2025-09-04 11:47:06,492 [INFO] Suggestion:
+                         Operation 'search_suggestions' completed in 0.0443s
+2025-09-04 11:47:06,492 [INFO] Suggestion:
+                         Successfully exported 2 suggestions in CSV format for admin 1264236749060575355
+2025-09-04 11:47:20,326 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 11:47:20,366 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 11:47:20,366 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0406s)
+2025-09-04 11:48:14,177 [INFO] Suggestion:
+                         Admin 1264236749060575355 requested suggestion statistics
+2025-09-04 11:48:15,960 [DEBUG] Suggestion:
+                         Starting operation: get_suggestion_stats
+2025-09-04 11:48:15,961 [INFO] Suggestion:
+                         Generating suggestion statistics
+2025-09-04 11:48:16,149 [INFO] Suggestion:
+                         Generated stats: 2 total suggestions, 2 statuses, 1 categories
+2025-09-04 11:48:16,149 [INFO] Suggestion:
+                         Operation 'get_suggestion_stats' completed in 0.1890s
+2025-09-04 11:48:16,150 [INFO] Suggestion:
+                         Statistics displayed to admin 1264236749060575355
+2025-09-04 11:48:51,399 [INFO] Suggestion:
+                         Admin 1264236749060575355 attempting to update suggestion ✅ Your suggestion has been posted! (ID: 1184d8c5) to status On Hold
+2025-09-04 11:48:51,718 [DEBUG] Suggestion:
+                         Starting operation: search_suggestions
+2025-09-04 11:48:51,718 [INFO] Suggestion:
+                         Searching suggestions with parameters: {'query': None, 'category': None, 'status': None, 'author_id': None, 'limit': 1000}
+2025-09-04 11:48:51,758 [INFO] Suggestion:
+                         Search returned 2 suggestions
+2025-09-04 11:48:51,758 [INFO] Suggestion:
+                         Operation 'search_suggestions' completed in 0.0399s
+2025-09-04 11:48:51,758 [WARNING] Suggestion:
+                         Admin 1264236749060575355 attempted to update non-existent suggestion ✅ Your suggestion has been posted! (ID: 1184d8c5)
+2025-09-04 11:52:20,322 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 11:52:20,365 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 11:52:20,365 [INFO] Suggestion:
+                         Completed: notification_processing (took 0.0430s)
+2025-09-04 11:53:12,964 [INFO] Suggestion:
+                         Unloading SuggestionCog
+2025-09-04 11:53:34,040 [INFO] Suggestion:
+                         Setting up SuggestionCog
+2025-09-04 11:53:34,040 [INFO] Suggestion:
+                         Initializing SuggestionCog with new DatabaseManager
+2025-09-04 11:53:34,040 [INFO] Suggestion:
+                         Initializing SuggestionDatabaseManager with new DatabaseManager
+2025-09-04 11:53:34,040 [INFO] Suggestion:
+                         Successfully initialized suggestion database manager
+2025-09-04 11:53:34,040 [INFO] Suggestion:
+                         SuggestionCog initialization completed
+2025-09-04 11:53:34,040 [INFO] Suggestion:
+                         SuggestionCog setup completed successfully
+2025-09-04 11:53:34,115 [INFO] Suggestion:
+                         Waiting for bot to be ready before starting notification task
+2025-09-04 11:53:34,115 [INFO] Suggestion:
+                         Bot ready, notification task can now start
+2025-09-04 11:53:34,115 [INFO] Suggestion:
+                         Starting: notification_processing
+2025-09-04 11:53:44,168 [DEBUG] Suggestion:
+                         Retrieved 0 pending notifications
+2025-09-04 11:53:44,168 [INFO] Suggestion:
+                         Completed: notification_processing (took 10.0533s)
+2025-09-04 11:56:55,228 [INFO] Suggestion:
+                         Unloading SuggestionCog

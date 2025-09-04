@@ -1,0 +1,469 @@
+2025-09-03 20:26:34,691 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-03 20:26:34,691 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-03 20:26:34,691 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-03 20:26:34,717 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-03 20:26:34,718 [INFO] WYR:
+                                   ✅ WYR database attached successfully: AsyncIOMotorCollection(Collection(Database(MongoClient(host='mongodb+srv://imperial-codex.vgsikpl.mongodb.net', document_class=dict, tz_aware=False, connect=False, driver=DriverInfo(name='Motor', version='3.7.1', platform='asyncio')), 'Daily'), 'WYR'))
+2025-09-03 20:26:34,718 [INFO] WYR:
+                                   ✅ WYR leaderboard attached successfully: AsyncIOMotorCollection(Collection(Database(MongoClient(host='mongodb+srv://imperial-codex.vgsikpl.mongodb.net', document_class=dict, tz_aware=False, connect=False, driver=DriverInfo(name='Motor', version='3.7.1', platform='asyncio')), 'Daily'), 'WYR_Leaderboard'))
+2025-09-03 20:26:43,522 [INFO] WYR:
+                         Database connectivity test successful
+2025-09-03 20:26:43,524 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-03 20:26:43,524 [INFO] WYR:
+                         Current Chicago time: 2025-09-03 20:26:43.524064-05:00
+2025-09-03 20:26:43,524 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-04 06:00:00-05:00 (Thursday, September 04 at 06:00 AM CDT)
+2025-09-03 20:26:43,524 [INFO] WYR:
+                         Scheduling next WYR post in 9:33:16.475432 at 2025-09-04 11:00:00+00:00 UTC
+2025-09-03 20:28:51,404 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 127.8803s
+2025-09-03 20:28:51,404 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 136.6875s
+2025-09-03 20:28:51,407 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-03 20:28:51,407 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-03 20:29:16,299 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-03 20:29:16,300 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-03 20:29:16,300 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-03 20:29:16,318 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-03 20:29:16,319 [INFO] WYR:
+                                   ✅ WYR database attached successfully: AsyncIOMotorCollection(Collection(Database(MongoClient(host='mongodb+srv://imperial-codex.vgsikpl.mongodb.net', document_class=dict, tz_aware=False, connect=False, driver=DriverInfo(name='Motor', version='3.7.1', platform='asyncio')), 'Daily'), 'WYR'))
+2025-09-03 20:29:16,319 [INFO] WYR:
+                                   ✅ WYR leaderboard attached successfully: AsyncIOMotorCollection(Collection(Database(MongoClient(host='mongodb+srv://imperial-codex.vgsikpl.mongodb.net', document_class=dict, tz_aware=False, connect=False, driver=DriverInfo(name='Motor', version='3.7.1', platform='asyncio')), 'Daily'), 'WYR_Leaderboard'))
+2025-09-03 20:29:20,950 [INFO] WYR:
+                         Database connectivity test successful
+2025-09-03 20:29:20,951 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-03 20:29:20,951 [INFO] WYR:
+                         Current Chicago time: 2025-09-03 20:29:20.951357-05:00
+2025-09-03 20:29:20,951 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-04 06:00:00-05:00 (Thursday, September 04 at 06:00 AM CDT)
+2025-09-03 20:29:20,951 [INFO] WYR:
+                         Scheduling next WYR post in 9:30:39.048140 at 2025-09-04 11:00:00+00:00 UTC
+2025-09-03 21:04:54,783 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 2133.8322s
+2025-09-03 21:04:54,784 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 2138.4658s
+2025-09-03 21:04:54,786 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-03 21:04:54,786 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-03 21:05:28,160 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-03 21:05:28,161 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-03 21:05:28,161 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-03 21:05:28,172 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-03 21:05:28,173 [INFO] WYR:
+                                   ✅ WYR database attached successfully: AsyncIOMotorCollection(Collection(Database(MongoClient(host='mongodb+srv://imperial-codex.vgsikpl.mongodb.net', document_class=dict, tz_aware=False, connect=False, driver=DriverInfo(name='Motor', version='3.7.1', platform='asyncio')), 'Daily'), 'WYR'))
+2025-09-03 21:05:28,173 [INFO] WYR:
+                                   ✅ WYR leaderboard attached successfully: AsyncIOMotorCollection(Collection(Database(MongoClient(host='mongodb+srv://imperial-codex.vgsikpl.mongodb.net', document_class=dict, tz_aware=False, connect=False, driver=DriverInfo(name='Motor', version='3.7.1', platform='asyncio')), 'Daily'), 'WYR_Leaderboard'))
+2025-09-03 21:05:32,794 [INFO] WYR:
+                         Database connectivity test successful
+2025-09-03 21:05:32,794 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-03 21:05:32,795 [INFO] WYR:
+                         Current Chicago time: 2025-09-03 21:05:32.795131-05:00
+2025-09-03 21:05:32,795 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-04 06:00:00-05:00 (Thursday, September 04 at 06:00 AM CDT)
+2025-09-03 21:05:32,795 [INFO] WYR:
+                         Scheduling next WYR post in 8:54:27.204365 at 2025-09-04 11:00:00+00:00 UTC
+2025-09-03 21:05:58,374 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 25.5799s
+2025-09-03 21:05:58,374 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 30.2018s
+2025-09-03 21:05:58,376 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-03 21:05:58,377 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 07:52:14,104 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 07:52:14,105 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 07:52:14,106 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 07:52:14,126 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 07:52:18,714 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 4.5881s
+2025-09-04 07:52:18,714 [ERROR] WYR:
+                                   ❌ Failed to initialize WYR database: 'ProfileCard'
+Traceback (most recent call last):
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\daily\WYR.py", line 299, in initialize_database
+    await db_manager.initialize()
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\Database\DatabaseManager.py", line 854, in initialize
+    await self._initialize_collections()
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\Database\DatabaseManager.py", line 870, in _initialize_collections
+    database = self.databases[config.database]
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'ProfileCard'
+2025-09-04 07:59:24,294 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 07:59:24,294 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 07:59:35,886 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 07:59:35,886 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 07:59:35,887 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 07:59:35,898 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 07:59:41,408 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 07:59:41,409 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 07:59:41,409 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 07:59:41.409870-05:00
+2025-09-04 07:59:41,410 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 07:59:41,410 [INFO] WYR:
+                         Scheduling next WYR post in 22:00:18.589626 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 08:07:23,370 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 461.9606s
+2025-09-04 08:07:23,370 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 467.4729s
+2025-09-04 08:07:23,375 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 08:07:23,375 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 08:07:36,122 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 08:07:36,123 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 08:07:36,123 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 08:07:36,140 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 08:07:41,539 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 08:07:41,539 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 08:07:41,539 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 08:07:41.539238-05:00
+2025-09-04 08:07:41,540 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 08:07:41,540 [INFO] WYR:
+                         Scheduling next WYR post in 21:52:18.459758 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 08:09:12,463 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 90.9244s
+2025-09-04 08:09:12,463 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 96.3233s
+2025-09-04 08:09:12,467 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 08:09:12,467 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 09:08:42,168 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 09:08:42,168 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 09:08:42,169 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 09:08:42,180 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 09:08:52,657 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 09:08:52,657 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 09:08:52,657 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 09:08:52.657877-05:00
+2025-09-04 09:08:52,658 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 09:08:52,658 [INFO] WYR:
+                         Scheduling next WYR post in 20:51:07.341117 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 09:18:54,822 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 602.1647s
+2025-09-04 09:18:54,823 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 612.6425s
+2025-09-04 09:18:54,825 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 09:18:54,826 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 09:19:07,254 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 09:19:07,254 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 09:19:07,254 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 09:19:07,269 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 09:19:17,267 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 09:19:17,268 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 09:19:17,268 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 09:19:17.268072-05:00
+2025-09-04 09:19:17,268 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 09:19:17,268 [INFO] WYR:
+                         Scheduling next WYR post in 20:40:42.731928 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 09:22:55,073 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 217.8052s
+2025-09-04 09:22:55,073 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 227.8040s
+2025-09-04 09:22:55,077 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 09:22:55,078 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 09:23:08,112 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 09:23:08,113 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 09:23:08,113 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 09:23:08,124 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 09:23:18,228 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 09:23:18,230 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 09:23:18,230 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 09:23:18.230462-05:00
+2025-09-04 09:23:18,230 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 09:23:18,230 [INFO] WYR:
+                         Scheduling next WYR post in 20:36:41.769032 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 09:29:16,624 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 358.3936s
+2025-09-04 09:29:16,624 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 368.4992s
+2025-09-04 09:29:16,628 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 09:29:16,628 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 09:29:29,828 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 09:29:29,829 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 09:29:29,829 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 09:29:29,840 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 09:29:39,790 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 09:29:39,790 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 09:29:39,790 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 09:29:39.790683-05:00
+2025-09-04 09:29:39,791 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 09:29:39,791 [INFO] WYR:
+                         Scheduling next WYR post in 20:30:20.208816 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 09:57:23,858 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 1664.0683s
+2025-09-04 09:57:23,858 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 1674.0185s
+2025-09-04 09:57:23,861 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 09:57:23,862 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 09:57:36,018 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 09:57:36,019 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 09:57:36,020 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 09:57:36,035 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 09:57:46,072 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 09:57:46,073 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 09:57:46,073 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 09:57:46.073094-05:00
+2025-09-04 09:57:46,073 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 09:57:46,073 [INFO] WYR:
+                         Scheduling next WYR post in 20:02:13.926906 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 10:14:45,931 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 1019.8586s
+2025-09-04 10:14:45,932 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 1029.8975s
+2025-09-04 10:14:45,935 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 10:14:45,935 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 10:15:01,301 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 10:15:01,301 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 10:15:01,301 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 10:15:01,316 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 10:15:11,419 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 10:15:11,420 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 10:15:11,420 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 10:15:11.420965-05:00
+2025-09-04 10:15:11,420 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 10:15:11,420 [INFO] WYR:
+                         Scheduling next WYR post in 19:44:48.579035 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 10:18:42,219 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 210.7982s
+2025-09-04 10:18:42,219 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 220.9029s
+2025-09-04 10:18:42,222 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 10:18:42,222 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 10:18:58,287 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 10:18:58,287 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 10:18:58,287 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 10:18:58,317 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 10:19:08,336 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 10:19:08,337 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 10:19:08,337 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 10:19:08.337868-05:00
+2025-09-04 10:19:08,338 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 10:19:08,338 [INFO] WYR:
+                         Scheduling next WYR post in 19:40:51.661628 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 10:47:41,128 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 1712.7910s
+2025-09-04 10:47:41,128 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 1722.8115s
+2025-09-04 10:47:41,131 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 10:47:41,131 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 10:52:05,440 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 10:52:05,440 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 10:52:05,440 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 10:52:05,456 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 10:52:15,426 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 10:52:15,427 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 10:52:15,427 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 10:52:15.427357-05:00
+2025-09-04 10:52:15,427 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 10:52:15,427 [INFO] WYR:
+                         Scheduling next WYR post in 19:07:44.572451 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 11:17:56,084 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 1540.6573s
+2025-09-04 11:17:56,084 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 1550.6280s
+2025-09-04 11:17:56,087 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 11:17:56,087 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 11:27:38,456 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 11:27:38,457 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 11:27:38,457 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 11:27:38,476 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 11:27:48,581 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 11:27:48,582 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 11:27:48,582 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 11:27:48.582519-05:00
+2025-09-04 11:27:48,582 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 11:27:48,582 [INFO] WYR:
+                         Scheduling next WYR post in 18:32:11.417205 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 11:29:21,335 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 92.7527s
+2025-09-04 11:29:21,335 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 102.8588s
+2025-09-04 11:29:21,338 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 11:29:21,338 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 11:37:20,296 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 11:37:20,296 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 11:37:20,297 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 11:37:20,317 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 11:37:30,346 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 11:37:30,346 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 11:37:30,346 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 11:37:30.346670-05:00
+2025-09-04 11:37:30,346 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 11:37:30,346 [INFO] WYR:
+                         Scheduling next WYR post in 18:22:29.653170 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 11:50:49,011 [INFO] WYR:
+                         WYR leaderboard requested by eosofficial with limit: 10
+2025-09-04 11:50:49,011 [DEBUG] WYR:
+                         Starting operation: wyr_leaderboard_generation_limit_10
+2025-09-04 11:50:49,057 [INFO] WYR:
+                         No WYR voting data available for leaderboard
+2025-09-04 11:50:49,435 [INFO] WYR:
+                         Operation 'wyr_leaderboard_generation_limit_10' completed in 0.4241s
+2025-09-04 11:52:21,665 [INFO] WYR:
+                         WYR leaderboard requested by eosofficial with limit: 10
+2025-09-04 11:52:21,666 [DEBUG] WYR:
+                         Starting operation: wyr_leaderboard_generation_limit_10
+2025-09-04 11:52:22,944 [INFO] WYR:
+                         WYR leaderboard successfully generated with 6 users
+2025-09-04 11:52:22,944 [INFO] WYR:
+                         Operation 'wyr_leaderboard_generation_limit_10' completed in 1.2785s
+2025-09-04 11:53:12,962 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 942.6154s
+2025-09-04 11:53:12,962 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 952.6447s
+2025-09-04 11:53:12,964 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 11:53:12,964 [INFO] WYR:
+                         WYR command group removed from bot tree
+2025-09-04 11:53:34,104 [INFO] WYR:
+                         Setting up WYR cog
+2025-09-04 11:53:34,105 [INFO] WYR:
+                         WYR cog initialized - starting database initialization
+2025-09-04 11:53:34,105 [INFO] WYR:
+                         WYR cog successfully added to bot
+2025-09-04 11:53:34,115 [DEBUG] WYR:
+                         Starting operation: wyr_database_initialization
+2025-09-04 11:53:44,126 [INFO] WYR:
+                                   ✅ WYR database initialized successfully
+2025-09-04 11:53:44,126 [DEBUG] WYR:
+                         Starting operation: schedule_next_wyr_post
+2025-09-04 11:53:44,126 [INFO] WYR:
+                         Current Chicago time: 2025-09-04 11:53:44.126886-05:00
+2025-09-04 11:53:44,126 [INFO] WYR:
+                         Next scheduled WYR post: 2025-09-05 06:00:00-05:00 (Friday, September 05 at 06:00 AM CDT)
+2025-09-04 11:53:44,127 [INFO] WYR:
+                         Scheduling next WYR post in 18:06:15.872991 at 2025-09-05 11:00:00+00:00 UTC
+2025-09-04 11:56:55,226 [INFO] WYR:
+                         Operation 'schedule_next_wyr_post' completed in 191.0998s
+2025-09-04 11:56:55,226 [INFO] WYR:
+                         Operation 'wyr_database_initialization' completed in 201.1118s
+2025-09-04 11:56:55,229 [INFO] WYR:
+                         WYR cog unloading - cleaning up
+2025-09-04 11:56:55,229 [INFO] WYR:
+                         WYR command group removed from bot tree

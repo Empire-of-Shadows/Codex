@@ -1,0 +1,243 @@
+2025-09-03 20:52:34,567 [INFO] GuildEventHandler:
+                         
+          New member joined: .7178 (478914159275409409) in Empire of Shadows Gaming Community
+
+2025-09-03 20:52:35,725 [INFO] GuildEventHandler:
+                         
+          Member cache updated for Empire of Shadows Gaming Community
+
+2025-09-03 20:52:37,048 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1412978633609445498
+2025-09-03 20:52:37,305 [INFO] GuildEventHandler:
+                         
+          [WELCOME] Status: 200
+
+2025-09-03 20:52:37,306 [INFO] GuildEventHandler:
+                         Interactive welcome message sent for .7178
+
+2025-09-03 20:53:05,649 [INFO] GuildEventHandler:
+                         Event: on_member_update - 478914159275409409 in Empire of Shadows Gaming Community
+2025-09-03 20:53:09,618 [INFO] GuildEventHandler:
+                         Event: on_member_update - 478914159275409409 in Empire of Shadows Gaming Community
+2025-09-03 20:54:54,099 [INFO] GuildEventHandler:
+                         Event: on_message - .7178 in Empire of Shadows Gaming Community
+2025-09-04 07:55:48,450 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413145532968337520
+2025-09-04 08:00:37,928 [INFO] GuildEventHandler:
+                         Event: on_voice_state_update - eosofficial in Imperial Support
+2025-09-04 08:00:40,889 [INFO] GuildEventHandler:
+                         Event: on_voice_state_update - eosofficial in Imperial Support
+2025-09-04 08:00:45,347 [INFO] GuildEventHandler:
+                         Event: on_voice_state_update - eosofficial in Imperial Support
+2025-09-04 08:00:47,083 [INFO] GuildEventHandler:
+                         Event: on_voice_state_update - eosofficial in Imperial Support
+2025-09-04 08:00:54,036 [INFO] GuildEventHandler:
+                         Event: on_typing - eosofficial in testing at 2025-09-04 13:00:56+00:00
+2025-09-04 08:00:56,521 [INFO] GuildEventHandler:
+                         Event: on_message - eosofficial in Imperial Support
+2025-09-04 08:01:31,126 [INFO] GuildEventHandler:
+                         Event: on_typing - eosofficial in this-is-for-talking at 2025-09-04 13:01:33+00:00
+2025-09-04 08:01:33,029 [INFO] GuildEventHandler:
+                         Event: on_message - eosofficial in Imperial Support
+2025-09-04 08:01:36,872 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:01:39,368 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:01:43,078 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:01:46,335 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:01:48,078 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:01:51,148 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:01:53,565 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:01:56,583 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:02:05,852 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:02:19,189 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:02:25,090 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413146981970477178
+2025-09-04 08:02:55,018 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413147318487748649
+2025-09-04 08:08:32,639 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413148736695042211
+2025-09-04 09:09:49,354 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413164151534260365
+2025-09-04 09:19:36,295 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413166611283574906
+2025-09-04 09:24:11,428 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413167765258375210
+2025-09-04 09:30:03,407 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413169241326223503
+2025-09-04 09:31:29,608 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413169605345542244
+2025-09-04 09:38:13,310 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413171279053324349
+2025-09-04 09:58:10,165 [INFO] GuildEventHandler:
+                         Event: on_user_update - 993942490333859960
+2025-09-04 09:58:10,166 [INFO] GuildEventHandler:
+                         Event: on_member_update - 993942490333859960 in Empire of Shadows Gaming Community
+2025-09-04 10:01:15,440 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413177091276407027
+2025-09-04 10:04:46,627 [INFO] GuildEventHandler:
+                         
+          New member joined: jpludik (1282273751433613405) in Empire of Shadows Gaming Community
+
+2025-09-04 10:04:47,754 [INFO] GuildEventHandler:
+                         
+          Member cache updated for Empire of Shadows Gaming Community
+
+2025-09-04 10:04:49,338 [INFO] GuildEventHandler:
+                         
+          [WELCOME] Status: 200
+
+2025-09-04 10:04:49,339 [INFO] GuildEventHandler:
+                         Interactive welcome message sent for jpludik
+
+2025-09-04 10:04:49,663 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413177993546694757
+2025-09-04 10:04:49,688 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413177993097904260
+2025-09-04 10:06:18,925 [INFO] GuildEventHandler:
+                         
+          Channel updated: Souls: 165 (1364204562960879677) in guild: Empire of Shadows Gaming Community
+
+2025-09-04 10:06:23,231 [INFO] GuildEventHandler:
+                         Event: on_member_update - 1282273751433613405 in Empire of Shadows Gaming Community
+2025-09-04 10:06:25,768 [INFO] GuildEventHandler:
+                         
+          Channels cache updated for Empire of Shadows Gaming Community
+
+2025-09-04 10:09:38,505 [INFO] GuildEventHandler:
+                         Event: on_member_update - 1282273751433613405 in Empire of Shadows Gaming Community
+2025-09-04 10:09:47,959 [INFO] GuildEventHandler:
+                         Event: on_member_update - 1282273751433613405 in Empire of Shadows Gaming Community
+2025-09-04 10:09:52,860 [INFO] GuildEventHandler:
+                         Event: on_member_update - 1282273751433613405 in Empire of Shadows Gaming Community
+2025-09-04 10:10:30,860 [INFO] GuildEventHandler:
+                         Event: on_member_update - 1282273751433613405 in Empire of Shadows Gaming Community
+2025-09-04 10:10:38,557 [INFO] GuildEventHandler:
+                         Event: on_message - jpludik in Empire of Shadows Gaming Community
+2025-09-04 10:10:49,238 [INFO] GuildEventHandler:
+                         Event: on_voice_state_update - jpludik in Empire of Shadows Gaming Community
+2025-09-04 10:10:53,776 [INFO] GuildEventHandler:
+                         Event: on_voice_state_update - jpludik in Empire of Shadows Gaming Community
+2025-09-04 10:11:04,330 [INFO] GuildEventHandler:
+                         Event: on_message - jpludik in Empire of Shadows Gaming Community
+2025-09-04 10:13:13,480 [INFO] GuildEventHandler:
+                         Event: on_member_update - 1282273751433613405 in Empire of Shadows Gaming Community
+2025-09-04 10:16:02,487 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413180815768031323
+2025-09-04 10:17:34,636 [INFO] GuildEventHandler:
+                         Event: on_user_update - 993942490333859960
+2025-09-04 10:17:34,637 [INFO] GuildEventHandler:
+                         Event: on_member_update - 993942490333859960 in Empire of Shadows Gaming Community
+2025-09-04 10:19:08,191 [INFO] GuildEventHandler:
+                         Event: on_user_update - 1282273751433613405
+2025-09-04 10:19:08,192 [INFO] GuildEventHandler:
+                         Event: on_member_update - 1282273751433613405 in Empire of Shadows Gaming Community
+2025-09-04 10:19:31,216 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413181691102498958
+2025-09-04 10:20:00,513 [INFO] GuildEventHandler:
+                         Event: on_member_update - 993942490333859960 in Empire of Shadows Gaming Community
+2025-09-04 10:25:10,467 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413183112493535352
+2025-09-04 10:26:13,852 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413183380060766343
+2025-09-04 10:56:45,923 [INFO] GuildEventHandler:
+                         Event: on_typing - picklerik420 in 📝│introductions at 2025-09-04 15:56:45+00:00
+2025-09-04 10:56:58,458 [INFO] GuildEventHandler:
+                         Event: on_typing - picklerik420 in 📝│introductions at 2025-09-04 15:56:58+00:00
+2025-09-04 10:57:05,527 [INFO] GuildEventHandler:
+                         Event: on_message - picklerik420 in Empire of Shadows Gaming Community
+2025-09-04 10:57:35,623 [INFO] GuildEventHandler:
+                         Event: on_user_update - 748369540425187425
+2025-09-04 10:57:35,623 [INFO] GuildEventHandler:
+                         Event: on_member_update - 748369540425187425 in Empire of Shadows Gaming Community
+2025-09-04 10:58:33,382 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413191512899981453
+2025-09-04 10:58:41,038 [INFO] GuildEventHandler:
+                         Event: on_raw_message_delete - id 1413160105309900840
+2025-09-04 11:11:21,977 [INFO] GuildEventHandler:
+                         
+          New member joined: gbkcarnage (773717953123450942) in Empire of Shadows Gaming Community
+
+2025-09-04 11:11:22,455 [INFO] GuildEventHandler:
+                         
+          Member cache updated for Empire of Shadows Gaming Community
+
+2025-09-04 11:11:24,167 [INFO] GuildEventHandler:
+                         
+          [WELCOME] Status: 200
+
+2025-09-04 11:11:24,168 [INFO] GuildEventHandler:
+                         Interactive welcome message sent for gbkcarnage
+
+2025-09-04 11:11:24,389 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413194749023879189
+2025-09-04 11:12:22,002 [INFO] GuildEventHandler:
+                         Event: on_member_update - 773717953123450942 in Empire of Shadows Gaming Community
+2025-09-04 11:12:25,813 [INFO] GuildEventHandler:
+                         Event: on_member_update - 773717953123450942 in Empire of Shadows Gaming Community
+2025-09-04 11:17:30,379 [INFO] GuildEventHandler:
+                         Event: on_user_update - 836013375338577952
+2025-09-04 11:17:30,380 [INFO] GuildEventHandler:
+                         Event: on_member_update - 836013375338577952 in Empire of Shadows Gaming Community
+2025-09-04 11:28:03,302 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413198928613998724
+2025-09-04 11:28:38,603 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413199084654690415
+2025-09-04 11:38:01,832 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413201419002974238
+2025-09-04 11:38:22,943 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413201419002974238
+2025-09-04 11:38:52,910 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413201661404643439
+2025-09-04 11:40:31,749 [INFO] GuildEventHandler:
+                         Event: on_message - lemmy0901 in Empire of Shadows Gaming Community
+2025-09-04 11:41:13,022 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413202251002155081
+2025-09-04 11:45:35,859 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413203353621496000
+2025-09-04 11:46:01,320 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413203460601417779
+2025-09-04 11:46:01,369 [INFO] GuildEventHandler:
+                         Event: on_thread_create - Discussion: EOSOfficial's Other Suggestion (1413203460601417779)
+2025-09-04 11:46:02,699 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413203458659586102
+2025-09-04 11:46:46,222 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413203648179212349
+2025-09-04 11:47:07,020 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413203734820950188
+2025-09-04 11:48:00,423 [INFO] GuildEventHandler:
+                         Event: on_disconnect - disconnected from gateway
+2025-09-04 11:48:00,745 [INFO] GuildEventHandler:
+                         Event: on_resumed - session resumed
+2025-09-04 11:48:16,719 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413204020285411470
+2025-09-04 11:48:52,180 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413204176372105286
+2025-09-04 11:50:25,441 [INFO] GuildEventHandler:
+                         
+          [WELCOME] Status: 200
+
+2025-09-04 11:50:25,665 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413204565741932575
+2025-09-04 11:50:25,744 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413204568107384903
+2025-09-04 11:50:30,895 [INFO] GuildEventHandler:
+                         Event: on_raw_message_delete - id 1413204568107384903
+2025-09-04 11:50:30,895 [INFO] GuildEventHandler:
+                         Event: on_message_delete - message 1413204568107384903
+2025-09-04 11:52:58,660 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413205209060085853
+2025-09-04 11:54:05,297 [INFO] GuildEventHandler:
+                         Event: on_message_edit - message 1413205484470800480
+2025-09-04 11:55:16,951 [INFO] GuildEventHandler:
+                         Event: on_disconnect - disconnected from gateway
+2025-09-04 11:55:17,173 [INFO] GuildEventHandler:
+                         Event: on_resumed - session resumed

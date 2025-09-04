@@ -1,0 +1,34 @@
+2025-09-04 11:38:12,043 [INFO] EmbedEditModal:
+                         Initializing embed edit modal for message 1413201419002974238 by user with roles: {1265126100485275720, 1266990254099922985, 1319937470200287273, 1266259240511737960, 1392926433734820014, 1374068534342189148, 1364034820820177038, 1365333442052620308, 1363379082644946964, 1265801878118203422, 1362166614451032346, 1365323369867903099, 1365461427053137980, 1265120128295632926, 1373742473071038527}
+2025-09-04 11:38:12,043 [DEBUG] EmbedEditModal:
+                         Maximum description length for user roles {1265126100485275720, 1266990254099922985, 1319937470200287273, 1266259240511737960, 1392926433734820014, 1374068534342189148, 1364034820820177038, 1365333442052620308, 1363379082644946964, 1265801878118203422, 1362166614451032346, 1365323369867903099, 1365461427053137980, 1265120128295632926, 1373742473071038527}: 4000
+2025-09-04 11:38:12,046 [DEBUG] EmbedEditModal:
+                         Current embed state - Title: SET, Description: 8 chars, Thumbnail: SET, Color: EMPTY
+2025-09-04 11:38:12,046 [DEBUG] EmbedEditModal:
+                         Embed edit modal initialized successfully
+2025-09-04 11:38:22,648 [INFO] EmbedEditModal:
+                         Starting: embed edit submission for message 1413201419002974238
+2025-09-04 11:38:22,648 [INFO] EmbedEditModal:
+                         Embed edit submitted by user 1264236749060575355 (EOSOfficial) for message 1413201419002974238 in channel 1266501320093732884
+2025-09-04 11:38:22,648 [DEBUG] EmbedEditModal:
+                         Submitted values - Title: SET, Description: 29 chars, Thumbnail: SET, Color: 'empire'
+2025-09-04 11:38:22,648 [DEBUG] EmbedEditModal:
+                         Description change detected: 8 chars -> 29 chars
+2025-09-04 11:38:22,648 [DEBUG] EmbedEditModal:
+                         Validating image URL: https://cdn.discordapp.com/avatars/1264236749060575355/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=102...
+2025-09-04 11:38:22,649 [DEBUG] EmbedEditModal:
+                         Image URL validation passed: https://cdn.discordapp.com/avatars/1264236749060575355/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=102...
+2025-09-04 11:38:22,649 [DEBUG] EmbedEditModal:
+                         Valid thumbnail URL provided, updating thumbnail
+2025-09-04 11:38:22,649 [DEBUG] EmbedEditModal:
+                         User has 47 allowed colors: ['aqua', 'purple', 'red', 'orange', 'navy', 'hot_pink', 'deep_purple', 'teal', 'deep_orange', 'fuchsia', 'dark_blue', 'dark_aqua', 'blurple', 'gold', 'empire', 'dark_vivid_pink', 'luminous_vivid_pink', 'dark_green', 'dark_orange', 'dark_red', 'dark_purple', 'dark_gold', 'white', 'greyple', 'dark_but_not_black', 'light_grey', 'dark_navy', 'blue', 'green', 'yellow', 'brown', 'black', 'amber', 'lime', 'light_green', 'default', 'grey', 'dark_grey', 'darker_grey', 'not_quite_black', 'grey_alt', 'white_alt', 'light_blue', 'deep_blue', 'indigo', 'lilac', 'peach']
+2025-09-04 11:38:22,649 [DEBUG] EmbedEditModal:
+                         Using named color 'empire' with value 7734271 (0x7603ff)
+2025-09-04 11:38:22,649 [DEBUG] EmbedEditModal:
+                         Color change detected: none -> 0x7603ff
+2025-09-04 11:38:22,649 [INFO] EmbedEditModal:
+                         Applying embed changes: description, thumbnail_set, color for message 1413201419002974238
+2025-09-04 11:38:22,965 [INFO] EmbedEditModal:
+                         Embed successfully updated by user 1264236749060575355 (EOSOfficial) for message 1413201419002974238. Changes: description, thumbnail_set, color
+2025-09-04 11:38:23,183 [INFO] EmbedEditModal:
+                         Completed: embed edit submission for message 1413201419002974238 (took 0.5344s)

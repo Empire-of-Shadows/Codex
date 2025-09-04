@@ -6,24 +6,23 @@ import pytz
 import discord
 from discord.ext import commands, tasks
 from discord import app_commands
-from motor.motor_asyncio import AsyncIOMotorClient
 from dotenv import load_dotenv
 
 from utils.bot import s
 from utils.logger import get_logger, PerformanceLogger
+from Database.DatabaseManager import db_manager
 
 # Load environment variables
 load_dotenv()
-MONGO_URI = os.getenv("MONGO_URI")
 
 # Constants
 POST_CHANNEL_ID = 1322177352758984764  # Channel where questions are posted
 OPTION1_EMOJI = "1️⃣"  # Reaction for option 1
 OPTION2_EMOJI = "2️⃣"  # Reaction for option 2
-# Scheduling constants
-TARGET_HOUR = 6  # 6 AM
-TARGET_TIMEZONE = pytz.timezone("America/Chicago")
 
+# Scheduling constants
+TARGET_HOUR = 6
+TARGET_TIMEZONE = pytz.timezone("America/Chicago")
 
 logger = get_logger("WYR")
 
@@ -69,11 +68,11 @@ class WYRCommandGroup(app_commands.Group):
 
 				# Create a discussion thread
 				thread = await message.create_thread(
-					name=f"💬 WYR Discussion - {datetime.now().strftime('%m/%d')}",
+					name=f" WYR Discussion - {datetime.now().strftime('%m/%d')}",
 					auto_archive_duration=1440
 				)
 
-				await thread.send("💭 **What's your reasoning?** Share your thoughts on this choice!")
+				await thread.send(" **What's your reasoning?** Share your thoughts on this choice!")
 				await self.cog.increment_used_count(question["_id"])
 
 				logger.info(f"Successfully posted manual WYR question {question['_id']} in thread {thread.id}")
@@ -98,7 +97,7 @@ class WYRCommandGroup(app_commands.Group):
 				stats = await self.cog.get_user_stats(target_user.id)
 
 				embed = discord.Embed(
-					title=f"📊 WYR Stats for {target_user.display_name}",
+					title=f" WYR Stats for {target_user.display_name}",
 					color=discord.Color.green()
 				)
 
@@ -113,7 +112,7 @@ class WYRCommandGroup(app_commands.Group):
 					inline=True
 				)
 				embed.add_field(
-					name="🗳️ Total Votes",
+					name="️ Total Votes",
 					value=f"{stats['total_votes']:,}",
 					inline=True
 				)
@@ -122,7 +121,7 @@ class WYRCommandGroup(app_commands.Group):
 					option1_pct = (stats['option1_votes'] / stats['total_votes']) * 100
 					option2_pct = (stats['option2_votes'] / stats['total_votes']) * 100
 					embed.add_field(
-						name="📈 Voting Preference",
+						name=" Voting Preference",
 						value=f"Option 1: {option1_pct:.1f}%\nOption 2: {option2_pct:.1f}%",
 						inline=False
 					)
@@ -130,13 +129,13 @@ class WYRCommandGroup(app_commands.Group):
 				# Add timestamps if available
 				if stats.get('first_vote'):
 					embed.add_field(
-						name="🕐 First Vote",
+						name=" First Vote",
 						value=f"<t:{int(stats['first_vote'].timestamp())}:R>",
 						inline=True
 					)
 				if stats.get('last_vote'):
 					embed.add_field(
-						name="🕐 Last Vote",
+						name=" Last Vote",
 						value=f"<t:{int(stats['last_vote'].timestamp())}:R>",
 						inline=True
 					)
@@ -173,8 +172,7 @@ class WYRCommandGroup(app_commands.Group):
 														ephemeral=True)
 				return
 
-			# For now, we'll need to find a way to link message to question ID
-			# This could be done by storing message_id in the database when posting
+			# Todo Link message id to suggestion id
 			logger.info(f"WYR results feature not yet implemented - requested by {interaction.user}")
 			await interaction.response.send_message(
 				"Results feature coming soon! We need to store message IDs with questions.", ephemeral=True)
@@ -194,16 +192,13 @@ class WYRCommandGroup(app_commands.Group):
 		"""
 		logger.info(f"WYR leaderboard requested by {interaction.user} with limit: {limit}")
 
-		if self.cog.wyr_leaderboard is None:
-			logger.error("WYR leaderboard database not available for leaderboard request")
-			await interaction.response.send_message("❌ Database not available.", ephemeral=True)
-			return
-
 		try:
 			with PerformanceLogger(logger, f"wyr_leaderboard_generation_limit_{limit}"):
-				# Get top users from leaderboard collection
-				cursor = self.cog.wyr_leaderboard.find().sort("total_votes", -1).limit(limit)
-				top_users = await cursor.to_list(length=limit)
+				# Get top users from leaderboard collection using the new database manager
+				top_users = await db_manager.daily_wyr_leaderboard.find_many(
+					sort=[("total_votes", -1)],
+					limit=limit
+				)
 
 				if not top_users:
 					logger.info("No WYR voting data available for leaderboard")
@@ -211,7 +206,7 @@ class WYRCommandGroup(app_commands.Group):
 					return
 
 				embed = discord.Embed(
-					title="🏆 WYR Voting Leaderboard",
+					title=" WYR Voting Leaderboard",
 					description="Most active voters in Would You Rather questions",
 					color=discord.Color.gold()
 				)
@@ -220,12 +215,12 @@ class WYRCommandGroup(app_commands.Group):
 				for i, user_data in enumerate(top_users, 1):
 					try:
 						user = await self.cog.bot.fetch_user(int(user_data["user_id"]))
-						emoji = "🥇" if i == 1 else "🥈" if i == 2 else "🥉" if i == 3 else "🏅"
+						emoji = "" if i == 1 else "" if i == 2 else "" if i == 3 else ""
 						vote_count = user_data["total_votes"]
 						leaderboard_text += f"{emoji} **{i}.** {user.mention} - {vote_count:,} votes\n"
 					except:
 						vote_count = user_data["total_votes"]
-						leaderboard_text += f"🏅 **{i}.** Unknown User - {vote_count:,} votes\n"
+						leaderboard_text += f" **{i}.** Unknown User - {vote_count:,} votes\n"
 						logger.warning(f"Could not fetch user data for user ID {user_data.get('user_id')}")
 
 				embed.description = leaderboard_text
@@ -248,16 +243,12 @@ class WYRCommandGroup(app_commands.Group):
 		"""
 		logger.warning(f"WYR stats reset requested by {interaction.user} for {user} (ID: {user.id})")
 
-		if self.cog.wyr_leaderboard is None:
-			logger.error("WYR leaderboard database not available for stats reset")
-			await interaction.response.send_message("❌ Database not available.", ephemeral=True)
-			return
-
 		try:
 			with PerformanceLogger(logger, f"wyr_stats_reset_{user.id}"):
-				result = await self.cog.wyr_leaderboard.delete_one({"user_id": str(user.id)})
+				# Use the new database manager to delete user stats
+				success = await db_manager.daily_wyr_leaderboard.delete_one({"user_id": str(user.id)})
 
-				if result.deleted_count > 0:
+				if success:
 					embed = discord.Embed(
 						title="✅ Stats Reset",
 						description=f"Successfully reset WYR statistics for {user.mention}",
@@ -282,9 +273,6 @@ class WYRCommandGroup(app_commands.Group):
 class WYR(commands.Cog):
 	def __init__(self, bot):
 		self.bot = bot
-		self.db = None
-		self.wyr_collection = None
-		self.wyr_leaderboard = None
 		self.bot.loop.create_task(self.initialize_database())
 
 		# Add the command group to the bot
@@ -300,32 +288,23 @@ class WYR(commands.Cog):
 		self.bot.tree.remove_command("wyr")
 		logger.info("WYR command group removed from bot tree")
 
-
 	async def initialize_database(self):
 		"""
-		Initialize the database connection and attach it to the class.
+		Initialize the database connection using the new DatabaseManager.
 		"""
 		try:
 			with PerformanceLogger(logger, "wyr_database_initialization"):
-				# Create MongoDB client and get the WYR collection
-				mongo_client = AsyncIOMotorClient(MONGO_URI)
-				self.db = mongo_client["ImperialCodex"]
-				self.wyr_collection = self.db["WYR"]
-				self.wyr_leaderboard = self.db["WYR_Leaderboard"]
+				# Initialize the global database manager if not already initialized
+				if not db_manager._initialized:
+					await db_manager.initialize()
 
-				logger.info(f"{s}✅ WYR database attached successfully: {self.wyr_collection}")
-				logger.info(f"{s}✅ WYR leaderboard attached successfully: {self.wyr_leaderboard}")
-
-				# Test database connectivity
-				await self.wyr_collection.count_documents({}, limit=1)
-				await self.wyr_leaderboard.count_documents({}, limit=1)
-				logger.info("Database connectivity test successful")
+				logger.info(f"{s}✅ WYR database initialized successfully")
 
 				# Start the timer after database is ready
 				await self.schedule_next_post()
 
 		except Exception as e:
-			logger.error(f"{s}❌ Failed to attach WYR database: {e}", exc_info=True)
+			logger.error(f"{s}❌ Failed to initialize WYR database: {e}", exc_info=True)
 
 	async def get_next_6am_chicago(self):
 		"""
@@ -405,17 +384,17 @@ class WYR(commands.Cog):
 
 				embed = self.create_question_embed(question)
 				view = WYRView(question["_id"], self)
-				message = await channel.send(content="<@&1392926433734820014>",embed=embed, view=view)
+				message = await channel.send(content="<@&1392926433734820014>", embed=embed, view=view)
 
 				# Create a discussion thread
 				chicago_now = datetime.now(TARGET_TIMEZONE)
 				thread = await message.create_thread(
-					name=f"💬 WYR Discussion - {chicago_now.strftime('%m/%d')}",
+					name=f" WYR Discussion - {chicago_now.strftime('%m/%d')}",
 					auto_archive_duration=1440
 				)
 
 				# Send a starter message in the thread
-				await thread.send("💭 **What's your reasoning?** Share your thoughts on this choice!")
+				await thread.send(" **What's your reasoning?** Share your thoughts on this choice!")
 
 				await self.increment_used_count(question["_id"])
 
@@ -427,18 +406,14 @@ class WYR(commands.Cog):
 
 	async def update_user_leaderboard(self, user_id, option_chosen):
 		"""
-		Update user statistics in the WYR_Leaderboard collection.
+		Update user statistics in the WYR_Leaderboard collection using the new DatabaseManager.
 		"""
-		if self.wyr_leaderboard is None:
-			logger.warning(f"Cannot update leaderboard for user {user_id} - database not available")
-			return
-
 		try:
 			with PerformanceLogger(logger, f"update_user_leaderboard_{user_id}"):
 				user_id_str = str(user_id)
 
 				# Check if user exists in leaderboard
-				user_stats = await self.wyr_leaderboard.find_one({"user_id": user_id_str})
+				user_stats = await db_manager.daily_wyr_leaderboard.find_one({"user_id": user_id_str})
 
 				if not user_stats:
 					# Create new user entry
@@ -450,7 +425,7 @@ class WYR(commands.Cog):
 						"last_vote": datetime.now(timezone.utc),
 						"first_vote": datetime.now(timezone.utc)
 					}
-					await self.wyr_leaderboard.insert_one(new_user)
+					await db_manager.daily_wyr_leaderboard.create_one(new_user)
 					logger.info(f"Created new leaderboard entry for user {user_id}: {option_chosen}")
 				else:
 					# Update existing user
@@ -463,7 +438,7 @@ class WYR(commands.Cog):
 							"last_vote": datetime.now(timezone.utc)
 						}
 					}
-					await self.wyr_leaderboard.update_one(
+					await db_manager.daily_wyr_leaderboard.update_one(
 						{"user_id": user_id_str},
 						update_query
 					)
@@ -475,23 +450,23 @@ class WYR(commands.Cog):
 
 	async def get_next_question(self, category="sfw", exclude_used=False):
 		"""
-		Fetch the next "Would You Rather" question with specified criteria.
+		Fetch the next "Would You Rather" question with specified criteria using the new DatabaseManager.
 		"""
-		if self.wyr_collection is None:
-			logger.error("WYR collection not initialized - cannot get next question")
-			return None
-
 		try:
 			with PerformanceLogger(logger, f"get_next_question_{category}"):
 				query = {"tags": category}
 				if exclude_used:
 					query["used_count"] = {"$eq": 0}
 
-				question_cursor = self.wyr_collection.find(query).sort("used_count", 1)
-				question_list = await question_cursor.to_list(length=1)
+				# Use the new database manager to find questions
+				questions = await db_manager.daily_wyr.find_many(
+					filter_dict=query,
+					sort=[("used_count", 1)],
+					limit=1
+				)
 
-				if question_list:
-					question = question_list[0]
+				if questions:
+					question = questions[0]
 					logger.info(
 						f"Retrieved next {category} question: ID {question['_id']} (used_count: {question.get('used_count', 0)})")
 					return question
@@ -505,20 +480,17 @@ class WYR(commands.Cog):
 
 	async def get_random_question(self, category="sfw"):
 		"""
-		Get a random question from the specified category.
+		Get a random question from the specified category using the new DatabaseManager.
 		"""
-		if self.wyr_collection is None:
-			logger.error("WYR collection not initialized - cannot get random question")
-			return None
-
 		try:
 			with PerformanceLogger(logger, f"get_random_question_{category}"):
 				pipeline = [
 					{"$match": {"tags": category}},
 					{"$sample": {"size": 1}}
 				]
-				question_cursor = self.wyr_collection.aggregate(pipeline)
-				questions = await question_cursor.to_list(length=1)
+
+				# Use the new database manager for aggregation
+				questions = await db_manager.daily_wyr.aggregate(pipeline)
 
 				if questions:
 					question = questions[0]
@@ -534,17 +506,14 @@ class WYR(commands.Cog):
 
 	async def get_user_stats(self, user_id):
 		"""
-		Get user voting statistics from the leaderboard collection.
+		Get user voting statistics from the leaderboard collection using the new DatabaseManager.
 		"""
 		default_stats = {"option1_votes": 0, "option2_votes": 0, "total_votes": 0}
 
-		if self.wyr_leaderboard is None:
-			logger.warning(f"Cannot get stats for user {user_id} - leaderboard database not available")
-			return default_stats
-
 		try:
 			with PerformanceLogger(logger, f"get_user_stats_{user_id}"):
-				user_stats = await self.wyr_leaderboard.find_one({"user_id": str(user_id)})
+				# Use the new database manager to find user stats
+				user_stats = await db_manager.daily_wyr_leaderboard.find_one({"user_id": str(user_id)})
 
 				if not user_stats:
 					logger.info(f"No stats found for user {user_id}")
@@ -567,17 +536,12 @@ class WYR(commands.Cog):
 
 	async def record_vote(self, question_id, user_id, option):
 		"""
-		Record a user's vote for a question and update leaderboard.
+		Record a user's vote for a question and update leaderboard using the new DatabaseManager.
 		"""
-		if self.wyr_collection is None:
-			logger.error(
-				f"Cannot record vote - WYR collection not initialized (user: {user_id}, question: {question_id})")
-			return
-
 		try:
 			with PerformanceLogger(logger, f"record_vote_{user_id}_{option}"):
 				# Check if user has already voted to handle vote count properly
-				existing_question = await self.wyr_collection.find_one({"_id": question_id})
+				existing_question = await db_manager.daily_wyr.find_one({"_id": question_id})
 				if not existing_question:
 					logger.error(f"Question {question_id} not found for vote recording")
 					return
@@ -598,7 +562,8 @@ class WYR(commands.Cog):
 						f"vote_counts.{option}": 1
 					}
 
-				await self.wyr_collection.update_one({"_id": question_id}, update_query)
+				# Use the new database manager to update the question
+				await db_manager.daily_wyr.update_one({"_id": question_id}, update_query)
 
 				# Only update leaderboard for new votes (not vote changes)
 				if is_new_vote:
@@ -613,15 +578,12 @@ class WYR(commands.Cog):
 
 	async def get_question_results(self, question_id):
 		"""
-		Get voting results for a specific question.
+		Get voting results for a specific question using the new DatabaseManager.
 		"""
-		if self.wyr_collection is None:
-			logger.error(f"Cannot get results for question {question_id} - collection not initialized")
-			return None
-
 		try:
 			with PerformanceLogger(logger, f"get_question_results_{question_id}"):
-				question = await self.wyr_collection.find_one({"_id": question_id})
+				# Use the new database manager to find the question
+				question = await db_manager.daily_wyr.find_one({"_id": question_id})
 				if not question:
 					logger.warning(f"Question {question_id} not found for results")
 					return None
@@ -652,19 +614,16 @@ class WYR(commands.Cog):
 
 	async def increment_used_count(self, question_id):
 		"""
-		Increment the `used_count` for a specific question by its MongoDB `_id`.
+		Increment the `used_count` for a specific question using the new DatabaseManager.
 		"""
-		if self.wyr_collection is None:
-			logger.error(f"Cannot increment used count - WYR collection not initialized (question: {question_id})")
-			return
-
 		try:
-			result = await self.wyr_collection.update_one(
+			# Use the new database manager to update the used count
+			success = await db_manager.daily_wyr.update_one(
 				{"_id": question_id},
 				{"$inc": {"used_count": 1}}
 			)
 
-			if result.modified_count > 0:
+			if success:
 				logger.info(f"Incremented used_count for question {question_id}")
 			else:
 				logger.warning(f"No document modified when incrementing used_count for question {question_id}")
@@ -688,7 +647,7 @@ class WYR(commands.Cog):
 
 			if show_results and results:
 				embed.add_field(
-					name="📊 Current Results",
+					name=" Current Results",
 					value=(
 						f"{OPTION1_EMOJI} **{results['option1_percentage']:.1f}%** "
 						f"({results['option1_votes']} votes)\n"
@@ -732,7 +691,7 @@ class WYRView(discord.ui.View):
 			f"Option 2 vote button clicked by {interaction.user} (ID: {interaction.user.id}) for question {self.question_id}")
 		await self.handle_vote(interaction, "option2")
 
-	@discord.ui.button(label="Show Results", style=discord.ButtonStyle.secondary, emoji="📊")
+	@discord.ui.button(label="Show Results", style=discord.ButtonStyle.secondary, emoji="")
 	async def show_results_button(self, interaction: discord.Interaction, button: discord.ui.Button):
 		logger.info(
 			f"Show results button clicked by {interaction.user} (ID: {interaction.user.id}) for question {self.question_id}")
@@ -746,7 +705,7 @@ class WYRView(discord.ui.View):
 					return
 
 				embed = discord.Embed(
-					title="📊 Current Results",
+					title=" Current Results",
 					color=discord.Color.green()
 				)
 
@@ -769,7 +728,7 @@ class WYRView(discord.ui.View):
 					inline=False
 				)
 				embed.add_field(
-					name="📈 Total Votes",
+					name=" Total Votes",
 					value=f"{results['total_votes']} people have voted",
 					inline=False
 				)

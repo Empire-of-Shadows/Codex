@@ -1,0 +1,1091 @@
+2025-09-03 20:26:39,439 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-03 20:26:39,439 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-03 20:26:39,439 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created with DB='Updates-Drops', monthly_coll='stats_monthly', totals_coll='stats_totals'
+2025-09-03 20:26:39,439 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Mongo URI present (hidden) and will be used to connect during cog load.
+2025-09-03 20:26:39,444 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-03 20:26:39,445 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-03 20:26:39,445 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-03 20:26:39,445 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Creating MongoClient and attaching DB/collections...
+2025-09-03 20:26:43,522 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Attached DB handles: db='Updates-Drops', monthly='stats_monthly', totals='stats_totals'
+2025-09-03 20:26:44,012 [INFO] UpdatesDrops.DropsStatsCog:
+                         MongoDB connectivity verified for database 'Updates-Drops'
+2025-09-03 20:26:44,013 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 4.5684s
+2025-09-03 20:26:44,013 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 4.5684s
+2025-09-03 20:26:44,013 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-03 20:26:44,013 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-03 20:28:51,407 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-03 20:28:51,451 [INFO] UpdatesDrops.DropsStatsCog:
+                         Closed MongoDB client for DropsStatsCog
+2025-09-03 20:29:21,013 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-03 20:29:21,013 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-03 20:29:21,014 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created with DB='Updates-Drops', monthly_coll='stats_monthly', totals_coll='stats_totals'
+2025-09-03 20:29:21,014 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Mongo URI present (hidden) and will be used to connect during cog load.
+2025-09-03 20:29:21,014 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-03 20:29:21,014 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-03 20:29:21,014 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-03 20:29:21,014 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Creating MongoClient and attaching DB/collections...
+2025-09-03 20:29:25,079 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Attached DB handles: db='Updates-Drops', monthly='stats_monthly', totals='stats_totals'
+2025-09-03 20:29:25,570 [INFO] UpdatesDrops.DropsStatsCog:
+                         MongoDB connectivity verified for database 'Updates-Drops'
+2025-09-03 20:29:25,570 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 4.5556s
+2025-09-03 20:29:25,570 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 4.5556s
+2025-09-03 20:29:25,571 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-03 20:29:25,572 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-03 20:33:52,514 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-03 20:34:10,282 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:35:31,502 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:38:53,482 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-03 20:39:22,029 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:39:42,334 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:43:54,057 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-03 20:45:44,394 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:48:29,752 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:48:43,142 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:48:54,538 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-03 20:50:58,407 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:51:42,989 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:52:36,618 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-03 20:52:37,049 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-03 20:52:37,234 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-03 20:52:41,300 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:53:49,605 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1372325735934459965 (#𝐇𝐚𝐥𝐥-𝐨𝐟-𝐉𝐮𝐝𝐠𝐦𝐞𝐧𝐭) not in channel_map
+2025-09-03 20:53:56,459 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-03 20:54:54,100 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-03 20:56:10,205 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:56:37,276 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:58:21,538 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:58:44,843 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 20:58:57,001 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-03 21:03:57,469 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-03 21:04:54,787 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-03 21:04:54,831 [INFO] UpdatesDrops.DropsStatsCog:
+                         Closed MongoDB client for DropsStatsCog
+2025-09-03 21:05:32,865 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-03 21:05:32,865 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-03 21:05:32,865 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created with DB='Updates-Drops', monthly_coll='stats_monthly', totals_coll='stats_totals'
+2025-09-03 21:05:32,865 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Mongo URI present (hidden) and will be used to connect during cog load.
+2025-09-03 21:05:32,865 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-03 21:05:32,866 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-03 21:05:32,866 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-03 21:05:32,866 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Creating MongoClient and attaching DB/collections...
+2025-09-03 21:05:36,945 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Attached DB handles: db='Updates-Drops', monthly='stats_monthly', totals='stats_totals'
+2025-09-03 21:05:37,454 [INFO] UpdatesDrops.DropsStatsCog:
+                         MongoDB connectivity verified for database 'Updates-Drops'
+2025-09-03 21:05:37,455 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 4.5887s
+2025-09-03 21:05:37,455 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 4.5887s
+2025-09-03 21:05:37,455 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-03 21:05:37,456 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-03 21:05:51,021 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-03 21:05:58,377 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-03 21:05:58,423 [INFO] UpdatesDrops.DropsStatsCog:
+                         Closed MongoDB client for DropsStatsCog
+2025-09-04 07:52:18,712 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 07:52:18,712 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 07:52:18,713 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 07:52:18,713 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 07:52:18,713 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 07:52:18,714 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 07:52:18,716 [ERROR] UpdatesDrops.DropsStatsCog:
+                         Database initialization failed: 'ProfileCard'
+Traceback (most recent call last):
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\updates-drops\drops-tracker.py", line 60, in _initialize_database
+    await db_manager.initialize()
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\Database\DatabaseManager.py", line 854, in initialize
+    await self._initialize_collections()
+  File "C:\Users\eosoc\Documents\AAA-CODE\DiscordBots\CodexRepo\Database\DatabaseManager.py", line 870, in _initialize_collections
+    database = self.databases[config.database]
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'ProfileCard'
+2025-09-04 07:52:18,717 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0035s
+2025-09-04 07:52:18,717 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0040s
+2025-09-04 07:59:41,531 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 07:59:41,532 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 07:59:41,532 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 07:59:41,532 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 07:59:41,532 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 07:59:41,532 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 07:59:41,633 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 07:59:41,633 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.1014s
+2025-09-04 07:59:41,633 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.1014s
+2025-09-04 07:59:41,633 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 07:59:41,633 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 08:00:02,019 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 08:00:05,918 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 08:00:15,849 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 08:00:56,528 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 08:01:33,039 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:01:33,518 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:01:36,872 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:01:39,368 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:01:43,079 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:01:46,336 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:01:48,079 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:01:51,149 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:01:53,566 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:01:56,584 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:01:58,560 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 08:02:05,853 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:02:19,190 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:02:25,090 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1379437477789564989 (#this-is-for-talking) not in channel_map
+2025-09-04 08:02:53,721 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413147318487748649 is from DM
+2025-09-04 08:02:55,019 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413147318487748649 is from DM
+2025-09-04 08:05:06,513 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 08:07:23,376 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 08:07:23,376 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 08:07:41,656 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 08:07:41,656 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 08:07:41,656 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 08:07:41,656 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 08:07:41,656 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 08:07:41,656 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 08:07:41,740 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 08:07:41,742 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0853s
+2025-09-04 08:07:41,742 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0853s
+2025-09-04 08:07:41,742 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 08:07:41,742 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 08:08:31,856 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413148736695042211 is from DM
+2025-09-04 08:08:32,640 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413148736695042211 is from DM
+2025-09-04 08:09:12,467 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 08:09:12,467 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 09:08:52,779 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 09:08:52,779 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 09:08:52,779 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 09:08:52,780 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 09:08:52,780 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 09:08:52,780 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 09:08:52,865 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 09:08:52,866 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0857s
+2025-09-04 09:08:52,866 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0862s
+2025-09-04 09:08:52,866 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 09:08:52,866 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 09:09:49,119 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413164151534260365 is from DM
+2025-09-04 09:09:49,356 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413164151534260365 is from DM
+2025-09-04 09:10:14,418 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 09:10:56,836 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:11:13,715 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:11:27,794 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:14:57,388 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:15:15,051 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 09:15:16,619 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:16:50,524 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:18:54,826 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 09:18:54,826 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 09:19:17,393 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 09:19:17,394 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 09:19:17,394 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 09:19:17,394 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 09:19:17,394 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 09:19:17,394 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 09:19:17,485 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 09:19:17,485 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0906s
+2025-09-04 09:19:17,486 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0916s
+2025-09-04 09:19:17,486 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 09:19:17,486 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 09:19:35,581 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413166611283574906 is from DM
+2025-09-04 09:19:36,297 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413166611283574906 is from DM
+2025-09-04 09:20:06,861 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:20:15,593 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 09:22:55,078 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 09:22:55,078 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 09:23:18,353 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 09:23:18,353 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 09:23:18,354 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 09:23:18,354 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 09:23:18,354 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 09:23:18,354 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 09:23:18,439 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 09:23:18,440 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0860s
+2025-09-04 09:23:18,440 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0865s
+2025-09-04 09:23:18,440 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 09:23:18,441 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 09:23:49,624 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 09:24:03,969 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:24:10,760 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413167765258375210 is from DM
+2025-09-04 09:24:11,429 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413167765258375210 is from DM
+2025-09-04 09:24:25,018 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:25:16,015 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 09:25:26,388 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:27:18,019 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:27:25,725 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:28:32,880 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:29:16,628 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 09:29:16,629 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 09:29:39,899 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 09:29:39,899 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 09:29:39,899 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 09:29:39,899 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 09:29:39,900 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 09:29:39,900 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 09:29:39,974 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 09:29:39,975 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0747s
+2025-09-04 09:29:39,975 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0747s
+2025-09-04 09:29:39,975 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 09:29:39,975 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 09:30:02,602 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413169241326223503 is from DM
+2025-09-04 09:30:03,408 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413169241326223503 is from DM
+2025-09-04 09:30:16,549 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 09:31:29,395 [INFO] UpdatesDrops.DropsStatsCog:
+                         Starting: drops_message_process
+2025-09-04 09:31:29,395 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Processing message 1413169605345542244 in #🕹️│game-updates (1314381131768008757) mapped to 'Updates' at 2025-09-04T14:31:29.336000+00:00 (author_id=1314382203865796628, author_bot=True, is_webhook=True, webhook_id=1314382203865796628, embeds=1, content_len=0)
+2025-09-04 09:31:29,395 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Attempting to acquire operation lock for message 1413169605345542244...
+2025-09-04 09:31:29,395 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Operation lock acquired for message 1413169605345542244
+2025-09-04 09:31:29,396 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Begin _process_event_async for coll='Updates', event_dt='2025-09-04T14:31:29.336000+00:00'
+2025-09-04 09:31:29,396 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Monthly doc _id={'coll': 'Updates', 'year': 2025, 'month': 9}
+2025-09-04 09:31:29,396 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: monthly_increment::Updates::2025-09
+2025-09-04 09:31:29,518 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'monthly_increment::Updates::2025-09' completed in 0.1218s
+2025-09-04 09:31:29,518 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Monthly stats update completed for {'coll': 'Updates', 'year': 2025, 'month': 9} (new_month=True)
+2025-09-04 09:31:29,518 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals increment payload: {'total_count': 1, 'months_with_data': 1}
+2025-09-04 09:31:29,518 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: totals_update::Updates
+2025-09-04 09:31:29,593 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'totals_update::Updates' completed in 0.0746s
+2025-09-04 09:31:29,594 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals update completed for 'Updates'
+2025-09-04 09:31:29,594 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Fetching totals document for 'Updates' to compute average...
+2025-09-04 09:31:29,609 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Embeds changed=False (before_count=1, after_count=1)
+2025-09-04 09:31:29,609 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: no meaningful embed change for message 1413169605345542244
+2025-09-04 09:31:29,638 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals doc fetched: {'_id': 'Updates', 'months_with_data': 1, 'total_count': 1}
+2025-09-04 09:31:29,639 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Computed average_per_month=1.00 from total=1 and months=1
+2025-09-04 09:31:29,684 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals updated for Updates: total=1, months=1, avg=1.00
+2025-09-04 09:31:29,685 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         End _process_event_async for coll='Updates' 2025-09
+2025-09-04 09:31:29,685 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Message 1413169605345542244 processed successfully for 'Updates'
+2025-09-04 09:31:29,685 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Releasing operation lock for message 1413169605345542244
+2025-09-04 09:31:29,685 [INFO] UpdatesDrops.DropsStatsCog:
+                         Completed: drops_message_process (took 0.2903s)
+2025-09-04 09:35:17,064 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 09:35:22,908 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:35:56,196 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:36:27,161 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:38:08,436 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413171279053324349 is from DM
+2025-09-04 09:38:13,312 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413171279053324349 is from DM
+2025-09-04 09:39:47,798 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 09:40:17,474 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 09:45:17,917 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 09:50:18,450 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 09:55:18,969 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 09:56:14,617 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 09:57:23,862 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 09:57:23,862 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 09:57:46,191 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 09:57:46,191 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 09:57:46,191 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 09:57:46,191 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 09:57:46,192 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 09:57:46,192 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 09:57:46,276 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 09:57:46,277 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0854s
+2025-09-04 09:57:46,278 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0859s
+2025-09-04 09:57:46,278 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 09:57:46,278 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 10:00:19,533 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:01:14,361 [INFO] UpdatesDrops.DropsStatsCog:
+                         Starting: drops_message_process
+2025-09-04 10:01:14,361 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Processing message 1413177091276407027 in #🎁│free-games (1317187274496016494) mapped to 'Free' at 2025-09-04T15:01:14.121000+00:00 (author_id=1339521953467203686, author_bot=True, is_webhook=True, webhook_id=1339521953467203686, embeds=1, content_len=23)
+2025-09-04 10:01:14,361 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Attempting to acquire operation lock for message 1413177091276407027...
+2025-09-04 10:01:14,362 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Operation lock acquired for message 1413177091276407027
+2025-09-04 10:01:14,362 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Begin _process_event_async for coll='Free', event_dt='2025-09-04T15:01:14.121000+00:00'
+2025-09-04 10:01:14,362 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Monthly doc _id={'coll': 'Free', 'year': 2025, 'month': 9}
+2025-09-04 10:01:14,362 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: monthly_increment::Free::2025-09
+2025-09-04 10:01:14,459 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'monthly_increment::Free::2025-09' completed in 0.0970s
+2025-09-04 10:01:14,459 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Monthly stats update completed for {'coll': 'Free', 'year': 2025, 'month': 9} (new_month=True)
+2025-09-04 10:01:14,460 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals increment payload: {'total_count': 1, 'months_with_data': 1}
+2025-09-04 10:01:14,460 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: totals_update::Free
+2025-09-04 10:01:14,510 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'totals_update::Free' completed in 0.0498s
+2025-09-04 10:01:14,511 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals update completed for 'Free'
+2025-09-04 10:01:14,514 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Fetching totals document for 'Free' to compute average...
+2025-09-04 10:01:14,561 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals doc fetched: {'_id': 'Free', 'months_with_data': 1, 'total_count': 1}
+2025-09-04 10:01:14,561 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Computed average_per_month=1.00 from total=1 and months=1
+2025-09-04 10:01:14,610 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals updated for Free: total=1, months=1, avg=1.00
+2025-09-04 10:01:14,611 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         End _process_event_async for coll='Free' 2025-09
+2025-09-04 10:01:14,611 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Message 1413177091276407027 processed successfully for 'Free'
+2025-09-04 10:01:14,612 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Releasing operation lock for message 1413177091276407027
+2025-09-04 10:01:14,612 [INFO] UpdatesDrops.DropsStatsCog:
+                         Completed: drops_message_process (took 0.2509s)
+2025-09-04 10:01:15,441 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Embeds changed=False (before_count=1, after_count=1)
+2025-09-04 10:01:15,441 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: no meaningful embed change for message 1413177091276407027
+2025-09-04 10:02:01,352 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:04:37,765 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:04:49,240 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-04 10:04:49,269 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-04 10:04:49,664 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-04 10:04:49,689 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-04 10:04:59,126 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:05:15,246 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:05:20,024 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:05:35,200 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:05:39,924 [INFO] UpdatesDrops.DropsStatsCog:
+                         Starting: drops_message_process
+2025-09-04 10:05:39,925 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Processing message 1413178205636001894 in #🕹️│game-updates (1314381131768008757) mapped to 'Updates' at 2025-09-04T15:05:39.805000+00:00 (author_id=1314382203865796628, author_bot=True, is_webhook=True, webhook_id=1314382203865796628, embeds=1, content_len=0)
+2025-09-04 10:05:39,925 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Attempting to acquire operation lock for message 1413178205636001894...
+2025-09-04 10:05:39,925 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Operation lock acquired for message 1413178205636001894
+2025-09-04 10:05:39,925 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Begin _process_event_async for coll='Updates', event_dt='2025-09-04T15:05:39.805000+00:00'
+2025-09-04 10:05:39,925 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Monthly doc _id={'coll': 'Updates', 'year': 2025, 'month': 9}
+2025-09-04 10:05:39,926 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: monthly_increment::Updates::2025-09
+2025-09-04 10:05:40,012 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'monthly_increment::Updates::2025-09' completed in 0.0859s
+2025-09-04 10:05:40,012 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Monthly stats update completed for {'coll': 'Updates', 'year': 2025, 'month': 9} (new_month=False)
+2025-09-04 10:05:40,012 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals increment payload: {'total_count': 1}
+2025-09-04 10:05:40,012 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: totals_update::Updates
+2025-09-04 10:05:40,059 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'totals_update::Updates' completed in 0.0471s
+2025-09-04 10:05:40,060 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals update completed for 'Updates'
+2025-09-04 10:05:40,060 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Fetching totals document for 'Updates' to compute average...
+2025-09-04 10:05:40,104 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals doc fetched: {'_id': 'Updates', 'months_with_data': 1, 'total_count': 2}
+2025-09-04 10:05:40,105 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Computed average_per_month=2.00 from total=2 and months=1
+2025-09-04 10:05:40,150 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Totals updated for Updates: total=2, months=1, avg=2.00
+2025-09-04 10:05:40,150 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         End _process_event_async for coll='Updates' 2025-09
+2025-09-04 10:05:40,150 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Message 1413178205636001894 processed successfully for 'Updates'
+2025-09-04 10:05:40,151 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Releasing operation lock for message 1413178205636001894
+2025-09-04 10:05:40,151 [INFO] UpdatesDrops.DropsStatsCog:
+                         Completed: drops_message_process (took 0.2260s)
+2025-09-04 10:06:06,158 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:06:09,901 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1372325735934459965 (#𝐇𝐚𝐥𝐥-𝐨𝐟-𝐉𝐮𝐝𝐠𝐦𝐞𝐧𝐭) not in channel_map
+2025-09-04 10:06:29,028 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:06:51,553 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:10:20,617 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:10:38,558 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1372045355423895612 (#📝│introductions) not in channel_map
+2025-09-04 10:11:04,333 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-04 10:11:31,058 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:13:57,152 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:14:09,981 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:14:45,936 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 10:14:45,936 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 10:15:11,536 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 10:15:11,536 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 10:15:11,537 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 10:15:11,537 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 10:15:11,537 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 10:15:11,537 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 10:15:11,621 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 10:15:11,622 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0851s
+2025-09-04 10:15:11,622 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0851s
+2025-09-04 10:15:11,622 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 10:15:11,622 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 10:15:12,691 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:15:21,276 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:15:40,934 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:16:02,138 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413180815768031323 is from DM
+2025-09-04 10:16:02,488 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413180815768031323 is from DM
+2025-09-04 10:16:05,763 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:16:34,338 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:16:48,365 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:17:41,466 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:18:42,222 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 10:18:42,222 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 10:19:08,463 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 10:19:08,463 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 10:19:08,463 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 10:19:08,464 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 10:19:08,464 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 10:19:08,464 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 10:19:08,550 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 10:19:08,550 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0864s
+2025-09-04 10:19:08,550 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0864s
+2025-09-04 10:19:08,551 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 10:19:08,551 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 10:19:19,581 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:19:30,824 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413181691102498958 is from DM
+2025-09-04 10:19:31,216 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413181691102498958 is from DM
+2025-09-04 10:20:07,234 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:20:22,073 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:21:51,022 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:25:09,727 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413183112493535352 is from DM
+2025-09-04 10:25:10,467 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413183112493535352 is from DM
+2025-09-04 10:25:22,503 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:26:13,584 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413183380060766343 is from DM
+2025-09-04 10:26:13,854 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413183380060766343 is from DM
+2025-09-04 10:30:22,931 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:30:52,075 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:31:03,336 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:31:23,836 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:33:56,020 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:34:20,216 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:34:53,697 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:35:23,450 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:40:03,496 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:40:23,924 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:40:34,116 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:41:38,928 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:42:03,131 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:43:48,593 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:44:10,339 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:45:24,346 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:46:19,428 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:46:49,239 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:47:41,131 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 10:47:41,131 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 10:52:15,532 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 10:52:15,533 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 10:52:15,533 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 10:52:15,533 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 10:52:15,533 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 10:52:15,533 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 10:52:15,618 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 10:52:15,618 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0854s
+2025-09-04 10:52:15,618 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0855s
+2025-09-04 10:52:15,618 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 10:52:15,618 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 10:52:24,382 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:52:41,126 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:53:10,892 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:53:35,976 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:53:48,235 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 10:53:52,606 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:55:25,322 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 10:57:05,528 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1372045355423895612 (#📝│introductions) not in channel_map
+2025-09-04 10:58:31,201 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 10:58:32,528 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 10:58:33,383 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 10:58:35,615 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 10:58:41,233 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 10:58:42,322 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:59:05,382 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:59:32,176 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 10:59:53,083 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:00:25,774 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 11:01:19,844 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:01:34,763 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:01:44,907 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:03:11,790 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:03:25,638 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:04:07,722 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:04:26,058 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:04:57,131 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:05:26,255 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 11:05:35,863 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:09:14,289 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:10:26,728 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 11:11:24,052 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-04 11:11:24,389 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-04 11:11:24,792 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-04 11:12:42,732 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1372325735934459965 (#𝐇𝐚𝐥𝐥-𝐨𝐟-𝐉𝐮𝐝𝐠𝐦𝐞𝐧𝐭) not in channel_map
+2025-09-04 11:15:27,241 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 11:15:49,020 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:16:23,594 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:17:02,852 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:17:12,780 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:17:32,816 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:17:56,088 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 11:17:56,088 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 11:27:48,692 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 11:27:48,692 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 11:27:48,692 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 11:27:48,692 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 11:27:48,692 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 11:27:48,692 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 11:27:48,785 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 11:27:48,786 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0936s
+2025-09-04 11:27:48,786 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0938s
+2025-09-04 11:27:48,786 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 11:27:48,786 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 11:28:00,632 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413198928613998724 is from DM
+2025-09-04 11:28:03,303 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413198928613998724 is from DM
+2025-09-04 11:28:37,756 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413199084654690415 is from DM
+2025-09-04 11:28:38,604 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413199084654690415 is from DM
+2025-09-04 11:28:45,491 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 11:29:02,400 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413199187864064030 is from DM
+2025-09-04 11:29:06,317 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413199204670509077 is from DM
+2025-09-04 11:29:08,985 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413199215378829399 is from DM
+2025-09-04 11:29:21,338 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 11:29:21,338 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 11:37:30,447 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 11:37:30,447 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 11:37:30,447 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 11:37:30,447 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 11:37:30,447 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 11:37:30,447 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 11:37:30,535 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 11:37:30,535 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0878s
+2025-09-04 11:37:30,536 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0884s
+2025-09-04 11:37:30,536 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 11:37:30,536 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 11:37:33,900 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413201333091176603 is from DM
+2025-09-04 11:37:54,434 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:38:01,832 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:38:22,943 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:38:23,166 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413201539723432047 is from DM
+2025-09-04 11:38:36,088 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413201593939136535 is from DM
+2025-09-04 11:38:52,105 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413201661404643439 is from DM
+2025-09-04 11:38:52,910 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413201661404643439 is from DM
+2025-09-04 11:40:29,412 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 11:40:31,749 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265123424892616705 (#│gaming-chair) not in channel_map
+2025-09-04 11:40:32,461 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 11:41:12,634 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413202251002155081 is from DM
+2025-09-04 11:41:13,023 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413202251002155081 is from DM
+2025-09-04 11:44:15,952 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:44:42,164 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:44:47,799 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125188308177000 (#👊🏼│bump) not in channel_map
+2025-09-04 11:45:16,912 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:45:29,838 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 11:45:35,528 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:45:35,859 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:46:00,548 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:46:01,017 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1371239792888516719 (#💡│suggestions) not in channel_map
+2025-09-04 11:46:01,320 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1371239792888516719 (#💡│suggestions) not in channel_map
+2025-09-04 11:46:01,369 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1413203460601417779 (#Discussion: EOSOfficial's Other Suggestion) not in channel_map
+2025-09-04 11:46:02,019 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1413203460601417779 (#Discussion: EOSOfficial's Other Suggestion) not in channel_map
+2025-09-04 11:46:02,381 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1265125349772230787 (#│logs) not in channel_map
+2025-09-04 11:46:02,700 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:46:45,758 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413203648179212349 is from DM
+2025-09-04 11:46:46,222 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413203648179212349 is from DM
+2025-09-04 11:47:06,430 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413203734820950188 is from DM
+2025-09-04 11:47:07,020 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413203734820950188 is from DM
+2025-09-04 11:47:49,350 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:48:12,656 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:48:15,887 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:48:16,719 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:48:30,956 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:48:51,706 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413204176372105286 is from DM
+2025-09-04 11:48:52,180 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413204176372105286 is from DM
+2025-09-04 11:49:43,062 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413204391825113119 is from DM
+2025-09-04 11:50:24,538 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413204565741932575 is from DM
+2025-09-04 11:50:25,124 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-04 11:50:25,665 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413204565741932575 is from DM
+2025-09-04 11:50:25,744 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: channel 1371686628510269460 (#🙌│new-souls) not in channel_map
+2025-09-04 11:50:30,332 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 11:50:49,306 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:52:22,793 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1266501320093732884 (#⚡│commands) not in channel_map
+2025-09-04 11:52:57,908 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413205209060085853 is from DM
+2025-09-04 11:52:58,660 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413205209060085853 is from DM
+2025-09-04 11:53:12,965 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 11:53:12,965 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup
+2025-09-04 11:53:44,226 [INFO] UpdatesDrops.DropsStatsCog:
+                         Setting up DropsStatsCog via setup()
+2025-09-04 11:53:44,226 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Initialized channel map with 3 entries: [(1314381131768008757, 'Updates'), (1317187274496016494, 'Free'), (1316889374318923856, 'Prime')]
+2025-09-04 11:53:44,226 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog created using DatabaseManager
+2025-09-04 11:53:44,226 [INFO] UpdatesDrops.DropsStatsCog:
+                         Loading DropsStatsCog...
+2025-09-04 11:53:44,226 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_cog_load
+2025-09-04 11:53:44,226 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         Starting operation: drops_stats_db_init
+2025-09-04 11:53:44,312 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager initialized successfully for DropsStatsCog
+2025-09-04 11:53:44,312 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_db_init' completed in 0.0854s
+2025-09-04 11:53:44,312 [INFO] UpdatesDrops.DropsStatsCog:
+                         Operation 'drops_stats_cog_load' completed in 0.0855s
+2025-09-04 11:53:44,312 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog loaded successfully
+2025-09-04 11:53:44,312 [INFO] UpdatesDrops.DropsStatsCog:
+                         DropsStatsCog added to bot
+2025-09-04 11:54:03,591 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: message 1413205484470800480 is from DM
+2025-09-04 11:54:05,298 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message_edit ignored: message 1413205484470800480 is from DM
+2025-09-04 11:55:30,833 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1401903745675165762 (#testing) not in channel_map
+2025-09-04 11:56:55,108 [DEBUG] UpdatesDrops.DropsStatsCog:
+                         on_message ignored: channel 1323089537702039654 (#advertisements) not in channel_map
+2025-09-04 11:56:55,230 [INFO] UpdatesDrops.DropsStatsCog:
+                         Unloading DropsStatsCog...
+2025-09-04 11:56:55,230 [INFO] UpdatesDrops.DropsStatsCog:
+                         DatabaseManager will handle connection cleanup

@@ -9,9 +9,8 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from fuzzywuzzy import fuzz, process
 from utils.bot import bot
 from utils.logger import get_logger, PerformanceLogger
+from Database.DatabaseManager import db_manager
 
-# Your MongoDB connection URI
-MONGO_URI = os.environ["MONGO_URI"]
 
 logger = get_logger("Guide")
 
@@ -389,9 +388,6 @@ class GuideManager:
 
 	def __init__(self):
 		logger.info("Initializing GuideManager")
-		self.client = None
-		self.db = None
-		self.categories = None
 		self.search_engine = SearchEngine()
 		self.navigation = NavigationBreadcrumbs()
 		self.quick_access = QuickAccessManager()
@@ -400,16 +396,15 @@ class GuideManager:
 		logger.info("GuideManager initialized successfully")
 
 	async def initialize_database(self):
-		"""Initialize the database connection and build search index"""
-		logger.info(f"Initializing database connection to MongoDB")
+		"""Initialize the database connection using DatabaseManager"""
+		logger.info("Initializing database connection using DatabaseManager")
 
 		try:
 			with PerformanceLogger(logger, "database_initialization"):
-				self.client = AsyncIOMotorClient(MONGO_URI)
-				self.db = self.client["ImperialCodex"]
-				self.categories = self.db["categories"]
+				# Initialize the global database manager
+				await db_manager.initialize()
 
-				logger.debug("Database connection established, building search index")
+				logger.debug("DatabaseManager initialized, building search index")
 				# Build search index
 				await self._build_search_index()
 
@@ -421,12 +416,14 @@ class GuideManager:
 			return False
 
 	async def _build_search_index(self):
-		"""Build search index from database content"""
+		"""Build search index from database content using DatabaseManager"""
 		logger.info("Building search index from database content")
 
 		try:
 			with PerformanceLogger(logger, "build_search_index"):
-				data = await self.categories.find().to_list(None)
+				# Use DatabaseManager to get the guide menus collection
+				guide_collection = db_manager.get_collection_manager('guide_menues')
+				data = await guide_collection.find_many({}, sort=[('order', 1)])
 
 				logger.info(f"Retrieved {len(data)} documents from database")
 
@@ -538,8 +535,7 @@ class GuideManager:
 	async def debug_search_index(self):
 		"""Debug method to check search index status"""
 		logger.info("=== SEARCH INDEX DEBUG ===")
-		logger.info(f"Database connected: {self.client is not None}")
-		logger.info(f"Categories collection: {self.categories is not None}")
+		logger.info(f"DatabaseManager initialized: {db_manager._initialized}")
 		logger.info(f"Content cache size: {len(self.content_cache)}")
 		logger.info(f"Search index size: {len(self.search_engine.content_index)}")
 		logger.info(f"Cache timestamp: {self.cache_timestamp}")
@@ -577,7 +573,9 @@ class GuideManager:
 					logger.info("Cache refresh needed, rebuilding search index")
 					await self._build_search_index()
 
-				data = await self.categories.find().sort("order", 1).to_list(None)
+				# Use DatabaseManager to get the guide menus collection
+				guide_collection = db_manager.get_collection_manager('guide_menues')
+				data = await guide_collection.find_many({}, sort=[('order', 1)])
 				options = [{"name": entry["name"], "meta_description": entry["meta_description"]} for entry in data]
 
 				logger.debug(f"Retrieved {len(data)} categories, created {len(options)} menu options")
@@ -648,7 +646,10 @@ class GuideManager:
 					self.quick_access.track_access(author_id, option_name)
 
 				logger.debug(f"Fetching entry for selected option: {option_name}")
-				entry = await self.categories.find_one({"name": option_name})
+
+				# Use DatabaseManager to find the entry
+				guide_collection = db_manager.get_collection_manager('guide_menues')
+				entry = await guide_collection.find_one({"name": option_name})
 
 				if entry:
 					logger.info(f"Found top-level entry for '{option_name}' (type: {entry.get('type', 'unknown')})")
@@ -686,9 +687,12 @@ class GuideManager:
 
 				# Search nested options with enhanced context
 				logger.info(f"No top-level match found. Checking sub-options for '{option_name}'")
-				cursor = self.categories.find({}, {"options": 1, "name": 1})
+
+				# Use DatabaseManager for nested search
+				documents = await guide_collection.find_many({}, projection={"options": 1, "name": 1})
 				documents_checked = 0
-				async for document in cursor:
+
+				for document in documents:
 					documents_checked += 1
 					result = await self.search_nested_options(
 						document.get("options", []),

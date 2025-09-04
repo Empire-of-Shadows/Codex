@@ -1,0 +1,90 @@
+2025-09-03 20:26:44,120 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-03 20:26:44,122 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-03 20:26:44,122 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-03 20:26:44,135 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-03 20:26:44,136 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-03 20:26:44,137 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-03 20:29:25,614 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-03 20:29:25,617 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-03 20:29:25,617 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-03 20:29:25,622 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-03 20:29:25,623 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-03 20:29:25,623 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-03 21:05:43,483 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-03 21:05:43,485 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-03 21:05:43,485 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-04 07:52:18,771 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-04 07:52:18,773 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-04 07:52:18,773 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-04 07:59:41,661 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-04 07:59:41,663 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-04 07:59:41,663 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-04 08:07:41,770 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-04 08:07:41,774 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-04 08:07:41,774 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-04 09:08:52,917 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-04 09:08:52,920 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-04 09:08:52,920 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-04 09:19:17,529 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-04 09:19:17,531 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-04 09:19:17,531 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-04 09:23:18,481 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-04 09:23:18,482 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-04 09:23:18,482 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-04 09:29:40,030 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-04 09:29:40,031 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-04 09:29:40,032 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)
+2025-09-04 09:38:08,448 [DEBUG] mongo_track:
+                                   get_user_stats called: guild=1371535176781402122, user=1264236749060575355, flush=False, include_cache=True
+2025-09-04 09:38:08,449 [DEBUG] mongo_track:
+                         Starting operation: fetch-user-stats-1264236749060575355
+2025-09-04 09:38:13,042 [INFO] mongo_track:
+                         Operation 'fetch-user-stats-1264236749060575355' completed in 4.5931s
+2025-09-04 09:38:13,044 [DEBUG] mongo_track:
+                                   No existing document found for user 1264236749060575355, creating default structure
+2025-09-04 09:38:13,044 [DEBUG] mongo_track:
+                                   Applying cache overlay for user 1264236749060575355
+2025-09-04 09:38:13,044 [DEBUG] mongo_track:
+                                   Cache overlay completed for user 1264236749060575355
+2025-09-04 09:57:46,306 [INFO] mongo_track:
+                                   Initializing TrackManager with flush_interval=60s, batch_size=1000
+2025-09-04 09:57:46,309 [INFO] mongo_track:
+                                   MongoDB connection established successfully
+2025-09-04 09:57:46,309 [INFO] mongo_track:
+                                   TrackManager initialized successfully (flush_interval=60s, batch=1000)

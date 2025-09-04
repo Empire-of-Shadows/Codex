@@ -1,0 +1,1134 @@
+2025-09-03 20:26:44,083 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-03 20:26:44,084 [INFO] Profile:
+                         Profile cog initialized
+2025-09-03 20:26:44,084 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-03 20:26:44,084 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-03 20:26:44,086 [INFO] Profile:
+                         ProfilePreferences initialized
+2025-09-03 20:26:44,086 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-03 20:26:44,086 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0015s
+2025-09-03 20:26:44,086 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-03 20:26:44,124 [INFO] Profile:
+                         ProfilePreferences initialized
+2025-09-03 20:26:44,138 [DEBUG] Profile:
+                         Starting operation: database index creation
+2025-09-03 20:26:44,138 [DEBUG] Profile:
+                         Starting operation: database index creation
+2025-09-03 20:26:49,255 [ERROR] Profile:
+                         Index creation failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 68b8ead4dd7fc1cbf0b98a0c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-09-03 20:26:49,255 [INFO] Profile:
+                         Operation 'database index creation' completed in 5.1168s
+2025-09-03 20:26:49,256 [ERROR] Profile:
+                         Index creation failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 68b8ead4dd7fc1cbf0b98a0c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-09-03 20:26:49,256 [INFO] Profile:
+                         Operation 'database index creation' completed in 5.1178s
+2025-09-03 20:28:51,452 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-03 20:28:51,452 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-03 20:29:25,604 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-03 20:29:25,605 [INFO] Profile:
+                         Profile cog initialized
+2025-09-03 20:29:25,605 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-03 20:29:25,605 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-03 20:29:25,606 [INFO] Profile:
+                         ProfilePreferences initialized
+2025-09-03 20:29:25,607 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-03 20:29:25,607 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0025s
+2025-09-03 20:29:25,608 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-03 20:29:25,619 [INFO] Profile:
+                         ProfilePreferences initialized
+2025-09-03 20:29:25,625 [DEBUG] Profile:
+                         Starting operation: database index creation
+2025-09-03 20:29:25,625 [DEBUG] Profile:
+                         Starting operation: database index creation
+2025-09-03 20:29:30,707 [ERROR] Profile:
+                         Index creation failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 68b8eb75e5744dd3fb82de33, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-09-03 20:29:30,708 [INFO] Profile:
+                         Operation 'database index creation' completed in 5.0832s
+2025-09-03 20:29:30,708 [ERROR] Profile:
+                         Index creation failed: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 68b8eb75e5744dd3fb82de33, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-09-03 20:29:30,708 [INFO] Profile:
+                         Operation 'database index creation' completed in 5.0837s
+2025-09-03 21:04:54,831 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-03 21:04:54,832 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-03 21:05:37,524 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-03 21:05:37,524 [INFO] Profile:
+                         Profile cog initialized
+2025-09-03 21:05:37,524 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-03 21:05:37,524 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-03 21:05:43,457 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 5.9329s
+2025-09-04 07:52:18,752 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 07:52:18,752 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 07:52:18,753 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 07:52:18,753 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 07:52:18,753 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0005s
+2025-09-04 07:59:41,658 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 07:59:41,658 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 07:59:41,658 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 07:59:41,658 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 07:59:41,658 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 07:59:41,659 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 07:59:41,659 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0010s
+2025-09-04 07:59:41,659 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 07:59:41,666 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 08:02:53,735 [DEBUG] Profile:
+                         Starting operation: get_user_preferences for user 1264236749060575355
+2025-09-04 08:02:53,737 [DEBUG] Profile:
+                         Fetching preferences for user 1264236749060575355, guild 1371535176781402122
+2025-09-04 08:02:53,738 [ERROR] Profile:
+                         Failed to fetch user preferences: Collection 'profilecard_preferences' not configured
+2025-09-04 08:02:53,738 [DEBUG] Profile:
+                         No saved preferences found for user 1264236749060575355, using defaults
+2025-09-04 08:02:53,739 [INFO] Profile:
+                         Operation 'get_user_preferences for user 1264236749060575355' completed in 0.0030s
+2025-09-04 08:02:53,838 [DEBUG] Profile:
+                         Getting theme palette: dark for user 1264236749060575355
+2025-09-04 08:02:53,839 [DEBUG] Profile:
+                         Using default palette for theme dark
+2025-09-04 08:02:53,839 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=detailed
+2025-09-04 08:02:53,839 [DEBUG] Profile:
+                         Creating profile card: layout=detailed, inventory=True, badges=True
+2025-09-04 08:02:53,839 [DEBUG] Profile:
+                         Card dimensions: 800x300, avatar: 200px
+2025-09-04 08:02:53,840 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 08:02:54,123 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 08:02:54,125 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 08:02:54,126 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 08:02:54,128 [DEBUG] Profile:
+                         Loading emoji font, size 22
+2025-09-04 08:02:54,130 [INFO] Profile:
+                         Successfully loaded emoji font: C:/Windows/Fonts/seguiemj.ttf
+2025-09-04 08:02:54,132 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 08:02:54,140 [DEBUG] Profile:
+                         Progress bar rendered: 0.0% (0/100)
+2025-09-04 08:02:54,142 [DEBUG] Profile:
+                         Badges section rendered
+2025-09-04 08:02:54,147 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 08:02:54,149 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 08:02:54,150 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 08:02:54,150 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/avatars/1264236749060575355/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 08:02:54,150 [DEBUG] Profile:
+                         Creating new aiohttp session
+2025-09-04 08:02:54,151 [INFO] Profile:
+                         HTTP session created with optimized settings
+2025-09-04 08:02:54,423 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 08:02:54,424 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.2738s
+2025-09-04 08:02:54,425 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 08:02:54,425 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 08:02:54,426 [INFO] Profile:
+                         Operation 'create_profile_card layout=detailed' completed in 0.5874s
+2025-09-04 08:02:54,466 [DEBUG] Profile:
+                         ProfileCardView initialized with theme=dark, layout=detailed, public=False
+2025-09-04 08:07:23,378 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 08:07:23,378 [INFO] Profile:
+                         HTTP session closed
+2025-09-04 08:07:23,379 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 08:07:41,765 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 08:07:41,765 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 08:07:41,765 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 08:07:41,766 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 08:07:41,766 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 08:07:41,766 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 08:07:41,766 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0005s
+2025-09-04 08:07:41,766 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 08:07:41,776 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 08:08:31,867 [DEBUG] Profile:
+                         Starting operation: get_user_preferences for user 1264236749060575355
+2025-09-04 08:08:31,870 [DEBUG] Profile:
+                         Fetching preferences for user 1264236749060575355, guild 1371535176781402122
+2025-09-04 08:08:31,871 [ERROR] Profile:
+                         Failed to fetch user preferences: Collection 'profilecard_preferences' not configured
+2025-09-04 08:08:31,871 [DEBUG] Profile:
+                         No saved preferences found for user 1264236749060575355, using defaults
+2025-09-04 08:08:31,871 [INFO] Profile:
+                         Operation 'get_user_preferences for user 1264236749060575355' completed in 0.0030s
+2025-09-04 08:08:31,941 [DEBUG] Profile:
+                         Getting theme palette: dark for user 1264236749060575355
+2025-09-04 08:08:31,941 [DEBUG] Profile:
+                         Using default palette for theme dark
+2025-09-04 08:08:31,942 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=detailed
+2025-09-04 08:08:31,943 [DEBUG] Profile:
+                         Creating profile card: layout=detailed, inventory=True, badges=True
+2025-09-04 08:08:31,943 [DEBUG] Profile:
+                         Card dimensions: 800x300, avatar: 200px
+2025-09-04 08:08:31,944 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 08:08:31,953 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 08:08:31,954 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 08:08:31,955 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 08:08:31,956 [DEBUG] Profile:
+                         Loading emoji font, size 22
+2025-09-04 08:08:31,957 [INFO] Profile:
+                         Successfully loaded emoji font: C:/Windows/Fonts/seguiemj.ttf
+2025-09-04 08:08:31,959 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 08:08:31,972 [DEBUG] Profile:
+                         Progress bar rendered: 0.0% (0/100)
+2025-09-04 08:08:31,974 [DEBUG] Profile:
+                         Badges section rendered
+2025-09-04 08:08:31,976 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 08:08:31,976 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 08:08:31,977 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 08:08:31,977 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/avatars/1264236749060575355/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 08:08:31,977 [DEBUG] Profile:
+                         Creating new aiohttp session
+2025-09-04 08:08:31,977 [INFO] Profile:
+                         HTTP session created with optimized settings
+2025-09-04 08:08:32,112 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 08:08:32,113 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.1362s
+2025-09-04 08:08:32,113 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 08:08:32,114 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 08:08:32,114 [INFO] Profile:
+                         Operation 'create_profile_card layout=detailed' completed in 0.1721s
+2025-09-04 08:08:32,157 [DEBUG] Profile:
+                         ProfileCardView initialized with theme=dark, layout=detailed, public=False
+2025-09-04 08:09:12,467 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 08:09:12,467 [INFO] Profile:
+                         HTTP session closed
+2025-09-04 08:09:12,468 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 09:08:52,896 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 09:08:52,897 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 09:08:52,897 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 09:08:52,897 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 09:08:52,897 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 09:08:52,897 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 09:08:52,897 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0005s
+2025-09-04 09:08:52,897 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 09:08:52,923 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 09:09:49,141 [DEBUG] Profile:
+                         Starting operation: get_user_preferences for user 1264236749060575355
+2025-09-04 09:09:49,141 [DEBUG] Profile:
+                         Fetching preferences for user 1264236749060575355, guild 1371535176781402122
+2025-09-04 09:09:49,188 [DEBUG] Profile:
+                         Retrieved preferences: False
+2025-09-04 09:09:49,189 [DEBUG] Profile:
+                         No saved preferences found for user 1264236749060575355, using defaults
+2025-09-04 09:09:49,190 [INFO] Profile:
+                         Operation 'get_user_preferences for user 1264236749060575355' completed in 0.0486s
+2025-09-04 09:18:54,826 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 09:18:54,826 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 09:19:17,512 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 09:19:17,512 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 09:19:17,512 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 09:19:17,512 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 09:19:17,513 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 09:19:17,513 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 09:19:17,513 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0010s
+2025-09-04 09:19:17,513 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 09:19:17,533 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 09:19:35,597 [DEBUG] Profile:
+                         Starting operation: get_user_preferences for user 1264236749060575355
+2025-09-04 09:19:35,598 [DEBUG] Profile:
+                         Fetching preferences for user 1264236749060575355, guild 1371535176781402122
+2025-09-04 09:19:35,643 [DEBUG] Profile:
+                         Retrieved preferences: False
+2025-09-04 09:19:35,644 [DEBUG] Profile:
+                         No saved preferences found for user 1264236749060575355, using defaults
+2025-09-04 09:19:35,644 [INFO] Profile:
+                         Operation 'get_user_preferences for user 1264236749060575355' completed in 0.0465s
+2025-09-04 09:19:35,657 [DEBUG] Profile:
+                         Getting theme palette: dark for user 1264236749060575355
+2025-09-04 09:19:35,657 [DEBUG] Profile:
+                         Using default palette for theme dark
+2025-09-04 09:19:35,658 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=detailed
+2025-09-04 09:19:35,658 [DEBUG] Profile:
+                         Creating profile card: layout=detailed, inventory=True, badges=True
+2025-09-04 09:19:35,658 [DEBUG] Profile:
+                         Card dimensions: 800x300, avatar: 200px
+2025-09-04 09:19:35,658 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 09:19:35,661 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 09:19:35,662 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 09:19:35,663 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 09:19:35,663 [DEBUG] Profile:
+                         Loading emoji font, size 22
+2025-09-04 09:19:35,664 [INFO] Profile:
+                         Successfully loaded emoji font: C:/Windows/Fonts/seguiemj.ttf
+2025-09-04 09:19:35,665 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 09:19:35,669 [DEBUG] Profile:
+                         Progress bar rendered: 0.0% (0/100)
+2025-09-04 09:19:35,671 [DEBUG] Profile:
+                         Badges section rendered
+2025-09-04 09:19:35,671 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 09:19:35,672 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 09:19:35,672 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 09:19:35,672 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/avatars/1264236749060575355/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 09:19:35,672 [DEBUG] Profile:
+                         Creating new aiohttp session
+2025-09-04 09:19:35,672 [INFO] Profile:
+                         HTTP session created with optimized settings
+2025-09-04 09:19:35,788 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 09:19:35,788 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.1165s
+2025-09-04 09:19:35,789 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 09:19:35,789 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 09:19:35,789 [INFO] Profile:
+                         Operation 'create_profile_card layout=detailed' completed in 0.1320s
+2025-09-04 09:19:35,818 [DEBUG] Profile:
+                         ProfileCardView initialized with theme=dark, layout=detailed, public=False
+2025-09-04 09:22:55,078 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 09:22:55,079 [INFO] Profile:
+                         HTTP session closed
+2025-09-04 09:22:55,080 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 09:23:18,464 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 09:23:18,465 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 09:23:18,465 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 09:23:18,465 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 09:23:18,465 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 09:23:18,465 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 09:23:18,465 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0005s
+2025-09-04 09:23:18,465 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 09:23:18,485 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 09:24:10,774 [DEBUG] Profile:
+                         Starting operation: get_user_preferences for user 1264236749060575355
+2025-09-04 09:24:10,774 [DEBUG] Profile:
+                         Fetching preferences for user 1264236749060575355, guild 1371535176781402122
+2025-09-04 09:24:10,820 [DEBUG] Profile:
+                         Retrieved preferences: False
+2025-09-04 09:24:10,821 [DEBUG] Profile:
+                         No saved preferences found for user 1264236749060575355, using defaults
+2025-09-04 09:24:10,821 [INFO] Profile:
+                         Operation 'get_user_preferences for user 1264236749060575355' completed in 0.0474s
+2025-09-04 09:24:10,821 [DEBUG] Profile:
+                         Getting theme palette: dark for user 1264236749060575355
+2025-09-04 09:24:10,821 [DEBUG] Profile:
+                         Using default palette for theme dark
+2025-09-04 09:24:10,822 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=detailed
+2025-09-04 09:24:10,822 [DEBUG] Profile:
+                         Creating profile card: layout=detailed, inventory=True, badges=True
+2025-09-04 09:24:10,822 [DEBUG] Profile:
+                         Card dimensions: 800x300, avatar: 200px
+2025-09-04 09:24:10,823 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 09:24:10,827 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 09:24:10,828 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 09:24:10,829 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 09:24:10,829 [DEBUG] Profile:
+                         Loading emoji font, size 22
+2025-09-04 09:24:10,830 [INFO] Profile:
+                         Successfully loaded emoji font: C:/Windows/Fonts/seguiemj.ttf
+2025-09-04 09:24:10,831 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 09:24:10,834 [DEBUG] Profile:
+                         Progress bar rendered: 0.0% (0/100)
+2025-09-04 09:24:10,836 [DEBUG] Profile:
+                         Badges section rendered
+2025-09-04 09:24:10,836 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 09:24:10,837 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 09:24:10,837 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 09:24:10,837 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/avatars/1264236749060575355/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 09:24:10,837 [DEBUG] Profile:
+                         Creating new aiohttp session
+2025-09-04 09:24:10,837 [INFO] Profile:
+                         HTTP session created with optimized settings
+2025-09-04 09:24:10,974 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 09:24:10,976 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.1381s
+2025-09-04 09:24:10,977 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 09:24:10,978 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 09:24:10,978 [INFO] Profile:
+                         Operation 'create_profile_card layout=detailed' completed in 0.1552s
+2025-09-04 09:24:11,010 [DEBUG] Profile:
+                         ProfileCardView initialized with theme=dark, layout=detailed, public=False
+2025-09-04 09:29:16,629 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 09:29:16,629 [INFO] Profile:
+                         HTTP session closed
+2025-09-04 09:29:16,630 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 09:29:40,011 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 09:29:40,011 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 09:29:40,011 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 09:29:40,012 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 09:29:40,012 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 09:29:40,012 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 09:29:40,012 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0005s
+2025-09-04 09:29:40,012 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 09:29:40,034 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 09:30:02,615 [DEBUG] Profile:
+                         Starting operation: get_user_preferences for user 1264236749060575355
+2025-09-04 09:30:02,616 [DEBUG] Profile:
+                         Fetching preferences for user 1264236749060575355, guild 1371535176781402122
+2025-09-04 09:30:02,660 [DEBUG] Profile:
+                         Retrieved preferences: False
+2025-09-04 09:30:02,661 [DEBUG] Profile:
+                         No saved preferences found for user 1264236749060575355, using defaults
+2025-09-04 09:30:02,662 [INFO] Profile:
+                         Operation 'get_user_preferences for user 1264236749060575355' completed in 0.0462s
+2025-09-04 09:30:02,663 [DEBUG] Profile:
+                         Getting theme palette: dark for user 1264236749060575355
+2025-09-04 09:30:02,663 [DEBUG] Profile:
+                         Using default palette for theme dark
+2025-09-04 09:30:02,664 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=detailed
+2025-09-04 09:30:02,664 [DEBUG] Profile:
+                         Creating profile card: layout=detailed, inventory=True, badges=True
+2025-09-04 09:30:02,664 [DEBUG] Profile:
+                         Card dimensions: 800x300, avatar: 200px
+2025-09-04 09:30:02,664 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 09:30:02,669 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 09:30:02,670 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 09:30:02,670 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 09:30:02,670 [DEBUG] Profile:
+                         Loading emoji font, size 22
+2025-09-04 09:30:02,671 [INFO] Profile:
+                         Successfully loaded emoji font: C:/Windows/Fonts/seguiemj.ttf
+2025-09-04 09:30:02,672 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 09:30:02,676 [DEBUG] Profile:
+                         Progress bar rendered: 0.0% (0/100)
+2025-09-04 09:30:02,677 [DEBUG] Profile:
+                         Badges section rendered
+2025-09-04 09:30:02,678 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 09:30:02,678 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 09:30:02,678 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 09:30:02,678 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/avatars/1264236749060575355/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 09:30:02,678 [DEBUG] Profile:
+                         Creating new aiohttp session
+2025-09-04 09:30:02,679 [INFO] Profile:
+                         HTTP session created with optimized settings
+2025-09-04 09:30:02,813 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 09:30:02,814 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.1364s
+2025-09-04 09:30:02,814 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 09:30:02,815 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 09:30:02,816 [INFO] Profile:
+                         Operation 'create_profile_card layout=detailed' completed in 0.1521s
+2025-09-04 09:30:02,844 [DEBUG] Profile:
+                         ProfileCardView initialized with theme=dark, layout=detailed, public=False
+2025-09-04 09:57:23,862 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 09:57:23,863 [INFO] Profile:
+                         HTTP session closed
+2025-09-04 09:57:23,863 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 09:57:46,302 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 09:57:46,302 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 09:57:46,303 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 09:57:46,303 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 09:57:46,303 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 09:57:46,304 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 09:57:46,304 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0005s
+2025-09-04 09:57:46,304 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 09:57:46,311 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 10:14:45,937 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 10:14:45,937 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 10:15:11,649 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 10:15:11,650 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 10:15:11,650 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 10:15:11,650 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 10:15:11,651 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 10:15:11,651 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 10:15:11,651 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0005s
+2025-09-04 10:15:11,651 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 10:15:11,671 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 10:18:42,223 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 10:18:42,223 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 10:19:08,642 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 10:19:08,643 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 10:19:08,644 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 10:19:08,644 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 10:19:08,644 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 10:19:08,644 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 10:19:08,644 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0000s
+2025-09-04 10:19:08,645 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 10:19:08,674 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 10:47:41,132 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 10:47:41,132 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 10:52:15,647 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 10:52:15,647 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 10:52:15,647 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 10:52:15,647 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 10:52:15,647 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 10:52:15,647 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 10:52:15,647 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0002s
+2025-09-04 10:52:15,647 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 10:52:15,654 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 11:17:56,088 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 11:17:56,089 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 11:27:48,814 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 11:27:48,814 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 11:27:48,814 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 11:27:48,814 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 11:27:48,814 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 11:27:48,814 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 11:27:48,814 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0001s
+2025-09-04 11:27:48,814 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 11:27:48,817 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 11:28:37,806 [DEBUG] Profile:
+                         Starting operation: get_user_preferences for user 1264236749060575355
+2025-09-04 11:28:37,806 [DEBUG] Profile:
+                         Fetching preferences for user 1264236749060575355, guild 1265120128295632926
+2025-09-04 11:28:37,860 [DEBUG] Profile:
+                         Retrieved preferences: True
+2025-09-04 11:28:37,860 [INFO] Profile:
+                         Loaded preferences for user 1264236749060575355: {'theme': 'eosofficial-default', 'layout': 'compact', 'show_inventory': True, 'show_badges': False}
+2025-09-04 11:28:37,860 [INFO] Profile:
+                         Operation 'get_user_preferences for user 1264236749060575355' completed in 0.0549s
+2025-09-04 11:28:37,862 [DEBUG] Profile:
+                         Getting theme palette: eosofficial-default for user 1264236749060575355
+2025-09-04 11:28:37,862 [DEBUG] Profile:
+                         Starting operation: get_custom_theme_palette eosofficial-default
+2025-09-04 11:28:37,862 [ERROR] Profile:
+                         Failed to fetch custom theme eosofficial-default: Collection 'profilecard_themes' not configured
+2025-09-04 11:28:37,862 [INFO] Profile:
+                         Operation 'get_custom_theme_palette eosofficial-default' completed in 0.0003s
+2025-09-04 11:28:37,862 [DEBUG] Profile:
+                         Custom theme eosofficial-default not found, using default dark palette
+2025-09-04 11:28:37,863 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=compact
+2025-09-04 11:28:37,863 [DEBUG] Profile:
+                         Creating profile card: layout=compact, inventory=True, badges=False
+2025-09-04 11:28:37,863 [DEBUG] Profile:
+                         Card dimensions: 800x240, avatar: 200px
+2025-09-04 11:28:37,864 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 11:28:37,865 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 11:28:37,866 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 11:28:37,867 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 11:28:37,867 [DEBUG] Profile:
+                         Loading emoji font, size 22
+2025-09-04 11:28:37,868 [INFO] Profile:
+                         Successfully loaded emoji font: C:/Windows/Fonts/seguiemj.ttf
+2025-09-04 11:28:37,869 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 11:28:37,873 [DEBUG] Profile:
+                         Formatted 379517.5074942112s as 105:25:17
+2025-09-04 11:28:37,875 [DEBUG] Profile:
+                         Progress bar rendered: 83.9% (1511/1800)
+2025-09-04 11:28:37,875 [DEBUG] Profile:
+                         Rendering favorite emoji: 2️⃣ (×13)
+2025-09-04 11:28:37,875 [DEBUG] Profile:
+                         Emoji support check for '2️⃣': True
+2025-09-04 11:28:37,876 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 11:28:37,877 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 11:28:37,877 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 11:28:37,877 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/guilds/1265120128295632926/users/1264236749060575355/avatars/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 11:28:37,877 [DEBUG] Profile:
+                         Creating new aiohttp session
+2025-09-04 11:28:37,877 [INFO] Profile:
+                         HTTP session created with optimized settings
+2025-09-04 11:28:38,124 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 11:28:38,124 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.2476s
+2025-09-04 11:28:38,125 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 11:28:38,125 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 11:28:38,125 [INFO] Profile:
+                         Operation 'create_profile_card layout=compact' completed in 0.2623s
+2025-09-04 11:28:38,160 [DEBUG] Profile:
+                         ProfileCardView initialized with theme=eosofficial-default, layout=compact, public=False
+2025-09-04 11:29:00,894 [DEBUG] Profile:
+                         Theme next requested by user 1264236749060575355
+2025-09-04 11:29:01,046 [DEBUG] Profile:
+                         Starting operation: get_available_themes for user 1264236749060575355
+2025-09-04 11:29:01,047 [DEBUG] Profile:
+                         Starting with default themes: ['dark', 'neon', 'gold', 'minimal']
+2025-09-04 11:29:01,047 [ERROR] Profile:
+                         Failed to fetch custom themes for user 1264236749060575355: Collection 'profilecard_themes' not configured
+2025-09-04 11:29:01,047 [DEBUG] Profile:
+                         Total available themes for user 1264236749060575355: 4
+2025-09-04 11:29:01,047 [INFO] Profile:
+                         Operation 'get_available_themes for user 1264236749060575355' completed in 0.0006s
+2025-09-04 11:29:01,047 [INFO] Profile:
+                         User 1264236749060575355 switched theme: eosofficial-default -> neon
+2025-09-04 11:29:01,047 [DEBUG] Profile:
+                         Starting operation: send_profile_card for user 1264236749060575355
+2025-09-04 11:29:01,047 [DEBUG] Profile:
+                         Generating profile card for 1264236749060575355 with theme neon
+2025-09-04 11:29:01,047 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=compact
+2025-09-04 11:29:01,047 [DEBUG] Profile:
+                         Creating profile card: layout=compact, inventory=True, badges=False
+2025-09-04 11:29:01,047 [DEBUG] Profile:
+                         Card dimensions: 800x240, avatar: 200px
+2025-09-04 11:29:01,048 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 11:29:01,051 [DEBUG] Profile:
+                         Formatted 379517.5074942112s as 105:25:17
+2025-09-04 11:29:01,053 [DEBUG] Profile:
+                         Progress bar rendered: 83.9% (1511/1800)
+2025-09-04 11:29:01,053 [DEBUG] Profile:
+                         Rendering favorite emoji: 2️⃣ (×13)
+2025-09-04 11:29:01,053 [DEBUG] Profile:
+                         Emoji support check for '2️⃣': True
+2025-09-04 11:29:01,054 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 11:29:01,054 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 11:29:01,054 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 11:29:01,054 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/guilds/1265120128295632926/users/1264236749060575355/avatars/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 11:29:01,226 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 11:29:01,227 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.1721s
+2025-09-04 11:29:01,227 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 11:29:01,227 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 11:29:01,227 [INFO] Profile:
+                         Operation 'create_profile_card layout=compact' completed in 0.1798s
+2025-09-04 11:29:01,257 [INFO] Profile:
+                         Profile card generated and sent for user 1264236749060575355
+2025-09-04 11:29:02,623 [INFO] Profile:
+                         Operation 'send_profile_card for user 1264236749060575355' completed in 1.5763s
+2025-09-04 11:29:05,476 [DEBUG] Profile:
+                         Theme previous requested by user 1264236749060575355
+2025-09-04 11:29:05,593 [INFO] Profile:
+                         User 1264236749060575355 switched theme: neon -> dark
+2025-09-04 11:29:05,594 [DEBUG] Profile:
+                         Starting operation: send_profile_card for user 1264236749060575355
+2025-09-04 11:29:05,594 [DEBUG] Profile:
+                         Generating profile card for 1264236749060575355 with theme dark
+2025-09-04 11:29:05,594 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=compact
+2025-09-04 11:29:05,594 [DEBUG] Profile:
+                         Creating profile card: layout=compact, inventory=True, badges=False
+2025-09-04 11:29:05,594 [DEBUG] Profile:
+                         Card dimensions: 800x240, avatar: 200px
+2025-09-04 11:29:05,594 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 11:29:05,598 [DEBUG] Profile:
+                         Formatted 379517.5074942112s as 105:25:17
+2025-09-04 11:29:05,601 [DEBUG] Profile:
+                         Progress bar rendered: 83.9% (1511/1800)
+2025-09-04 11:29:05,601 [DEBUG] Profile:
+                         Rendering favorite emoji: 2️⃣ (×13)
+2025-09-04 11:29:05,602 [DEBUG] Profile:
+                         Emoji support check for '2️⃣': True
+2025-09-04 11:29:05,603 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 11:29:05,603 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 11:29:05,603 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 11:29:05,603 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/guilds/1265120128295632926/users/1264236749060575355/avatars/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 11:29:05,738 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 11:29:05,739 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.1360s
+2025-09-04 11:29:05,739 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 11:29:05,739 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 11:29:05,740 [INFO] Profile:
+                         Operation 'create_profile_card layout=compact' completed in 0.1458s
+2025-09-04 11:29:05,777 [INFO] Profile:
+                         Profile card generated and sent for user 1264236749060575355
+2025-09-04 11:29:06,362 [INFO] Profile:
+                         Operation 'send_profile_card for user 1264236749060575355' completed in 0.7689s
+2025-09-04 11:29:08,211 [DEBUG] Profile:
+                         Theme previous requested by user 1264236749060575355
+2025-09-04 11:29:08,337 [INFO] Profile:
+                         User 1264236749060575355 switched theme: dark -> minimal
+2025-09-04 11:29:08,338 [DEBUG] Profile:
+                         Starting operation: send_profile_card for user 1264236749060575355
+2025-09-04 11:29:08,338 [DEBUG] Profile:
+                         Generating profile card for 1264236749060575355 with theme minimal
+2025-09-04 11:29:08,338 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=compact
+2025-09-04 11:29:08,338 [DEBUG] Profile:
+                         Creating profile card: layout=compact, inventory=True, badges=False
+2025-09-04 11:29:08,338 [DEBUG] Profile:
+                         Card dimensions: 800x240, avatar: 200px
+2025-09-04 11:29:08,339 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 11:29:08,342 [DEBUG] Profile:
+                         Formatted 379517.5074942112s as 105:25:17
+2025-09-04 11:29:08,345 [DEBUG] Profile:
+                         Progress bar rendered: 83.9% (1511/1800)
+2025-09-04 11:29:08,346 [DEBUG] Profile:
+                         Rendering favorite emoji: 2️⃣ (×13)
+2025-09-04 11:29:08,346 [DEBUG] Profile:
+                         Emoji support check for '2️⃣': True
+2025-09-04 11:29:08,347 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 11:29:08,347 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 11:29:08,347 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 11:29:08,347 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/guilds/1265120128295632926/users/1264236749060575355/avatars/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 11:29:08,482 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 11:29:08,483 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.1352s
+2025-09-04 11:29:08,483 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 11:29:08,483 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 11:29:08,483 [INFO] Profile:
+                         Operation 'create_profile_card layout=compact' completed in 0.1448s
+2025-09-04 11:29:08,518 [INFO] Profile:
+                         Profile card generated and sent for user 1264236749060575355
+2025-09-04 11:29:09,096 [INFO] Profile:
+                         Operation 'send_profile_card for user 1264236749060575355' completed in 0.7580s
+2025-09-04 11:29:21,338 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 11:29:21,339 [INFO] Profile:
+                         HTTP session closed
+2025-09-04 11:29:21,339 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 11:37:30,568 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 11:37:30,569 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 11:37:30,569 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 11:37:30,569 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 11:37:30,569 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 11:37:30,569 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 11:37:30,569 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0003s
+2025-09-04 11:37:30,569 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 11:37:30,600 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 11:38:52,119 [DEBUG] Profile:
+                         Starting operation: get_user_preferences for user 1264236749060575355
+2025-09-04 11:38:52,120 [DEBUG] Profile:
+                         Fetching preferences for user 1264236749060575355, guild 1265120128295632926
+2025-09-04 11:38:52,163 [DEBUG] Profile:
+                         Retrieved preferences: True
+2025-09-04 11:38:52,163 [INFO] Profile:
+                         Loaded preferences for user 1264236749060575355: {'theme': 'eosofficial-default', 'layout': 'compact', 'show_inventory': True, 'show_badges': False}
+2025-09-04 11:38:52,163 [INFO] Profile:
+                         Operation 'get_user_preferences for user 1264236749060575355' completed in 0.0444s
+2025-09-04 11:38:52,165 [DEBUG] Profile:
+                         Getting theme palette: eosofficial-default for user 1264236749060575355
+2025-09-04 11:38:52,165 [DEBUG] Profile:
+                         Starting operation: get_custom_theme_palette eosofficial-default
+2025-09-04 11:38:52,165 [ERROR] Profile:
+                         Failed to fetch custom theme eosofficial-default: Collection 'profilecard_themes' not configured
+2025-09-04 11:38:52,165 [INFO] Profile:
+                         Operation 'get_custom_theme_palette eosofficial-default' completed in 0.0001s
+2025-09-04 11:38:52,165 [DEBUG] Profile:
+                         Custom theme eosofficial-default not found, using default dark palette
+2025-09-04 11:38:52,166 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=compact
+2025-09-04 11:38:52,166 [DEBUG] Profile:
+                         Creating profile card: layout=compact, inventory=True, badges=False
+2025-09-04 11:38:52,166 [DEBUG] Profile:
+                         Card dimensions: 800x240, avatar: 200px
+2025-09-04 11:38:52,166 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 11:38:52,167 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 11:38:52,167 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 11:38:52,168 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 11:38:52,168 [DEBUG] Profile:
+                         Loading emoji font, size 22
+2025-09-04 11:38:52,170 [INFO] Profile:
+                         Successfully loaded emoji font: C:/Windows/Fonts/seguiemj.ttf
+2025-09-04 11:38:52,170 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 11:38:52,175 [DEBUG] Profile:
+                         Formatted 379517.5074942112s as 105:25:17
+2025-09-04 11:38:52,177 [DEBUG] Profile:
+                         Progress bar rendered: 83.9% (1511/1800)
+2025-09-04 11:38:52,177 [DEBUG] Profile:
+                         Rendering favorite emoji: 2️⃣ (×13)
+2025-09-04 11:38:52,178 [DEBUG] Profile:
+                         Emoji support check for '2️⃣': True
+2025-09-04 11:38:52,179 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 11:38:52,179 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 11:38:52,179 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 11:38:52,179 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/guilds/1265120128295632926/users/1264236749060575355/avatars/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 11:38:52,179 [DEBUG] Profile:
+                         Creating new aiohttp session
+2025-09-04 11:38:52,180 [INFO] Profile:
+                         HTTP session created with optimized settings
+2025-09-04 11:38:52,412 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 11:38:52,413 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.2334s
+2025-09-04 11:38:52,413 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 11:38:52,413 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 11:38:52,413 [INFO] Profile:
+                         Operation 'create_profile_card layout=compact' completed in 0.2478s
+2025-09-04 11:38:52,448 [DEBUG] Profile:
+                         ProfileCardView initialized with theme=eosofficial-default, layout=compact, public=False
+2025-09-04 11:52:57,911 [DEBUG] Profile:
+                         Starting operation: get_user_preferences for user 1264236749060575355
+2025-09-04 11:52:57,911 [DEBUG] Profile:
+                         Fetching preferences for user 1264236749060575355, guild 1265120128295632926
+2025-09-04 11:52:57,958 [DEBUG] Profile:
+                         Retrieved preferences: True
+2025-09-04 11:52:57,958 [INFO] Profile:
+                         Loaded preferences for user 1264236749060575355: {'theme': 'eosofficial-default', 'layout': 'compact', 'show_inventory': True, 'show_badges': False}
+2025-09-04 11:52:57,958 [INFO] Profile:
+                         Operation 'get_user_preferences for user 1264236749060575355' completed in 0.0474s
+2025-09-04 11:52:57,960 [DEBUG] Profile:
+                         Getting theme palette: eosofficial-default for user 1264236749060575355
+2025-09-04 11:52:57,960 [DEBUG] Profile:
+                         Starting operation: get_custom_theme_palette eosofficial-default
+2025-09-04 11:52:57,961 [ERROR] Profile:
+                         Failed to fetch custom theme eosofficial-default: Collection 'profilecard_themes' not configured
+2025-09-04 11:52:57,961 [INFO] Profile:
+                         Operation 'get_custom_theme_palette eosofficial-default' completed in 0.0002s
+2025-09-04 11:52:57,961 [DEBUG] Profile:
+                         Custom theme eosofficial-default not found, using default dark palette
+2025-09-04 11:52:57,961 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=compact
+2025-09-04 11:52:57,961 [DEBUG] Profile:
+                         Creating profile card: layout=compact, inventory=True, badges=False
+2025-09-04 11:52:57,961 [DEBUG] Profile:
+                         Card dimensions: 800x240, avatar: 200px
+2025-09-04 11:52:57,961 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 11:52:57,965 [DEBUG] Profile:
+                         Formatted 379517.5074942112s as 105:25:17
+2025-09-04 11:52:57,968 [DEBUG] Profile:
+                         Progress bar rendered: 83.9% (1511/1800)
+2025-09-04 11:52:57,968 [DEBUG] Profile:
+                         Rendering favorite emoji: 2️⃣ (×13)
+2025-09-04 11:52:57,969 [DEBUG] Profile:
+                         Emoji support check for '2️⃣': True
+2025-09-04 11:52:57,970 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 11:52:57,971 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 11:52:57,971 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 11:52:57,971 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/guilds/1265120128295632926/users/1264236749060575355/avatars/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 11:52:58,176 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 11:52:58,177 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.2056s
+2025-09-04 11:52:58,177 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 11:52:58,177 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 11:52:58,177 [INFO] Profile:
+                         Operation 'create_profile_card layout=compact' completed in 0.2165s
+2025-09-04 11:52:58,210 [DEBUG] Profile:
+                         ProfileCardView initialized with theme=eosofficial-default, layout=compact, public=False
+2025-09-04 11:53:12,965 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 11:53:12,966 [INFO] Profile:
+                         HTTP session closed
+2025-09-04 11:53:12,966 [INFO] Profile:
+                         Profile cog unloaded
+2025-09-04 11:53:44,337 [INFO] Profile:
+                         Setting up Profile cog
+2025-09-04 11:53:44,337 [INFO] Profile:
+                         Profile cog initialized
+2025-09-04 11:53:44,338 [INFO] Profile:
+                         Loading Profile cog...
+2025-09-04 11:53:44,338 [DEBUG] Profile:
+                         Starting operation: Profile cog loading
+2025-09-04 11:53:44,338 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 11:53:44,338 [INFO] Profile:
+                         Profile cog loaded successfully
+2025-09-04 11:53:44,338 [INFO] Profile:
+                         Operation 'Profile cog loading' completed in 0.0001s
+2025-09-04 11:53:44,338 [INFO] Profile:
+                         Profile cog setup completed
+2025-09-04 11:53:44,341 [INFO] Profile:
+                         ProfilePreferences initialized with DatabaseManager
+2025-09-04 11:54:03,608 [DEBUG] Profile:
+                         Starting operation: get_user_preferences for user 1264236749060575355
+2025-09-04 11:54:03,609 [DEBUG] Profile:
+                         Fetching preferences for user 1264236749060575355, guild 1265120128295632926
+2025-09-04 11:54:03,651 [DEBUG] Profile:
+                         Retrieved preferences: True
+2025-09-04 11:54:03,651 [INFO] Profile:
+                         Loaded preferences for user 1264236749060575355: {'theme': 'eosofficial-default', 'layout': 'compact', 'show_inventory': True, 'show_badges': False}
+2025-09-04 11:54:03,651 [INFO] Profile:
+                         Operation 'get_user_preferences for user 1264236749060575355' completed in 0.0430s
+2025-09-04 11:54:03,655 [DEBUG] Profile:
+                         Getting theme palette: eosofficial-default for user 1264236749060575355
+2025-09-04 11:54:03,655 [DEBUG] Profile:
+                         Starting operation: get_custom_theme_palette eosofficial-default
+2025-09-04 11:54:03,698 [DEBUG] Profile:
+                         Ensured color tuple: [33, 37, 41, 255] -> (33, 37, 41, 255)
+2025-09-04 11:54:03,699 [DEBUG] Profile:
+                         Ensured color tuple: [77, 14, 179, 255] -> (77, 14, 179, 255)
+2025-09-04 11:54:03,699 [DEBUG] Profile:
+                         Ensured color tuple: [77, 14, 179, 255] -> (77, 14, 179, 255)
+2025-09-04 11:54:03,699 [INFO] Profile:
+                         Retrieved custom theme palette for eosofficial-default
+2025-09-04 11:54:03,699 [INFO] Profile:
+                         Operation 'get_custom_theme_palette eosofficial-default' completed in 0.0439s
+2025-09-04 11:54:03,699 [DEBUG] Profile:
+                         Starting operation: create_profile_card layout=compact
+2025-09-04 11:54:03,699 [DEBUG] Profile:
+                         Creating profile card: layout=compact, inventory=True, badges=False
+2025-09-04 11:54:03,699 [DEBUG] Profile:
+                         Card dimensions: 800x240, avatar: 200px
+2025-09-04 11:54:03,700 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 11:54:03,701 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 40
+2025-09-04 11:54:03,701 [DEBUG] Profile:
+                         Loading font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 11:54:03,702 [INFO] Profile:
+                         Successfully loaded font: fonts/Bebas_Neue/BebasNeue-Regular.ttf size 22
+2025-09-04 11:54:03,702 [DEBUG] Profile:
+                         Loading emoji font, size 22
+2025-09-04 11:54:03,703 [INFO] Profile:
+                         Successfully loaded emoji font: C:/Windows/Fonts/seguiemj.ttf
+2025-09-04 11:54:03,704 [DEBUG] Profile:
+                         Rendering text elements
+2025-09-04 11:54:03,707 [DEBUG] Profile:
+                         Formatted 379517.5074942112s as 105:25:17
+2025-09-04 11:54:03,709 [DEBUG] Profile:
+                         Progress bar rendered: 83.9% (1511/1800)
+2025-09-04 11:54:03,709 [DEBUG] Profile:
+                         Rendering favorite emoji: 2️⃣ (×13)
+2025-09-04 11:54:03,709 [DEBUG] Profile:
+                         Emoji support check for '2️⃣': True
+2025-09-04 11:54:03,710 [DEBUG] Profile:
+                         Inventory section rendered: Items: 0
+2025-09-04 11:54:03,710 [DEBUG] Profile:
+                         Accent line rendered
+2025-09-04 11:54:03,710 [DEBUG] Profile:
+                         Starting operation: fetch_avatar size=200
+2025-09-04 11:54:03,711 [DEBUG] Profile:
+                         Fetching avatar from: https://cdn.discordapp.com/guilds/1265120128295632926/users/1264236749060575355/avatars/8eab5b3c474ca0e0d368e0651fdcb22f.png?size=1024
+2025-09-04 11:54:03,711 [DEBUG] Profile:
+                         Creating new aiohttp session
+2025-09-04 11:54:03,711 [INFO] Profile:
+                         HTTP session created with optimized settings
+2025-09-04 11:54:03,951 [DEBUG] Profile:
+                         Avatar fetched and resized successfully: 72106 bytes
+2025-09-04 11:54:03,951 [INFO] Profile:
+                         Operation 'fetch_avatar size=200' completed in 0.2411s
+2025-09-04 11:54:03,952 [DEBUG] Profile:
+                         Avatar applied successfully
+2025-09-04 11:54:03,952 [INFO] Profile:
+                         Profile card generation completed successfully
+2025-09-04 11:54:03,952 [INFO] Profile:
+                         Operation 'create_profile_card layout=compact' completed in 0.2532s
+2025-09-04 11:54:03,980 [DEBUG] Profile:
+                         ProfileCardView initialized with theme=eosofficial-default, layout=compact, public=False
+2025-09-04 11:56:55,230 [INFO] Profile:
+                         Unloading Profile cog...
+2025-09-04 11:56:55,231 [INFO] Profile:
+                         HTTP session closed
+2025-09-04 11:56:55,231 [INFO] Profile:
+                         Profile cog unloaded
